@@ -12,4 +12,4 @@ chart.renderTo('#scatter');
 ```
 [example jsBin](http://jsbin.com/hogoci/7/watch?output)
 
-Color settings see [encoding](/advanced/encoding.md)
+Color settings see [encoding](../advanced/encoding.md)
