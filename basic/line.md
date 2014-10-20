@@ -9,7 +9,5 @@ var chart = new tauChart.Chart({
         });
 chart.renderTo('#line');
 ```
+Line chart is wrapping over a [line element](../advanced/elements.md#line) and has same settings.
 [example jsBin](http://jsbin.com/hogoci/15/embed?output&height=500px)
-Line chart is alias [line element](../advanced/elements.md#line) and has same settings
-
-Color settings see [encoding](../advanced/encoding.md)

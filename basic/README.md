@@ -1,4 +1,4 @@
-For creating simple chart you can use
+For creating simple chart you can use.
 ```javascript
 var chart = new tauChart.Chart({
             data: defData,
@@ -8,6 +8,8 @@ var chart = new tauChart.Chart({
             color: 'team',
             size: 'count'
         });
-chart.renderTo('#scatter');
-```
-[example jsBin](http://jsbin.com/hogoci/7/watch?output)
+chart.renderTo('#scatter');```
+Where type can be [scatterplot](scatterplot.md), [line](line.md), [bar](bar.md)
+
+
+[example jsBin](http://jsbin.com/hogoci/16/embed?output)
