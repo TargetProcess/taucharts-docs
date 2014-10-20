@@ -9,6 +9,6 @@ var chart = new tauChart.Chart({
         });
 chart.renderTo('#line');
 ```
-[example jsBin](http://jsbin.com/hogoci/14/watch?output)
+[example jsBin](http://jsbin.com/hogoci/14/embed?output&height=500px)
 
 Color settings see [encoding](../advanced/encoding.md)
