@@ -9,18 +9,16 @@ var plot = new tauCharts.Chart({
         ...
         { name: "Mary", age: 22, gender: 'Female', hasChild: false }
     ],
-    spec: {
-        type:  "scatterplot",
-        ...
-        x:     "gender",
-        y:     "age",
-        size:  "age",
-        color: "hasChild"
-    }
+    type:  "scatterplot",
+    ...
+    x:     "gender",
+    y:     "age",
+    size:  "age",
+    color: "hasChild"
 });
 ```
 
-![](https://dl.dropboxusercontent.com/u/96767946/tauchart-docs/tauchart-docs-1.png)
+[example jsBin](http://jsbin.com/pibuvicoya/1/embed?output&height=500px)
 
 According to this conception the API requires source data to be provided in form of structured table which can be expressed in javascript as an array of same-typed objects (e.g. in example above: name, age, gender, hasChild).
 
@@ -28,7 +26,7 @@ NOTE: we plan to support X-Array format in the near future.
 
 By default TauCharts try to detect a dimension type which can be categorical or quantitative.
 
-Also you can explicitly specify dimension type within [spec.dimensions] section:
+Also you can explicitly specify dimension type within [dimensions] section:
 
 ```javascript
 var plot = new tauCharts.Chart({
@@ -37,20 +35,18 @@ var plot = new tauCharts.Chart({
         ...
         { name: "Mary", age: 22, gender: 'Female', hasChild: false }
     ],
-    spec: {
-        dimensions: {
-            name: { scaleDim: 'ordinal' },
-            age: { scaleDim: 'linear' },
-            gender: { scaleDim: 'ordinal' },
-            hasChild: { scaleDim: 'ordinal' }
-        },
-        type:  "scatterplot",
-        ...
-        x:     "gender",
-        y:     "age",
-        size:  "age",
-        color: "hasChild"
-    }
+    dimensions: {
+        name: { scaleDim: 'ordinal' },
+        age: { scaleDim: 'linear' },
+        gender: { scaleDim: 'ordinal' },
+        hasChild: { scaleDim: 'ordinal' }
+    },
+    type:  "scatterplot",
+    ...
+    x:     "gender",
+    y:     "age",
+    size:  "age",
+    color: "hasChild"
 });
 ```
 
@@ -58,8 +54,7 @@ You can specify sort order for dimension domain using [ASC | DESC] keywords (non
 
 ```javascript
 dimensions: {
-    name: { scaleDim: 'ordinal', sort: 'DESC' },
-    age : { scaleDim: 'linear' , sort: 'Asc' },
+    name: { scaleDim: 'ordinal', sort: 'DESC' }
     ...
 }
 ```
@@ -78,10 +73,9 @@ There are 2 variants available:
 
 Using this method you should put in data property a nested object and provide mapping for category id (a number) and category name.
 
-Mapping can be declared using:
+Mapping is declared using strings (first level property names).
 
-* strings (first level property names) or
-* functions (useful for non-trivial and deep nested properties).
+[Improvement ideas]: Probably use JSON path for complex objects?
 
 Sorting will be applied by numerical [id] property.
 
@@ -92,23 +86,21 @@ Sorting will be applied by numerical [id] property.
         ...
         { name: "Mary", gender: { key: 2, val: 'Female'}}
     ],
-    spec: {
-        dimensions: {
-            ...
-            gender: {
-                scaleDim: 'ordinal',
-                id:   'key',                // string
-                name: function(genderObj) { // function
-                    return genderObj.val
-                },
-                sort: 'Desc'
-            }
-            ...
-        },
+    dimensions: {
         ...
-    }
+        gender: {
+            scaleDim: 'ordinal',
+            id:   'key',
+            name: 'val',
+            sort: 'Desc'
+        }
+        ...
+    },
+    ...
 });
 ```
+
+[example jsBin](http://jsbin.com/ruqudobeci/1/embed?output&height=500px)
 
 #####Category as a token in the ordered array
 
@@ -119,21 +111,25 @@ The [index] specifies ascending order for categories.
 ```javascript
 {
     data: [
-        { task: "Watch TV"       , priority: 'low' },
+        { name: "John", gender: 'Male'},
         ...
-        { task: "Visit a dantist", priority: 'high'}
+        { name: "Mary", gender: 'Female'},
+        ...
+        { name: "Pete", gender: 'Infant'}
     ],
-    spec: {
-        dimensions: {
-            ...
-            priority: {
-                scaleDim: 'ordinal',
-                index: ['low', 'medium', 'high'],
-                sort: 'Desc'
-            }
-            ...
-        },
+    dimensions: {
         ...
-    }
+        gender: {
+            scaleDim: 'ordinal',
+            index: ['Male', 'Female'],
+            sort: 'Desc'
+        }
+        ...
+    },
+    ...
 });
 ```
+
+[example jsBin](http://jsbin.com/beqalufomi/1/embed?output&height=500px)
+
+NOTE: Specifying sort order for quantitative dimension doesn't make any effect since such a dimensions are always displayed in ascending order.
