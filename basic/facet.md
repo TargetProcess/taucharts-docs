@@ -1,46 +1,40 @@
 #What is a facet chart
-If you want to map several dimensions to a single coordinate, you will have a faceted chart as a result. For example, you want to have City and Population on Y axis and Time on X axis.
+
+The Grammar of Graphics provides the following description for "facet" term:
+
+"The facet implies a little face, such as one of the sides of an object (e.g., a cut diamond) that has many faces. The word is useful for describing an object that creates many little graphics that are variations of a single graphic. In a graphical system, facets are frames of frames. Because of this recursion, facets make frames behave like points in the sense that the center of a frame can be located by coordinates derived from a facet. Thus we can use facets to make graphs of graphs or tables of graphs"
+
+To construct facets we should use coordinates recursively by embedding COORDS.XXX units inside each other.
 
 #Examples
 
 ```
-var facet2x2 = {
-        dimensions: {
-            project: { scaleType: 'ordinal' },
-            team: { scaleType: 'ordinal' },
-            cycleTime: { scaleType: 'linear' },
-            effort: { scaleType: 'linear' }
-        },
+var plot = new tauChart.Plot({
+    data: [
+        { name: "John", age: 30, tshirt: 'M', gender: 'Male',   hasChild: true  },
+        ...
+        { name: "Jane", age: 28, tshirt: 'L', gender: 'Female', hasChild: true }
+    ],
+    spec: {
         unit: {
             type: 'COORDS.RECT',
-            guide: {
-                padding: {l: 152, b: 48, r: 0, t: 0},
-                x: {label: { text: 'Projects', padding: 32}},
-                y: {label: { text: 'Teams', padding: 120}}
-            },
-            x: 'project',
-            y: 'team',
+            x: 'gender',
+            y: 'hasChild',
             unit: [
                 {
                     type: 'COORDS.RECT',
-                    guide: {
-                        showGridLines: 'xy',
-                        padding: { l:54, b:28, r:16, t:16 },
-                        x: {padding: 8, label: ''},
-                        y: {padding: 8, label: 'effort'}
-                    },
-                    x: 'cycleTime',
-                    y: 'effort',
+                    x: 'age',
+                    y: 'tshirt',
                     unit: [
                         {
-                            type: 'ELEMENT.POINT',
-                            color: 'effort',
-                            size: 'cycleTime',
-                            shape: null
+                            type: 'ELEMENT.POINT'
                         }
                     ]
                 }
             ]
         }
-    };
+    }
+});
 ```
+
+[example jsBin](http://jsbin.com/wuyujeroxo/1/embed?output&height=500px)
