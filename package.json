@@ -13,7 +13,8 @@
     }
   ],
   "dependencies": {
-    "gitbook-plugin-jsbin": "0.0.5"
+    "gitbook-plugin-jsbin": "0.0.5",
+    "gitbook-plugin-disqus": "0.0.1"
   },
   "repository": {
     "type": "git",
