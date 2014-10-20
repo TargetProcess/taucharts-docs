@@ -10,6 +10,6 @@ var chart = new tauChart.Chart({
         });
 chart.renderTo('#scatter');
 ```
-[example jsBin](http://jsbin.com/hogoci/7/embed?output&height=500px)
+[example jsBin](http://jsbin.com/hogoci/16/embed?output&height=500px)
 
 Color settings see [encoding](../advanced/encoding.md)

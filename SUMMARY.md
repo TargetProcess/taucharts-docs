@@ -6,7 +6,7 @@
 	* [5 mins tutorial](tutorials/5min.md) - M
 * [Data source / dimensions](datasource/README.md) - V
 * [Basic concepts](basic/README.md)
-    * [Scatterlot](basic/scatterplot.md) - K
+    * [Scatterplot](basic/scatterplot.md) - K
     * [Line](basic/line.md) - K
     * [Bar](basic/bar.md) - K
     * [Facets](basic/facet.md) - V
