@@ -1,9 +1,10 @@
 ##Data source
 
-You can think of TauCharts API as a mapping between data variable set (data dimensions) and visual encoding parameters.
+You can think of TauCharts API as a mapping between data variable set (data dimensions) and visual encoding parameters (X, Y, color and size).
 
 ```javascript
 var plot = new tauCharts.Chart({
+    // data dimensions
     data: [
         { name: "John", age: 30, gender: 'Male',   hasChild: true  },
         ...
@@ -11,6 +12,7 @@ var plot = new tauCharts.Chart({
     ],
     type:  "scatterplot",
     ...
+    // visual encoding 
     x:     "gender",
     y:     "age",
     size:  "age",
@@ -20,13 +22,15 @@ var plot = new tauCharts.Chart({
 
 [example jsBin](http://jsbin.com/hazelanari/2/embed?output&height=500px)
 
-According to this conception the API requires source data to be provided in form of structured table which can be expressed in javascript as an array of same-typed objects (e.g. in example above: name, age, gender, hasChild).
+TauCharts requires the source data to be provided in a form of structured table which can be expressed in javascript as an array of same-typed objects (e.g. in example above: name, age, gender, hasChild).
 
-NOTE: we plan to support X-Array format in the near future.
+By default TauCharts try to detect a dimension type which can be categorical, qualitative or quantitative.
 
-By default TauCharts try to detect a dimension type which can be categorical or quantitative.
+* Categorical: Represents data that can't be compared. Let's say, list of countries or names.
+* Qualitative: Can be ordered, but you can't say how bigger one value from the other. For example, you can say that Must Have is more important than Nice to Have, but you can't say that Must Have is twice as important.
+* Quantitative: That is easy. You can compare these variables, add them, multiply them, etc.
 
-Also you can explicitly specify dimension type within [dimensions] section:
+Also you can explicitly specify dimension type within *dimensions* section:
 
 ```javascript
 var plot = new tauCharts.Chart({
@@ -36,10 +40,10 @@ var plot = new tauCharts.Chart({
         { name: "Mary", age: 22, gender: 'Female', hasChild: false }
     ],
     dimensions: {
-        name: { scaleDim: 'ordinal' },
-        age: { scaleDim: 'linear' },
-        gender: { scaleDim: 'ordinal' },
-        hasChild: { scaleDim: 'ordinal' }
+        name: { type: 'categorical', scale: 'ordinal' },
+        age: { type: 'quantitative' },
+        gender: { type: 'categorical' },
+        hasChild: { type: 'categorical' }
     },
     type:  "scatterplot",
     ...
@@ -50,49 +54,22 @@ var plot = new tauCharts.Chart({
 });
 ```
 
-You can specify sort order for dimension domain using [ASC | DESC] keywords (non case sensitive).
+## Nested objects in DataSource
 
-```javascript
-dimensions: {
-    name: { scaleDim: 'ordinal', sort: 'DESC' }
-    ...
-}
-```
-
-Non-ordered categorical dimensions will be sorted alphabetically by default.
-
-Ordered categorical dimension should be declared in a special way.
-
-There are 2 variants available:
-
-1. Category as object with id and name.
-2. Category as a token in the ordered array.
-
-
-#####Category as object with id and name
-
-Using this method you should put in data property a nested object and provide mapping for category id (a number) and category name.
-
-Mapping is declared using strings (first level property names).
-
-[Improvement ideas]: Probably use JSON path for complex objects?
-
-Sorting will be applied by numerical [id] property.
 
 ```javascript
 {
     data: [
-        { name: "John", gender: { key: 1, val: 'Male'  }},
+        { name: "John", gender: { key: 1, value: 'Male'  }},
         ...
-        { name: "Mary", gender: { key: 2, val: 'Female'}}
+        { name: "Mary", gender: { key: 2, value: 'Female'}}
     ],
     dimensions: {
         ...
         gender: {
-            scaleDim: 'ordinal',
-            id:   'key',
-            name: 'val',
-            sort: 'Desc'
+            type: 'categorical',
+            value:   'key'
+            
         }
         ...
     },
@@ -100,9 +77,20 @@ Sorting will be applied by numerical [id] property.
 });
 ```
 
-[example jsBin](http://jsbin.com/ruqudobeci/1/embed?output&height=500px)
 
-#####Category as a token in the ordered array
+## Sorting data
+
+You can specify sort order for dimension domain using [ASC | DESC] keywords (thet are case insensitive, in fact).
+
+```javascript
+dimensions: {
+    name: { scale: 'ordinal', sort: 'DESC' }
+    ...
+}
+```
+
+
+##### Qualitative data handling
 
 Using this method you should declare data property as a string but provide to dimension declaration an [index] array which is an ordered list of available categories. Once you have in data some unknown categories they will be added to the tail of [index] in unknown order.
 
@@ -111,18 +99,18 @@ The [index] specifies ascending order for categories.
 ```javascript
 {
     data: [
-        { name: "John", gender: 'Male'},
+        { name: "John", tshirt: 'S'},
         ...
-        { name: "Mary", gender: 'Female'},
+        { name: "Mary", tshirt: 'M'},
         ...
-        { name: "Pete", gender: 'Infant'}
+        { name: "Pete", tshirt: 'XXXXL'}
     ],
     dimensions: {
         ...
-        gender: {
-            scaleDim: 'ordinal',
-            index: ['Male', 'Female'],
-            sort: 'Desc'
+        tshirt: {
+            scale: 'ordinal',
+            index: ['S', 'M'],
+            sort: 'DESC'
         }
         ...
     },
@@ -132,4 +120,4 @@ The [index] specifies ascending order for categories.
 
 [example jsBin](http://jsbin.com/beqalufomi/1/embed?output&height=500px)
 
-NOTE: Specifying sort order for quantitative dimension doesn't make any effect since such a dimensions are always displayed in ascending order.
+NOTE: Specifying sort order for quantitative dimension doesn't make any effect since such dimensions are always displayed in ascending order.
