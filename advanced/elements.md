@@ -1,4 +1,6 @@
-For creating composite cart you can use small elements line, interval, point.
+For creating composite cart you can use small elements [line](#line), [interval](#interval), [point](#point).
+
+Example [jsBin](http://jsbin.com/hogoci/20/embed?,output)
 ##Line
 Line element draws line and has following view
 ```javascript
