@@ -18,7 +18,7 @@ var plot = new tauCharts.Chart({
 });
 ```
 
-[example jsBin](http://jsbin.com/pibuvicoya/1/embed?output&height=500px)
+[example jsBin](http://jsbin.com/hazelanari/2/embed?output&height=500px)
 
 According to this conception the API requires source data to be provided in form of structured table which can be expressed in javascript as an array of same-typed objects (e.g. in example above: name, age, gender, hasChild).
 
