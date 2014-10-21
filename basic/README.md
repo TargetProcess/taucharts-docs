@@ -8,7 +8,9 @@ var chart = new tauChart.Chart({
             color: 'team',
             size: 'count'
         });
-chart.renderTo('#scatter');```
+chart.renderTo('#scatter');
+```
+
 Where type can be [scatterplot](scatterplot.md), [line](line.md), [bar](bar.md)
 
 

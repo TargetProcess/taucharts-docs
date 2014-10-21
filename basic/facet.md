@@ -10,15 +10,17 @@ Here is an example of a facet chart. As you see, there are 4 variables encoded u
 
 You can use various combinations of axis to have just a single row: Y, X, X or a single column: Y, Y, X.
 
-Facet charts help to compare information with many variable.
+Facet charts help to compare information with many variable very effectively.
 
 #How to create a facet chart
 
-To construct facets we should use coordinates recursively by embedding COORDS.RECT units inside each other.
+To construct facets we should use coordinates recursively by embedding [COORDS.RECT](../advanced/coordinates.md) units inside each other.
 
 #Examples
 
-```
+TODO: Replace with a better data
+
+```javascript
 var plot = new tauChart.Plot({
     data: [
         { name: "John", age: 30, tshirt: 'M', gender: 'Male',   hasChild: true  },
@@ -26,11 +28,11 @@ var plot = new tauChart.Plot({
         { name: "Jane", age: 28, tshirt: 'L', gender: 'Female', hasChild: true }
     ],
     spec: {
-        unit: { // outer X and Y axes 
+        unit: { // outer X and Y axes
             type: 'COORDS.RECT',
             x: 'gender',
             y: 'hasChild',
-            unit: [
+            unit: [ // inner X and Y axes
                 {
                     type: 'COORDS.RECT',
                     x: 'age',
