@@ -56,7 +56,7 @@ Point element draws point and has following description
 ```
 Size of point depend between the min value and max value specified dimension.
 
-Color of point can set according to encoding [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value)
+Color of point can set according to encoding [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value#custom-colors-for-encoding-color-value).
 ##Line
 Line element draws line and has following description
 ```javascript

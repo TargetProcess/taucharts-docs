@@ -12,7 +12,12 @@ var spec = {
        type: 'ELEMENT.INTERVAL',
        x: 'month',
        y: 'count',
-       color: {dimension:'team', brewer:tauBrewer(YlGnBu,9)}
+       color: 'team'
+       guide:{
+            color:{
+                brewer:tauBrewer('YlGnBu',9)
+            }
+       }
    }]
 };
 ```
@@ -23,23 +28,33 @@ var spec = {
        type: 'ELEMENT.INTERVAL',
        x: 'month',
        y: 'count',
-       color: {dimension:'team', brewer:['myColorCssClass1','myColorCssClass2','myColorCssClass3']}
+       color: 'team',
+       guide:{
+           color:{
+                brewer:['myColorCssClass1','myColorCssClass2','myColorCssClass3']
+           }
+       }
    }]
 };
 ```
 or if you want have mapping from your domain
 ```javascript
 var spec = {
-  unit:[{
-       type: 'ELEMENT.INTERVAL',
-       x: 'month',
-       y: 'count',
-       color: {dimension:'team', brewer:{
-        NewTeam:'myColorCssClass1',
-        Alaska:'myColorCssClass2',
-        oldTeam:'myColorCssClass3'
-       }
-       }
-   }]
+    unit:[{
+        type: 'ELEMENT.INTERVAL',
+        x: 'month',
+        y: 'count',
+        color: 'team',
+        guide:{
+            color:{
+                brewer:{
+                                NewTeam:'myColorCssClass1',
+                                Alaska:'myColorCssClass2',
+                                oldTeam:'myColorCssClass3'
+                            }
+            }
+        }
+
+    }]
 };
 ```

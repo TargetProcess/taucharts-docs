@@ -10,4 +10,5 @@ var chart = new tauChart.Chart({
 chart.renderTo('#line');
 ```
 Line chart is wrapping over a [line element](../advanced/elements.md#line) and has same settings.
+Also you can use [guide](guide.md) property for visual settings.
 [example jsBin](http://jsbin.com/hogoci/15/embed?output&height=500px)

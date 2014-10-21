@@ -11,6 +11,7 @@
     * [Bar](basic/bar.md) - K
     * [Facets](basic/facet.md) - V
     * [Composite charts](basic/composite.md) - V
+    * [Guide](basic/guide.md)
 * [Advanced concepts](advanced/README.md)
 	* [Grammar of Graphic](advanced/gog.md) - M
 	* [Coordinates](advanced/coordinates.md) - V
