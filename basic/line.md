@@ -1,4 +1,7 @@
-For creating line chart you can use
+Let's create a simple line chart.
+
+TODO: change example to something more relevant. For example, how average CycleTime changes for 3 teams with time.
+
 ```javascript
 var chart = new tauChart.Chart({
             data: defData,
@@ -9,6 +12,9 @@ var chart = new tauChart.Chart({
         });
 chart.renderTo('#line');
 ```
-Line chart is wrapping over a [line element](../advanced/elements.md#line) and has same settings.
-Also you can use [guide](guide.md) property for visual settings.
+
+Use [guide](guide.md) property for visual settings.
+
+TODO: Example with guide
+
 [example jsBin](http://jsbin.com/hogoci/15/embed?output&height=500px)

@@ -1,5 +1,6 @@
 
 For creating line chart you can use
+
 ```javascript
 var chart = new tauChart.Chart({
             data: defData,

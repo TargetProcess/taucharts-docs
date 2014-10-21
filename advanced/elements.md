@@ -1,5 +1,5 @@
 #Elements
-Elements can be used for creating composite chart, you can use small elements [point](#point), [line](#line), [interval](#interval) and draw their on one plot.
+Elements can be used for creating composite chart, you can use small elements [point](#point), [line](#line), [interval](#interval) and draw them on a single plot.
 
 For example
 ```javascript
@@ -44,19 +44,21 @@ var data = [
 [jsBin](http://jsbin.com/hogoci/20/embed?,output)
 ##Point
 Point element draws point and has following description
+
 ```javascript
    var line = {
         'ELEMENTS.POINT':{
-                x:'dimensionX,
-                y:'dimensionY'
-                size:'dimensionSize'
-                color:'dimensionForGrouping'
+                x:'dimensionX, //x axis
+                y:'dimensionY' //y axis
+                size:'dimensionSize' //point diameter
+                color:'dimensionForGrouping' //point color
         }
    }
 ```
-Size of point depend between the min value and max value specified dimension.
+Point diameter depends on the min and max value in a *size* dimension.
 
-Color of point can set according to encoding [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value#custom-colors-for-encoding-color-value).
+Point color can be set according to encoding [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value#custom-colors-for-encoding-color-value).
+
 ##Line
 Line element draws line and has following description
 ```javascript
@@ -69,6 +71,7 @@ Line element draws line and has following description
    }
 ```
 Property color use for groping your data. For example if you have data like
+
 ```javascript
   var data = [
           {x:1, y:1, name:'firstLine'},
@@ -78,6 +81,7 @@ Property color use for groping your data. For example if you have data like
       ];
 ```
 and you will create graphic with params
+
 ```javascript
    var lineElement = {
            unit: {
@@ -105,4 +109,5 @@ and you will create graphic with params
                    }).renderTo('#line-element');
 ```
 you will get result
+
 [jsBin](http://jsbin.com/hogoci/19/embed?output)
