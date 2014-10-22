@@ -1,9 +1,25 @@
 #Guide
 Guide is responsible for axes look and feel, color, size and other aesthetic parameters.
-
-Guide can accept following params:
-
-TODO: examples with real charts
+```javascript
+var chart = new tauChart.Chart({
+    guide: {
+        x: {label: {text: 'Cycle Time in days', padding: 35}, padding: 20},
+        y: {label: 'Effort in points', padding: 20},
+        padding: {b: 70, l: 70, t: 10, r: 10},
+        showGridLines: 'xy',
+        color: {
+            brewer: ['color-red', 'color-green', 'color-blue']
+        }
+    },
+    data: defData,
+    type: 'scatterplot',
+    x: 'cycleTime',
+    y: 'effort',
+    color: 'team',
+    size: 'count'
+});
+```
+[example jsBin](http://jsbin.com/focowi/1/embed?output&height=500px)
 
 ##Axis
 x or y describe axis view

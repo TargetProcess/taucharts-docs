@@ -113,8 +113,8 @@ Let's check an example where property *person* contains nested object with *pass
     dimensions: {   // <------- dimensions
         person: {
             type : 'category',
-            value: 'pass'        // NOTE: use [value] property
-                                 // to map identity (pass) in dimensions
+            value: 'pass'               // NOTE: use [value] property
+                                        // to map identity (pass) in dimensions
         }
         ...
     },
@@ -122,9 +122,9 @@ Let's check an example where property *person* contains nested object with *pass
     x: "person",
     ...
     guide: {        // <------- visual guide
-        x: { name: "firstName" } // NOTE: use [name] property
-                                 // to map visual property (firstName)
-                                 // to x axis ticks
+        x: { tickLabel: "firstName" }   // NOTE: use [name] property
+                                        // to map visual property (firstName)
+                                        // to x axis ticks
     }
 });
 ```
@@ -142,7 +142,7 @@ You can use nested objects to specify *ordered* dimensions:
     dimensions: {   // <------- dimensions
         severity: {
             type : 'order',
-            value: 'id'          // NOTE: [value] property to map severity id
+            value: 'id'             // NOTE: [value] property to map severity id
         }
         ...
     },
@@ -150,9 +150,9 @@ You can use nested objects to specify *ordered* dimensions:
     x: "severity",
     ...
     guide: {        // <------- visual guide
-        x: { name: "title" }     // NOTE: use [name] property
-                                 // to map visual property (severity title)
-                                 // to x axis ticks
+        x: { tickLabel: "title" }   // NOTE: use [name] property
+                                    // to map visual property (severity title)
+                                    // to x axis ticks
     }
 });
 ```
