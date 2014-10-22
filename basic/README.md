@@ -16,6 +16,7 @@ var chart = new tauChart.Chart({
         });
 chart.renderTo('#scatter'); // HTML element with 'scatter' id
 ```
+Method `renderTo` can accept a parameters: html selector or DOM element.
 
 As a result, you will have the chart like that:
 
