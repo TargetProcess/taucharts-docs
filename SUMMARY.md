@@ -4,14 +4,14 @@
 * [Tutorials](tutorials/README.md) - M
 	* [1 min tutorial](tutorials/1min.md) - M
 	* [5 mins tutorial](tutorials/5min.md) - M
-* [Data source / dimensions](datasource/README.md) - V
+* [Data source / dimensions](datasource/README.md) - V, DONE
 * [Basic concepts](basic/README.md)
-    * [Scatterplot](basic/scatterplot.md) - K
+    * [Scatterplot](basic/scatterplot.md) - K, DONE
     * [Line](basic/line.md) - K
     * [Bar](basic/bar.md) - K
     * [Facets](basic/facet.md) - V
     * [Composite charts](basic/composite.md) - V
-    * [Guide](basic/guide.md)
+    * [Guide](basic/guide.md) - K
 * [Advanced concepts](advanced/README.md)
 	* [Grammar of Graphic](advanced/gog.md) - M
 	* [Coordinates](advanced/coordinates.md) - V

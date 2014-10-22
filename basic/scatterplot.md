@@ -1,4 +1,4 @@
-For creating scatterplot chart you can use
+For creating scatterplot chart you can use the following script:
 
 ```javascript
 var chart = new tauChart.Chart({
@@ -12,18 +12,19 @@ var chart = new tauChart.Chart({
 chart.renderTo('#scatter');
 ```
 [example jsBin](http://jsbin.com/hogoci/16/embed?output&height=500px)
-Check [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value#custom-colors-for-encoding-color-value) section to see how to apply colors.
-Use [guide](guide.md) property for some advanced  settings.
 
-Next chart use custom color `'color-red'`,`'color-green'`,`'color-blue'` ang guide property
+Check [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value#custom-colors-for-encoding-color-value) section to see how to apply colors.
+
+Use [guide](guide.md) property for some advanced  settings. Here is an example that sets custom labels for axes and custom colors `'color-red'`,`'color-green'`,`'color-blue'` for elements.
+
 ```javascript
 var chart = new tauChart.Chart({
-            guide:{
-              x:{label:'My x label'},
-              y:{label:'My y label'},
-              padding:{b:40,l:40,t:10,r:10},
-              color:{
-                brewer:['color-red', 'color-green', 'color-blue']
+            guide: {
+              x: {label:'Cycle Time in days'},  // custom label for X axis
+              y: {label:'Effort in points'},    // custom label for Y axis
+              padding: {b:40,l:40,t:10,r:10},   // chart paddings
+              color: {                          // custom colors
+                brewer: ['color-red', 'color-green', 'color-blue']
               }
             },
             data: defData,
@@ -34,5 +35,5 @@ var chart = new tauChart.Chart({
             size: 'count'
         });
 ```
-[example jsBin](http://jsbin.com/hogoci/26/embed?output&height=500px)
 
+[example jsBin](http://jsbin.com/tohujobuba/1/embed?output&height=500px)
