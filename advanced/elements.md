@@ -47,8 +47,8 @@ Point element draws point and has following description
 
 ```javascript
    var line = {
-        'ELEMENTS.POINT':{
-                x:'dimensionX, //x axis
+        'ELEMENT.POINT':{
+                x:'dimensionX', //x axis
                 y:'dimensionY' //y axis
                 size:'dimensionSize' //point diameter
                 color:'dimensionForGrouping' //point color
@@ -63,7 +63,7 @@ Point color can be set according to encoding [encoding](../advanced/encoding.md#
 Line element draws line and has following description
 ```javascript
    var line = {
-        'ELEMENTS.LINE':{
+        'ELEMENT.LINE':{
                 x:'dimensionX,
                 y:'dimensionY'
                 color:'dimensionForGrouping'

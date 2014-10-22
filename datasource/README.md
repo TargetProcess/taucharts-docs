@@ -26,11 +26,11 @@ TauCharts requires the source data to be provided in a form of structured table 
 
 By default TauCharts try to detect a dimension type which can be a category, order or measure.
 
-* Category: Represents data that can't be compared. Let's say, list of countries or names.
-* Order: As you might guess, represents data taht can be ordered, but you can't say how bigger one value from the other. For example, you can say that Must Have is more important than Nice to Have, but you can't say that Must Have is twice as important.
-* Measure: That is easy. You can compare these variables, add them, multiply them, etc.
+* **Category**: Represents data that can't be compared. Let's say, list of countries or names.
+* **Order**: As you might guess, represents data taht can be ordered, but you can't say how bigger one value from the other. For example, you can say that Must Have is more important than Nice to Have, but you can't say that Must Have is twice as important.
+* **Measure**: That is easy. You can compare these variables, add them, multiply them, etc.
 
-Basing on dimension type TauChart will try to find most appropriate scale for a dimension. Here is a list of default scales for corresponding dimension types:
+Using dimension type TauChart tries to find the most appropriate scale for a dimension. Here is a list of default scales for corresponding dimension types:
 
 | type | scale |
 | -- | -- |
@@ -38,7 +38,7 @@ Basing on dimension type TauChart will try to find most appropriate scale for a 
 | order | ordinal |
 | measure | linear |
 
-Also you can explicitly specify dimension type / scale within *dimensions* section:
+You can explicitly specify dimension type / scale in *dimensions* section:
 
 ```javascript
 var plot = new tauCharts.Chart({
@@ -62,13 +62,45 @@ var plot = new tauCharts.Chart({
 });
 ```
 
+
+#### Specifying *Ordered* dimension
+
+You should pass data property as a primitive type (string, boolean) and define an **order** array that provides the order of categories.
+
+For example, we have *priority* property in the data. It can be ordered, but TauCharts don't have a clue how to do that. In *dimensions* section you describe *priority* as *order* and set ['Low', 'Medium', 'High'] order.
+
+```javascript
+{
+    data: [
+        { featureID: 1, priority: 'High'},
+        { featureID: 2, priority: 'Low'},
+        ...
+        { featureID: 5, priority: 'So-so'},
+        ...
+        { featureID: 9, priority: 'to be done yesterday'},
+
+        { featureID: 99, priority: 'Medium'},
+    ],
+    dimensions: {
+        ...
+        priority: {
+            type: 'order',
+            order: ['Low', 'Medium', 'High'] // ["So-so", "to be done yesterday"]
+                                             // will be added to the end of order
+        }
+        ...
+    },
+    ...
+});
+```
+
 #### Nested objects in DataSource
 
-As you might notice from previous examples we used only primitive values in "data row" properties. Actually TauCharts API allows you to pass nested objects as well. But such an approach goes with additional settings which tune which property to use as identity and which to display on axis ticks.
+In previous examples we used only primitive values in data.  TauCharts API allows you to pass nested objects as well. In this case you should specify which property is an identity and which property should be on axis ticks.
 
-This can be useful for visualizing complex entities which *potentially* can have non-unique names but have to be tracked by their unique identity.
+This can be useful for visualizing complex entities which *potentially* can have non-unique names but have to be tracked by their unique identity (for example, Cities are non-unique).
 
-Let's consider example where property *person* contains nested object with *pass* and *name* properties. It means we want to code persons by their passport number but display their first names on axis marks.
+Let's check an example where property *person* contains nested object with *pass* and *firstName* properties. It means we want to encode persons by their passport number, but display their first names on axis marks.
 
 ```javascript
 {
@@ -97,7 +129,7 @@ Let's consider example where property *person* contains nested object with *pass
 });
 ```
 
-Also you can use nested objects to specify *ordered* dimensions. The principle is the same: codify order by one property and use another property as visual marker for better readability.
+You can use nested objects to specify *ordered* dimensions:
 
 ```javascript
 {
@@ -125,32 +157,3 @@ Also you can use nested objects to specify *ordered* dimensions. The principle i
 });
 ```
 
-#### Specifying *Ordered* dimension
-
-There is one more way to specify *ordered* dimension.
-Using this method you should pass data property as a primitive type (string, boolean) but provide to dimension declaration an **order** array which specify ascending order for categories. Once you have in data some unknown categories they will be added to the tail of **order** in the order of appearance in the source data.
-
-```javascript
-{
-    data: [
-        { featureID: 1, priority: 'High'},
-        { featureID: 2, priority: 'Low'},
-        ...
-        { featureID: 5, priority: 'So-so'},
-        ...
-        { featureID: 9, priority: 'to be done yesterday'},
-
-        { featureID: 99, priority: 'Medium'},
-    ],
-    dimensions: {
-        ...
-        priority: {
-            type: 'order',
-            order: ['Low', 'Medium', 'High'] // ["So-so", "to be done yesterday"]
-                                             // will be added to the end of order
-        }
-        ...
-    },
-    ...
-});
-```
