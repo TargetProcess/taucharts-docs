@@ -2,12 +2,12 @@
 
 * [Why TauCharts?](why/README.md) - M
 * [Tutorials](tutorials/README.md) - M
-	* [1 min tutorial](tutorials/1min.md) - M
+	* [1 min tutorial](tutorials/1min.md) - M, DONE
 	* [5 mins tutorial](tutorials/5min.md) - M
 * [Data source / dimensions](datasource/README.md) - V, DONE
 * [Basic concepts](basic/README.md)
     * [Scatterplot](basic/scatterplot.md) - K, DONE
-    * [Line](basic/line.md) - K
+    * [Line](basic/line.md) - K, DONE
     * [Bar](basic/bar.md) - K
     * [Facets](basic/facet.md) - V
     * [Composite charts](basic/composite.md) - V
