@@ -3,9 +3,9 @@ TauCharts is a javascript charting library. It is based on an awesome [D3 framew
 
 We built TauCharts based on three rules:
 
-1. Graphical design is imporant, so we designe everything with passion.
+1. Graphical design is imporant, so we design everything with passion.
 2. Simple charts are easy to create, complex charts are not easy, but possible.
-3. Flexibility is important. Plugins framework should be powerful.
+3. Flexibility is important. [Plugins framework](../plugins/README.md) should be powerful.
 
 ##How to create a simple line chart?
 
@@ -14,7 +14,7 @@ Download and add tauCharts.js library.
 ```html
 <script type='text/javascript' src='tauCharts.js'>
 ```
-Then [prepare data](../datasource/readme.md) you want to use for the chart. TauCharts accepts data like an array of same-typed objects (it looks like CSV):
+Then [prepare data](../datasource/README.md) you want to use for the chart. TauCharts accepts data like an array of same-typed objects (it looks like CSV):
 
 
 ```javascript
@@ -29,7 +29,7 @@ var datasource = [{
 }];
 ```
 
-Chart definition is extremely simple:
+Chart definition is extremely simple and speak for itself:
 
 ```javascript
 var chart = new tauChart.Chart({
