@@ -63,7 +63,7 @@ In this example we create coordinate grid and draw same dimensions with differen
 
 Let's build a visualization to compare some characteristics for different cars (e.g. CO2 emission and horse power).
 
-Here we create empty COORDS.RECT item to use it as a top composition container and insert 2 coordinates inside. First for CO2 values and second for horse power.
+Here we create empty COORDS.RECT item to use it as a top composition container and insert 2 coordinates inside. First bar chart for CO2 values and second line chart for horse power. Note how we use *guide/split* flag to draw nested coordinates separately one below other.
 
 ```javascript
 {
@@ -74,13 +74,62 @@ Here we create empty COORDS.RECT item to use it as a top composition container a
     },
     unit: {
         type: 'COORDS.RECT',
-        // NOTE: "x" and "y" are not specified
+        guide: { split: true },
+        unit: [
+            {
+                type: 'COORDS.RECT',
+                guide: {
+                    showGridLines: 'xy',
+                    padding: { l:72, b:4, r:8, t:8 },
+                    y: {label: { text: 'CO2 emission', padding:52}},
+                    x: {hide: true}
+                },
+                y: 'co2',
+                x: 'car',
+                unit: [
+                    {type: 'ELEMENT.INTERVAL'}
+                ]
+            },
+            {
+                type: 'COORDS.RECT',
+                guide: {
+                    showGridLines: 'xy',
+                    padding: { l:72, b:224, r:8, t:8 },
+                    y: {label: 'Horse power'},
+                    x: {rotate: 45, textAnchor: 'start'}
+                },
+                x: 'car',
+                y: 'hp',
+                unit: [
+                    {type: 'ELEMENT.POINT'},
+                    {type: 'ELEMENT.LINE'}
+                ]
+            }
+        ]
+    }
+}
+```
+
+But what if you want to draw both bar and line within one grid. In this case you have to share Y axis for both charts. To do that we need to normalize the axis to common values domain by using *tickMin* / *tickMax* properties and set *guide/split* flag to *false* (actually *false* is default value).
+
+```javascript
+{
+    dimensions: {
+        car: { type: 'category' },
+        co2: { type: 'measure' },
+        hp : { type: 'measure' }
+    },
+    unit: {
+        type: 'COORDS.RECT',
+        // NOTE: set split to false
+        guide: { split: false },
         unit: [
             {
                 type: 'COORDS.RECT',
                 guide: {
                     showGridLines: 'xy',
                     padding: { l:72, b:224, r:8, t:8 },
+                    // NOTE: use tickMin / tickMax to specify values range
                     y: {label: { text: 'CO2 emission', padding:52}, tickMin: 0, tickMax: 100},
                     x: {rotate: 90, textAnchor: 'start', hide: true}
                 },
@@ -95,6 +144,7 @@ Here we create empty COORDS.RECT item to use it as a top composition container a
                 guide: {
                     showGridLines: 'xy',
                     padding: { l:72, b:224, r:8, t:8 },
+                    // NOTE: use tickMin / tickMax to specify values range
                     y: {label: 'Horse power', tickMin: 0, tickMax: 100},
                     x: {rotate: 45, textAnchor: 'start'}
                 },
@@ -108,5 +158,8 @@ Here we create empty COORDS.RECT item to use it as a top composition container a
         ]
     }
 }
-
 ```
+
+
+
+
