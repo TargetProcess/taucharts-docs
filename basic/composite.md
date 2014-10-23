@@ -1,18 +1,16 @@
 ## Composite charts
 
-TauCharts API focused on flexible composition architecture instead of rich taxonomy of chart types like many other libraries.
+TauCharts API focuses on flexible composition architecture instead of rich taxonomy of chart types like many other libraries.
 
-Such an approach allows to build a facet charts by nesting coordinates into coordinates recursively as well as display many different elements (e.g. points, bars, lines) on the chart grid.
+This approach allows to build a facet charts by nesting coordinates into coordinates recursively as well as display many different elements (e.g. points, bars, lines) on the chart grid.
 
-Once you understand the composition principles you can build even a facet of facets of facets if you find such a visualization useful.
+When you understand the composition principles, you can build even a facet of facets of facets if you find such a visualization useful.
 
 There are 2 ways of composition supported:
 1. Composition in depth. You can insert COORDS.RECT into COORDS.RECT to get a facet chart.
-2. Horizontal composition. The API allows to display several chart elements on one grid. Separate axes and shared common axes are possible.
+2. Horizontal composition. API allows to display several chart elements on one grid. It means that separate axes and shared common axes are possible.
 
-First type of charts is explained in details in [Facets](../basic/facet.html) chapter.
-
-Let's focus on second type. The COORDS.RECT item has *unit* property. It can contain an array of nested elements (points, lines, nested coordinates etc.)
+[Facets](../basic/facet.html) are explained in another chapter. So let's focus on the second type. The [COORDS.RECT](../advanced/coordinates.md) item has *unit* property. It can contains an array of nested [elements](../advanced/elements.md) (points, lines, nested coordinates etc.)
 
 #### Example 1: Several elements on same data
 
@@ -49,9 +47,9 @@ In this example we create coordinate grid and draw same dimensions with differen
 
 #### Example 2: Several elements on different data
 
-Let's build a visualization to compare some characteristics for different cars (e.g. CO2 emission and horse power).
+Let's build a visualization to compare some characteristics for different cars (e.g. CO<sub>2</sub> emission and horse power).
 
-Here we create empty COORDS.RECT item to use it as a top composition container and insert 2 coordinates inside. First bar chart for CO2 values and second line chart for horse power. Note how we use *guide/split* flag to draw nested coordinates separately one below other.
+Here we create empty COORDS.RECT item to use it as a top composition container and insert 2 coordinates inside. First bar chart for CO<sub>2</sub> values and second line chart for horse power. Note how we use *guide/split* flag to draw nested coordinates separately, CO<sub>2</sub> above hp.
 
 ```javascript
 {
@@ -62,7 +60,7 @@ Here we create empty COORDS.RECT item to use it as a top composition container a
     },
 
     unit: {
-        type: 'COORDS.RECT',
+        type: 'COORDS.RECT', // top container
         guide: { split: true },
         unit: [
             {
@@ -101,7 +99,7 @@ Here we create empty COORDS.RECT item to use it as a top composition container a
 
 [example jsBin](http://jsbin.com/ninalevedi/2/embed?output&height=500px)
 
-But what if you want to draw both bar and line within one grid. In this case you have to share Y axis for both charts. To do that we need to normalize the axis to common values domain by using *tickMin* / *tickMax* properties and set *guide/split* flag to *false* (actually *false* is default value).
+But what if you want to draw both bar and line on one grid? In this case you have to share Y axis for both charts. To do that we need to normalize the axis to common values domain by using *tickMin* / *tickMax* properties and set *guide/split* flag to *false* (actually *false* is default value).
 
 ```javascript
 {
