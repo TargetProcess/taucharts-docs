@@ -13,7 +13,6 @@
     * [Composite charts](basic/composite.md) - V, DONE
     * [Guide](basic/guide.md) - K
 * [Advanced concepts](advanced/README.md)
-	* [Grammar of Graphic](advanced/gog.md) - M
 	* [Coordinates](advanced/coordinates.md) - V
 	* [Elements](advanced/elements.md) - K
 	* [Visual encoding / Color and Size](advanced/encoding.md) - K
