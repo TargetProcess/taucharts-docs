@@ -15,7 +15,7 @@ Here is an example of a facet chart. As you see, there are 4 variables encoded u
 
 To construct facets we should use coordinates recursively by embedding COORDS.RECT units inside each other.
 
-## Example 1: Segmentation
+## Example: Segmentation
 
 In the following example we use facet chart to visualize distribution of car models among segments powerfull / eco-friendly. While detailed information on horse power and CO2 emission is still available for each segment.
 
@@ -62,90 +62,5 @@ In the following example we use facet chart to visualize distribution of car mod
 
 [example jsBin](http://jsbin.com/zodocuzeco/1/embed?output&height=500px)
 
-## Example 2: Scatterplot Matrices (SPLOMs)
-
-The scatterplot matrix (SPLOM) was invented by John Hartigan (1975). The SPLOM replaces the numbers in a covariance or correlation matrix with the scatterplots of the data on which they were computed. In other words it allows visually search most interesting correlations between parameters in the data set.
-
-Let's consider example. There is a data source with car characteristics:
-
-```javascript
-{
-    car : "...",
-    hp  : 150,  // horse power
-    co2 : 238,  // CO2 emission
-    mpg : 10    // miles per galon
-}
-```
-
-We want to know: is there any patterns or correlation between parameters (e.g. hp vs co2, hp vs mpg, co2 vs mpg) on the whole data set?
-
-To address this question we need to transform source data to the format where meta data (property names) becomes a category property:
-
-```javascript
-{
-    param1: 'co2',
-    param2: 'mpg',
-    value1: 238,    // CO2 emission
-    value2: 10      // miles per galon
-}
-```
-
-using the following script:
-
-```javascript
-sourceArray.reduce(
-    function(memo, x) {
-        var keyNames = ['hp', 'co2', 'mpg'];
-        keyNames.forEach(function(mainParam) {
-            keyNames.forEach(function(subParam) {
-                memo.push({
-                    param1: mainParam,
-                    param2: subParam,
-                    value1: x[mainParam],
-                    value2: x[subParam]
-                });
-            });
-        });
-        return memo;
-    },
-    []
-);
-```
-
-and build a facet which visualize correlation:
-
-```javascript
-{
-    dimensions: {
-        param1: {type: 'category'},
-        param2: {type: 'category'},
-        value1: {type: 'measure'},
-        value2: {type: 'measure'}
-    },
-
-    unit: {
-        type: 'COORDS.RECT',
-        guide: {
-            padding: {l: 42, b: 24, r: 8, t: 8}
-        },
-        x: 'param1',
-        y: 'param2',
-        unit: [
-            {
-                type: 'COORDS.RECT',
-                guide: {
-                    showGridLines: 'xy'
-                },
-                x: 'value1',
-                y: 'value1',
-                unit: [
-                    {type: 'ELEMENT.POINT'}
-                ]
-            }
-        ]
-    }
-}
-```
-
-[example jsBin](http://jsbin.com/jetowayige/2/embed?output&height=500px)
+Another example of faceted charts is [Scatterplot Matrices](../advanced/splom.md). Check them out.
 
