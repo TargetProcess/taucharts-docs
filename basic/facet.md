@@ -17,35 +17,47 @@ To construct facets we should use coordinates recursively by embedding COORDS.RE
 
 #Examples
 
-TODO: Replace with a better data
+In the following example we use facet chart to visualize distribution of car models among segments powerfull / eco-friendly. While detailed information on horse power and CO2 emission is still available for each segment.
 
 ```javascript
-var plot = new tauChart.Plot({
-    data: [
-        { name: "John", age: 30, tshirt: 'M', gender: 'Male',   hasChild: true  },
-        ...
-        { name: "Jane", age: 28, tshirt: 'L', gender: 'Female', hasChild: true }
-    ],
-    spec: {
-        unit: { // outer X and Y axes
-            type: 'COORDS.RECT',
-            x: 'gender',
-            y: 'hasChild',
-            unit: [
-                {
-                    type: 'COORDS.RECT',
-                    x: 'age',
-                    y: 'tshirt',
-                    unit: [
-                        {
-                            type: 'ELEMENT.POINT' // scatterplot
-                        }
-                    ]
-                }
-            ]
-        }
+{
+    dimensions: {
+        car: {type: 'category'},
+        euroEco: {type: 'category'},
+        power: {
+            type: 'order',
+            order: ['low', 'normal', 'high']
+        },
+        co2: {type: 'measure'},
+        hp: {type: 'measure'}
+    },
+
+    unit: {
+        type: 'COORDS.RECT',
+        guide: {
+            split: false,
+            padding: {l: 42, b: 24, r: 8, t: 8},
+        },
+        x: 'euroEco',
+        y: 'power',
+        unit: [
+            {
+                type: 'COORDS.RECT',
+                guide: {
+                    showGridLines: 'xy',
+                    padding: {l: 52, b: 42, r: 8, t: 8},
+                    y: {label: 'CO2 emission, g/km'},
+                    x: {label: 'Horse power'}
+                },
+                y: 'co2',
+                x: 'hp',
+                unit: [
+                    {type: 'ELEMENT.POINT'}
+                ]
+            }
+        ]
     }
-});
+}
 ```
 
-[example jsBin](http://jsbin.com/wuyujeroxo/1/embed?output&height=500px)
+[example jsBin](http://jsbin.com/fiwaxetevu/2/embed?output&height=500px)
