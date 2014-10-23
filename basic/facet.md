@@ -46,11 +46,11 @@ In the following example we use facet chart to visualize distribution of car mod
                 guide: {
                     showGridLines: 'xy',
                     padding: {l: 52, b: 42, r: 8, t: 8},
-                    y: {label: 'CO2 emission, g/km'},
-                    x: {label: 'Horse power'}
+                    x: {label: 'CO2 emission, g/km'},
+                    y: {label: 'Horse power'}
                 },
-                y: 'co2',
-                x: 'hp',
+                x: 'co2',
+                y: 'hp',
                 unit: [
                     {type: 'ELEMENT.POINT'}
                 ]
@@ -60,4 +60,4 @@ In the following example we use facet chart to visualize distribution of car mod
 }
 ```
 
-[example jsBin](http://jsbin.com/fiwaxetevu/2/embed?output&height=500px)
+[example jsBin](http://jsbin.com/zodocuzeco/1/embed?output&height=500px)
