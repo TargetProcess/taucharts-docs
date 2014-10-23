@@ -21,43 +21,31 @@ In this example we create coordinate grid and draw same dimensions with differen
 ```javascript
 {
     dimensions: {
-        month: { type: 'category' },
-        project: { type: 'category' },
-        team: { type: 'category' },
-        cycleTime: { type: 'measure' },
-        effort: { type: 'measure' },
-        count: { type: 'measure' }
+        car: {type: 'category'},
+        co2: {type: 'measure'},
+        hp: {type: 'measure'}
     },
+
     unit: {
         type: 'COORDS.RECT',
         guide: {
-            padding: { l:56, b:32, r:8, t:8 },
-            showGridLines: 'xy',
-            x: {label: 'Month'},
-            y: {label: { text: 'Count', padding: 36 }}
+            showGridLines: '',
+            padding: {l: 72, b: 120, r: 8, t: 8},
+            // NOTE: use tickMin / tickMax to specify values range
+            y: {label: 'Horse power'},
+            x: {rotate: 45, textAnchor: 'start'}
         },
-        x: 'month',
-        y: 'count',
+        x: 'car',
+        y: 'hp',
         unit: [
-            {
-                type: 'ELEMENT.POINT'
-                // NOTE: "x" and "y" are  inherited from parent unit
-            },
-            {
-                type: 'ELEMENT.INTERVAL',
-                x: 'month'
-                // NOTE: "y" is inherited from parent unit
-            },
-            {
-                type: 'ELEMENT.LINE',
-                x: 'month',
-                y: 'count'
-            }
+            {type: 'ELEMENT.INTERVAL'},
+            {type: 'ELEMENT.POINT'},
+            {type: 'ELEMENT.LINE'}
         ]
     }
 }
-
 ```
+[example jsBin](http://jsbin.com/lokoxomape/1/embed?output&height=500px)
 
 #### Example 2: Several elements on different data
 
@@ -72,6 +60,7 @@ Here we create empty COORDS.RECT item to use it as a top composition container a
         co2: { type: 'measure' },
         hp : { type: 'measure' }
     },
+
     unit: {
         type: 'COORDS.RECT',
         guide: { split: true },
@@ -81,11 +70,11 @@ Here we create empty COORDS.RECT item to use it as a top composition container a
                 guide: {
                     showGridLines: 'xy',
                     padding: { l:72, b:4, r:8, t:8 },
-                    y: {label: { text: 'CO2 emission', padding:52}},
+                    y: {label: 'CO2 emission, g/km'},
                     x: {hide: true}
                 },
-                y: 'co2',
                 x: 'car',
+                y: 'co2',
                 unit: [
                     {type: 'ELEMENT.INTERVAL'}
                 ]
@@ -94,9 +83,9 @@ Here we create empty COORDS.RECT item to use it as a top composition container a
                 type: 'COORDS.RECT',
                 guide: {
                     showGridLines: 'xy',
-                    padding: { l:72, b:224, r:8, t:8 },
+                    padding: { l:72, b:124, r:8, t:8 },
                     y: {label: 'Horse power'},
-                    x: {rotate: 45, textAnchor: 'start'}
+                    x: {rotate: 50, textAnchor: 'start'}
                 },
                 x: 'car',
                 y: 'hp',
@@ -110,27 +99,29 @@ Here we create empty COORDS.RECT item to use it as a top composition container a
 }
 ```
 
+[example jsBin](http://jsbin.com/ninalevedi/2/embed?output&height=500px)
+
 But what if you want to draw both bar and line within one grid. In this case you have to share Y axis for both charts. To do that we need to normalize the axis to common values domain by using *tickMin* / *tickMax* properties and set *guide/split* flag to *false* (actually *false* is default value).
 
 ```javascript
 {
     dimensions: {
-        car: { type: 'category' },
-        co2: { type: 'measure' },
-        hp : { type: 'measure' }
+        car: {type: 'category'},
+        co2: {type: 'measure'},
+        hp: {type: 'measure'}
     },
+
     unit: {
         type: 'COORDS.RECT',
-        // NOTE: set split to false
-        guide: { split: false },
+        guide: {split: false},
         unit: [
             {
                 type: 'COORDS.RECT',
                 guide: {
                     showGridLines: 'xy',
-                    padding: { l:72, b:224, r:8, t:8 },
+                    padding: {l: 72, b: 224, r: 8, t: 8},
                     // NOTE: use tickMin / tickMax to specify values range
-                    y: {label: { text: 'CO2 emission', padding:52}, tickMin: 0, tickMax: 100},
+                    y: {label: {text: 'CO2 emission, g/km', padding: 52}, tickMin: 0, tickMax: 600},
                     x: {rotate: 90, textAnchor: 'start', hide: true}
                 },
                 y: 'co2',
@@ -142,11 +133,12 @@ But what if you want to draw both bar and line within one grid. In this case you
             {
                 type: 'COORDS.RECT',
                 guide: {
-                    showGridLines: 'xy',
-                    padding: { l:72, b:224, r:8, t:8 },
+                    showGridLines: '',
+                    padding: {l: 72, b: 224, r: 8, t: 8},
                     // NOTE: use tickMin / tickMax to specify values range
-                    y: {label: 'Horse power', tickMin: 0, tickMax: 100},
-                    x: {rotate: 45, textAnchor: 'start'}
+                    y: {label: 'Horse power (red line)', tickMin: 0, tickMax: 600},
+                    x: {rotate: 45, textAnchor: 'start'},
+                    color: { brewer: ['color-red'] }
                 },
                 x: 'car',
                 y: 'hp',
@@ -159,6 +151,8 @@ But what if you want to draw both bar and line within one grid. In this case you
     }
 }
 ```
+
+[example jsBin](http://jsbin.com/girubegara/2/embed?output&height=500px)
 
 
 
