@@ -1,7 +1,8 @@
 #Elements
 Elements can be used for creating composite chart, you can use small elements [point](#point), [line](#line), [interval](#interval) and draw them on a single plot.
 
-For example
+For example:
+
 ```javascript
 var data = [
         {x:1, y:1, name:'firstLine'},
@@ -9,12 +10,12 @@ var data = [
         {x:14, y:3, name:'firstLine'},
         {x:6, y:1, name: 'secondLine'},
     ];
-    var lineElement = {
+var lineElement = {
         unit: {
             type: 'COORDS.RECT',
             x:'x',
             y:'y',
-  guide: {
+            guide: {
                 showGridLines: 'xy',
                 padding: { l:56, b:46, r:8, t:8 },
                 x: {padding: 8, label: 'x'},
@@ -38,12 +39,11 @@ var data = [
             {
                 data: data,
                 spec: lineElement
-
             }).renderTo('#line-element');
 ```
 [jsBin](http://jsbin.com/hogoci/20/embed?,output)
 ##Point
-Point element draws point and has following description
+Point element draws a point. It has the following parameters:
 
 ```javascript
    var line = {
@@ -57,20 +57,22 @@ Point element draws point and has following description
 ```
 Point diameter depends on the min and max value in a *size* dimension.
 
-Point color can be set according to encoding [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value#custom-colors-for-encoding-color-value).
+Point color can be set via  [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value#custom-colors-for-encoding-color-value).
 
 ##Line
-Line element draws line and has following description
+Line element draws a line, obviously:
+
 ```javascript
    var line = {
         'ELEMENT.LINE':{
-                x:'dimensionX,
+                x:'dimensionX',
                 y:'dimensionY'
                 color:'dimensionForGrouping'
         }
    }
 ```
-Property color use for groping your data. For example if you have data like
+
+*Color* property groups data into several lines of different colors. For example, if you have data like:
 
 ```javascript
   var data = [
@@ -80,7 +82,7 @@ Property color use for groping your data. For example if you have data like
           {x:6, y:1, name: 'secondLine'},
       ];
 ```
-and you will create graphic with params
+and you create a chart with parameters:
 
 ```javascript
    var lineElement = {
@@ -108,6 +110,11 @@ and you will create graphic with params
                        spec: lineElement
                    }).renderTo('#line-element');
 ```
-you will get result
+the result is two lines:
 
 [jsBin](http://jsbin.com/hogoci/19/embed?output)
+
+##Interval
+
+Draws a bar:
+
