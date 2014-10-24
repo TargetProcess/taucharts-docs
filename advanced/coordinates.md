@@ -12,9 +12,8 @@ There are many types of coordinates:
 * Cylindrical
 * Local / Global Maps
 * 3D
-* etc.
 
-For now TauCharts supports Cartesian coordinates only - the most popular coordinate system.
+For now TauCharts supports Cartesian coordinates only &mdash; the most popular coordinate system.
 
 In TauCharts cartesian coordinates are specified using *COORDS.RECT* type:
 
@@ -26,9 +25,9 @@ In TauCharts cartesian coordinates are specified using *COORDS.RECT* type:
 }
 ```
 
-You can embed coordinate element inside coordinate element recursively to build a [Facet plot](../basic/facet.md).
+You can embed a coordinate element inside another coordinate element recursively to build a [Facet plot](../basic/facet.md).
 
-Also coordinate element is a container for geometry elements like point or line. Use *unit* property to compose elements:
+Coordinate element is a container for geometry elements like point or line. Use *unit* property to compose elements:
 
 ```javascript
 {
