@@ -117,4 +117,27 @@ the result is two lines:
 ##Interval
 
 Draws a bar:
+```javascript
+var intervalElement = {
+    unit: {
+        type: 'COORDS.RECT',
+        x:'date',
+        y:'count',
+        guide: {
+                showGridLines: 'xy',
+                padding: { l:56, b:46, r:8, t:8 },
+                y: {padding: 8, label: 'Count of completed entities'}
+            },
+            unit: [{
+                type:'ELEMENT.INTERVAL'
 
+            }]
+        }
+    };
+
+    var s = new tauChart.Plot({
+                data: defData,
+                spec: intervalElement
+            }).renderTo('#interval-element');
+```
+[jsBin](http://jsbin.com/hogoci/31/embed?output)
