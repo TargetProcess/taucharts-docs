@@ -1,1 +1,1 @@
-
+This section digs deeper into TauCharts. Start with [TauCharts Language](tauchartslanguage.md) and then check other sections. You will understand how to create quite advanced charts, mix several charts together and use visual encoding.
