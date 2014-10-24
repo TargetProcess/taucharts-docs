@@ -1,7 +1,7 @@
 If you didn't check [1 minute tutorial](1min), please go and read it. We will not repeat these basics here.
 
 ##What is TauCharts, finally?
-OK, here is the truth. We are developing [Targetprocess](http://www.targetprocess.com), a visual project management software. We wanted to add cool reporting inside Targetprocess, but all existing javascript charting frameworks lacked functionality we needed. Sounds familiar, huh? We decided to invent our own bycicle and that's how TauCharts were born. TauCharts is open source framework and it is free for non-commercial use. 
+OK, here is the truth. We are developing [Targetprocess](http://www.targetprocess.com), a visual project management software. We wanted to add a cool reporting inside Targetprocess, but all existing javascript charting frameworks lacked functionality we needed. Sounds familiar, huh? We decided to invent our own bycicle and that's how TauCharts were born. TauCharts is open source framework and it is free for non-commercial use. 
 
 
 ##How to create a simple scatterplot chart?
@@ -41,7 +41,7 @@ var chart = new tauChart.Chart({
 [Example jsBin](http://jsbin.com/tohujobuba/1/embed?output&height=500px)
 
 ##Work with plugins
-Plugins are under construction. So we can do nothing about that. Sad.
+Plugins are under construction. So we can do nothing about that. Sad. But this section takes less than 5 mins to read! Good!
 
 ##Facets: complex and cool
 In TauCharts facet charts group variables using X and Y coordinates. Facet charts help to compare information with many variables.
