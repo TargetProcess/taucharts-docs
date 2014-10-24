@@ -12,7 +12,7 @@ var spec = {
        type: 'ELEMENT.POINT',
        x: 'month',
        y: 'count',
-       color: 'team'
+       color: 'team',
        guide:{
             color:{
                 brewer:tauBrewer('YlGnBu',9)
