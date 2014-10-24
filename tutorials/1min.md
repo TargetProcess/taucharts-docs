@@ -9,11 +9,19 @@ We built TauCharts based on three rules:
 
 ##How to create a simple line chart?
 
-Download and add tauCharts.js library.
+[Download and include TauCharts](https://github.com/TargetProcess/tauCharts/blob/master/build/tauCharts.min.js) library.
 
 ```html
-<script type='text/javascript' src='tauCharts.js'>
+<script type='text/javascript' src='tauCharts.min.js'>
 ```
+
+[Download and include CSS file](https://github.com/TargetProcess/tauCharts/blob/master/build/css/graphic-elements.min.css) as well
+
+```html
+<link rel="stylesheet" type="text/css" href='graphic-elements.min.css'>
+```
+
+
 Then [prepare data](../datasource/README.md) you want to use for the chart. TauCharts accepts data like an array of same-typed objects (it looks like CSV):
 
 
