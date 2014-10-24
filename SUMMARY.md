@@ -11,11 +11,11 @@
     * [Bar](basic/bar.md) - K, DONE
     * [Facets](basic/facet.md) - V, DONE
     * [Composite charts](basic/composite.md) - V, DONE
-    * [Guide](basic/guide.md) - K
+    * [Guide](basic/guide.md) - K, DONE
 * [Advanced concepts](advanced/README.md)
 	* [Tau Chart Language](advanced/tauchartslanguage.md) - V, DONE
 	* [Coordinates](advanced/coordinates.md) - V, DONE
-	* [Elements](advanced/elements.md) - K
+	* [Elements](advanced/elements.md) - K, DONE
 	* [Visual encoding / Color and Size](advanced/encoding.md) - K
 	* [Scatterplot Matrices](advanced/splom.md) - V, DONE
 * [Plugins](plugins/README.md) - K

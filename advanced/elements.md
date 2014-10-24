@@ -116,7 +116,8 @@ the result is two lines:
 
 ##Interval
 
-Draws a bar:
+Draws a bar. So far it does not have any additonal properties.
+
 ```javascript
 var intervalElement = {
     unit: {
@@ -130,7 +131,6 @@ var intervalElement = {
             },
             unit: [{
                 type:'ELEMENT.INTERVAL'
-
             }]
         }
     };

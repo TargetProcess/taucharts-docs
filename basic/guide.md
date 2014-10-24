@@ -1,5 +1,9 @@
 #Guide
-Guide is responsible for axes look and feel, color, size and other aesthetic parameters.
+Guide is responsible for axes look and feel: labels, paddings, color, size and other aesthetic parameters. Here is the structure of the chart and related settings:
+![guide](../images/guide.png)
+
+And a live example:
+
 ```javascript
 var chart = new tauChart.Chart({
     guide: {
@@ -22,7 +26,7 @@ var chart = new tauChart.Chart({
 [example jsBin](http://jsbin.com/focowi/1/embed?output&height=500px)
 
 ##Axis
-x or y describe axis view
+x or y describes correspontent axis view. Text property is the axis title.
 ```javascript
   var guide = {
         x:{
@@ -32,7 +36,7 @@ x or y describe axis view
 ```
 
 ##Coordinate grid
-If you want draw coordinate grid, you can set *showGridLines*:
+If you want draw coordinates grid, you can set *showGridLines*:
 ```javascript
    var guide = {
         showGridLines:'xy' //show vertical and horizontal line
@@ -48,4 +52,4 @@ If you want draw coordinate grid, you can set *showGridLines*:
 ```
 
 ##Color
-See [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value) section.
+See [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value) section to understand how to apply color.
