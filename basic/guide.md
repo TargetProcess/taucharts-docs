@@ -26,7 +26,7 @@ var chart = new tauChart.Chart({
 [example jsBin](http://jsbin.com/focowi/1/embed?output&height=500px)
 
 ##Axis
-x or y describes correspontent axis view. Text property is the axis title.
+x or y describes correspontent axis view. We set axis label to 'Count' and define a padding in pixels.
 ```javascript
   var guide = {
         x:{
