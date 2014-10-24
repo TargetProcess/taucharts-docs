@@ -87,3 +87,16 @@ Then logical structure can be visually decorated with some pre-defined layout pa
 ```
 
 By default sub element inherits parent properties like x, y, guide.
+
+
+## Rendering Process
+
+Let's make an overview of the process which transforms declarative specification to visual plot.
+
+There are 3 main steps:
+
+1. **Build logical structure**. TauChart plot engine expands CIL specification to tree  structure based on data domain.
+2. **Calculate Layout**. On this step layout engine traverses tree structure and calculates phisical position and size for each item to fit the plot into the given area.
+3. **Draw**. On this stage the engine traverses the layout tree from previous step and calls drawer for each item with corresponding configuration.
+
+The division by these stages allows to control the process and augment behavior on each step using plugins.
