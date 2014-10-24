@@ -1,5 +1,14 @@
 
-For creating line chart you can use
+Bar chart is very easy to create as well. Here is the datasource:
+
+```javascript
+var defData = [
+        {"team": "d", "cycleTime": 1, "effort": 1, "count": 1, "priority": "low"},
+        ...
+        {"team": "k", "cycleTime": 4, "effort": 6, "count": 8, "priority": "medium"}];
+```
+
+Now just specify 'bar' type to create a bar chart:
 
 ```javascript
 var chart = new tauChart.Chart({
@@ -10,7 +19,9 @@ var chart = new tauChart.Chart({
         });
 chart.renderTo('#bar');
 ```
+
 [example jsBin](http://jsbin.com/hogoci/18/embed?output&height=500px)
 
-Color settings see [encoding](../advanced/encoding.md)
+
+To define color settings check [encoding](../advanced/encoding.md) section.
 
