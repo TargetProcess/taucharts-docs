@@ -55,7 +55,7 @@ Point element draws a point. It has the following parameters:
         }
    }
 ```
-Point diameter depends on the min and max value in a *size* dimension.
+Point diameter can be set via  [encoding](../advanced/encoding.md#size).
 
 Point color can be set via  [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value#custom-colors-for-encoding-color-value).
 

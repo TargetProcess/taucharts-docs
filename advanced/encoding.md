@@ -9,7 +9,7 @@ and for define color should use
 ```javascript
 var spec = {
   unit:[{
-       type: 'ELEMENT.INTERVAL',
+       type: 'ELEMENT.POINT',
        x: 'month',
        y: 'count',
        color: 'team'
@@ -25,7 +25,7 @@ if you want use custom bandles you can define following method
 ```javascript
 var spec = {
   unit:[{
-       type: 'ELEMENT.INTERVAL',
+       type: 'ELEMENT.POINT',
        x: 'month',
        y: 'count',
        color: 'team',
@@ -41,7 +41,7 @@ or if you want have mapping from your domain
 ```javascript
 var spec = {
     unit:[{
-        type: 'ELEMENT.INTERVAL',
+        type: 'ELEMENT.POINT',
         x: 'month',
         y: 'count',
         color: 'team',
@@ -58,3 +58,19 @@ var spec = {
     }]
 };
 ```
+
+##Size
+Size encoding currently applies only point element.
+Point diameter depends on the min and max value in a *size* dimension.
+
+```javascript
+var spec = {
+    unit:[{
+        type: 'ELEMENT.POINT',
+        x: 'effort',
+        y: 'cycleTime',
+        size: 'bugsCount'
+    }]
+};
+```
+[jsBin example](http://jsbin.com/hogoci/33/embed?output&height=500px)
