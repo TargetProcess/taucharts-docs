@@ -35,7 +35,9 @@ x or y describes correspontent axis view. We set axis label to 'Count' and defin
   }
 ```
 
-The guide allows to format tick labels using *tickFormat* property. We use d3-based formatter. See available format specifiers [here](https://github.com/mbostock/d3/wiki/Formatting#d3_format).
+#### tickFormat
+
+The guide allows to format tick labels using *tickFormat* property. TauChart uses d3-based formatter. See available format specifiers [here](https://github.com/mbostock/d3/wiki/Formatting#d3_format).
 
 ```javascript
   var guide = {
@@ -44,6 +46,8 @@ The guide allows to format tick labels using *tickFormat* property. We use d3-ba
 ```
 
 In the example above ticks on *x* axis formatted using SI-prefix (e.g. "22000" printed as "22k").
+
+#### tickPeriod
 
 When operate with *period* scale *guide* allows to specify the period size.
 
@@ -79,7 +83,7 @@ Also there is a set of *tickFormat*'s for time-based dimensions:
 - "quarter" (Q2 2014)
 - "year" (2014)
 
-Also you can define your own period and tick format using [plugins](../encoding.md).
+Also you can define your own period and tick format using [plugins](../plugins/readme.md).
 
 ##Coordinate grid
 If you want draw coordinates grid, you can set *showGridLines*:

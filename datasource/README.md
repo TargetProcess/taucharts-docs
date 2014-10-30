@@ -157,3 +157,52 @@ You can use nested objects to specify *ordered* dimensions:
 });
 ```
 
+#### Time-based dimensions
+
+In TauCharts time-based data is expressed as *order* or *measure* dimension type on *period* or *time* scale.
+
+```javascript
+{
+    data: [
+        { createDate: "2014-10-02", ... },                  // short ISO
+        { createDate: "2014-10-02T22:17:59+03:00", ... },   // full ISO
+        { createDate: 1412208000000, ... },                 // tick (from 1970-01-01Z)
+        { createDate: new Date(), ... },                    // javascript Date object
+        ...
+    ],
+    dimensions: {
+        // if you want to split timeline to some specific periods (day, week, quarter...)
+        createDate: {
+            type : 'order',
+            scale: 'period'
+        }
+        ...
+        // or
+        ...
+        // if you want to draw continuous timeline
+        createDate: {
+            type : 'measure',
+            scale: 'time'
+        }
+        ...
+    }
+}
+```
+
+The source time value can be passed as:
+- javascript Date object
+- javascript tick (amount of milliseconds from 1970-01-01Z)
+- string date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format (e.g. "2014-10-02T22:17:59+03:00")
+
+The period size for *period*'ical scale is specified using [axis *guide*](../basic/guide.md#tickPeriod).
+
+There is a set of pre-defined periods:
+- day
+- week (split timeline by sundays)
+- month
+- quarter
+- year
+
+Also you can define custom periods using [plugins](../plugins/readme.md).
+
+The *time* scale doesn't require special customization, while you can use [d3-based time format specifiers](https://github.com/mbostock/d3/wiki/Time-Formatting#format) for *tickFormat* on scale *guide*.
