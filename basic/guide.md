@@ -35,6 +35,52 @@ x or y describes correspontent axis view. We set axis label to 'Count' and defin
   }
 ```
 
+The guide allows to format tick labels using *tickFormat* property. We use d3-based formatter. See available format specifiers [here](https://github.com/mbostock/d3/wiki/Formatting#d3_format).
+
+```javascript
+  var guide = {
+        x:{ tickFormat: 's' }
+  }
+```
+
+In the example above ticks on *x* axis formatted using SI-prefix (e.g. "22000" printed as "22k").
+
+When operate with *period* scale *guide* allows to specify the period size.
+
+```javascript
+  var guide = {
+        x:{ tickPeriod: 'quarter', tickFormat: 'day' }
+        // will tick on x axis a beginnings of quarters using "day" format
+        // like 01-Jan-2014, 01-Apr-2014, 01-Jul-2014, 01-Oct-2014...
+  }
+```
+
+```javascript
+  var guide = {
+        x:{ tickPeriod: 'quarter', tickFormat: 'quarter' }
+        // will tick on x axis a beginnings of quarters using "quarter" format
+        // like Q4 2013, Q1 2014, Q2 2014, Q3 2014...
+  }
+```
+
+There is a set of pre-defined periods:
+- day
+- week (split timeline by sundays)
+- month
+- quarter
+- year
+
+Also there is a set of *tickFormat*'s for time-based dimensions:
+- "day" (12-Oct-2014)
+- "week" (02-Nov-2014) - end date of week
+- "week-range" (02-Nov-2014 - 09-Nov-2014) - dates range for the week
+- "month" (January 2014, Febrary...) - display month name. January is displayed with year to tick beginning of next year.
+- "month-year" (January 2014, Febrary 2014...)
+- "quarter" (Q2 2014)
+- "year" (2014)
+
+Also you can define your own period and tick format using [plugins](../encoding.md).
+
 ##Coordinate grid
 If you want draw coordinates grid, you can set *showGridLines*:
 ```javascript
