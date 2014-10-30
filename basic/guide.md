@@ -83,7 +83,7 @@ Also there is a set of *tickFormat*'s for time-based dimensions:
 - "quarter" (Q2 2014)
 - "year" (2014)
 
-Also you can define your own period and tick format using [plugins](../plugins/readme.md).
+Also you can define your own period and tick format using [plugins](../plugins/README.md).
 
 ##Coordinate grid
 If you want draw coordinates grid, you can set *showGridLines*:

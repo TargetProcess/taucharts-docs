@@ -194,7 +194,7 @@ The source time value can be passed as:
 - javascript tick (amount of milliseconds from 1970-01-01Z)
 - string date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format (e.g. "2014-10-02T22:17:59+03:00")
 
-The period size for *period*'ical scale is specified using [axis *guide*](../basic/guide.md#tickPeriod).
+The period size for *period*'ical scale is specified using [axis *guide*](../basic/guide.md#tickperiod).
 
 There is a set of pre-defined periods:
 - day
@@ -203,6 +203,6 @@ There is a set of pre-defined periods:
 - quarter
 - year
 
-Also you can define custom periods using [plugins](../plugins/readme.md).
+Also you can define custom periods using [plugins](../plugins/README.md).
 
 The *time* scale doesn't require special customization, while you can use [d3-based time format specifiers](https://github.com/mbostock/d3/wiki/Time-Formatting#format) for *tickFormat* on scale *guide*.
