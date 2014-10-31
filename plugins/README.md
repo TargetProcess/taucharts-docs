@@ -57,3 +57,25 @@ Another example which shows how to cast a date to the 2 hour period of the day (
 }
 ```
 
+#### How to add custom tick format
+
+Axis guide supports a set of pre-defined and d3-based [tick formats](../basic/guide.md#tickformat). While you can easily define your custom named tick format.
+
+There is an extension point in tauCharts API:
+
+```javascript
+tauChart.api.tickFormat.add("custom_tick_format", function(x) { ... })
+```
+
+A formatter is a function which takes a value and produces formatted string.
+
+For example, below we add "quarter" formatter which takes a date object and produce a quarter which this date belongs to (e.g. "Q1 2014"):
+
+```javascript
+tauChart.api.tickFormat.add("quarter", function(x) {
+    var d = new Date(x);
+    var m = d.getMonth();
+    var q = (m - (m % 3)) / 3;
+    return 'Q' + (q + 1) + ' ' + d.getFullYear();
+})
+```
