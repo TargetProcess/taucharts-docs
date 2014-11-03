@@ -37,7 +37,7 @@ x or y describes correspontent axis view. We set axis label to 'Count' and defin
 
 ## Ticks
 
-Ticks are small indicators on an axis that shows axis values. 
+Ticks are small indicators on an axis that shows axis values.
 
 #### tickFormat
 
@@ -87,6 +87,20 @@ Also there is a set of *tickFormat*'s for time-based dimensions:
 - "year" (2014)
 
 Also you can [define your own period and tick format](../plugins/customticks.md).
+
+#### tickAutoScale
+
+By default TauChart engine tries to auto scale plot axes for better look and feel by adding some values below and above.
+
+You can avoid this behaviour by setting axis guide property *tickAutoScale* to false:
+
+```javascript
+guide: {
+    x: { tickAutoScale: false }
+}
+```
+
+In this case axis values fit to source domain i.e. extreme points will be drawn on the plot borders.
 
 ##Coordinate grid
 
