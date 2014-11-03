@@ -35,9 +35,13 @@ x or y describes correspontent axis view. We set axis label to 'Count' and defin
   }
 ```
 
+## Ticks
+
+Ticks are small indicators on an axis that shows axis values. 
+
 #### tickFormat
 
-The guide allows to format tick labels using *tickFormat* property. TauChart uses d3-based formatter. See available format specifiers [here](https://github.com/mbostock/d3/wiki/Formatting#d3_format).
+*guide* allows to format tick labels using *tickFormat* property. TauCharts uses d3-based formatter. Check available [format specifiers](https://github.com/mbostock/d3/wiki/Formatting#d3_format).
 
 ```javascript
   var guide = {
@@ -45,25 +49,24 @@ The guide allows to format tick labels using *tickFormat* property. TauChart use
   }
 ```
 
-In the example above ticks on *x* axis formatted using SI-prefix (e.g. "22000" printed as "22k").
+In the example above ticks on *x* axis are formatted using SI-prefix (e.g. "22000" printed as "22k").
 
 #### tickPeriod
 
-When operate with *period* scale *guide* allows to specify the period size.
+When operate with *period* scale, *guide* allows to specify the period size.
 
 ```javascript
   var guide = {
         x:{ tickPeriod: 'quarter', tickFormat: 'day' }
-        // will tick on x axis a beginnings of quarters using "day" format
-        // like 01-Jan-2014, 01-Apr-2014, 01-Jul-2014, 01-Oct-2014...
+        // tickPeriod indicates that every tick is a quarter, while tickFormat sets how tick value will be displayed
+        // In this example we will have quarters with first day of the quarter: 01-Jan-2014, 01-Apr-2014, 01-Jul-2014, 01-Oct-2014...
   }
 ```
 
 ```javascript
   var guide = {
         x:{ tickPeriod: 'quarter', tickFormat: 'quarter' }
-        // will tick on x axis a beginnings of quarters using "quarter" format
-        // like Q4 2013, Q1 2014, Q2 2014, Q3 2014...
+        // Q4 2013, Q1 2014, Q2 2014, Q3 2014...
   }
 ```
 
@@ -78,15 +81,16 @@ Also there is a set of *tickFormat*'s for time-based dimensions:
 - "day" (12-Oct-2014)
 - "week" (02-Nov-2014) - end date of week
 - "week-range" (02-Nov-2014 - 09-Nov-2014) - dates range for the week
-- "month" (January 2014, Febrary...) - display month name. January is displayed with year to tick beginning of next year.
+- "month" (January 2014, Febrary...) - display month name. January is displayed with a year on the right.
 - "month-year" (January 2014, Febrary 2014...)
 - "quarter" (Q2 2014)
 - "year" (2014)
 
-Also you can define your own period and tick format using [plugins](../plugins/README.md).
+Also you can [define your own period and tick format](../plugins/customticks.md).
 
 ##Coordinate grid
-If you want draw coordinates grid, you can set *showGridLines*:
+
+If you want to draw a coordinates grid, you can set *showGridLines*:
 ```javascript
    var guide = {
         showGridLines:'xy' //show vertical and horizontal line

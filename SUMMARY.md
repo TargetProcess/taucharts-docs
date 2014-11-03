@@ -20,5 +20,6 @@
 	* [Visual encoding / Color and Size](advanced/encoding.md) - K, DONE
 	* [Scatterplot Matrices](advanced/splom.md) - V, DONE
 * [Plugins](plugins/README.md) - K - IN DEV
+	* [Custom Ticks](plugins/customticks.md) - V, DONE
 
 

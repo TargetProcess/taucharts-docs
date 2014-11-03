@@ -63,7 +63,7 @@ var plot = new tauCharts.Chart({
 ```
 
 
-#### Specifying *Ordered* dimension
+#### *Ordered* dimension
 
 You should pass data property as a primitive type (string, boolean) and define an **order** array that provides the order of categories.
 
@@ -176,6 +176,13 @@ In TauCharts time-based data is expressed as *order* or *measure* dimension type
             type : 'order',
             scale: 'period'
         }
+        // guide property sets 
+        guide: {
+            x:{ tickPeriod: 'quarter', tickFormat: 'day' }
+            // tickPeriod indicates that every tick is a quarter, while tickFormat sets how tick value will be displayed
+            // In this example we will have quarters with first day of the quarter: 01-Jan-2014, 01-Apr-2014, 01-Jul-2014, 01-Oct-2014...
+        }
+
         ...
         // or
         ...
@@ -189,20 +196,18 @@ In TauCharts time-based data is expressed as *order* or *measure* dimension type
 }
 ```
 
-The source time value can be passed as:
-- javascript Date object
-- javascript tick (amount of milliseconds from 1970-01-01Z)
+Accepted time data source values:
+- javascript [Date object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+- javascript [tick](http://www.w3schools.com/jsref/jsref_gettime.asp) (amount of milliseconds from 1970-01-01Z)
 - string date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format (e.g. "2014-10-02T22:17:59+03:00")
 
-The period size for *period*'ical scale is specified using [axis *guide*](../basic/guide.md#tickperiod).
-
-There is a set of pre-defined periods:
+The period size for *periodical* scale is specified using [tickPeriod](../basic/guide.md#tickperiod) propert. There is a set of pre-defined periods:
 - day
 - week (split timeline by sundays)
 - month
 - quarter
 - year
 
-Also you can define custom periods using [plugins](../plugins/README.md).
+Also you can define [custom periods](../plugins/customticks.md).
 
-The *time* scale doesn't require special customization, while you can use [d3-based time format specifiers](https://github.com/mbostock/d3/wiki/Time-Formatting#format) for *tickFormat* on scale *guide*.
+The *time* scale doesn't require special customization, you can use [d3-based time format specifiers](https://github.com/mbostock/d3/wiki/Time-Formatting#format) for *tickFormat* in scale *guide*.
