@@ -88,15 +88,15 @@ Also there is a set of *tickFormat*'s for time-based dimensions:
 
 Also you can [define your own period and tick format](../plugins/customticks.md).
 
-#### tickAutoScale
+#### autoScale
 
-By default TauChart engine tries to auto scale plot axes for better look and feel by adding some values below and above.
+By default TauCharts engine tries to auto scale plot axes for better look and feel by adding some values below and above.
 
-You can avoid this behaviour by setting axis guide property *tickAutoScale* to false:
+You can avoid this behaviour by setting axis guide property *autoScale* to false:
 
 ```javascript
 guide: {
-    x: { tickAutoScale: false }
+    x: { autoScale: false }
 }
 ```
 
