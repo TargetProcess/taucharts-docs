@@ -35,6 +35,20 @@ x or y describes correspontent axis view. We set axis label to 'Count' and defin
   }
 ```
 
+#### autoScale
+
+By default TauCharts engine tries to auto scale axes, it always draws 0 for *measures* and add some ticks to create paddings below the bottom value and above the top value. For example, if you have data values 1, 2, 20, 40, the on axis you will have ticks from 0 to 45.
+
+You can avoid this behaviour by setting axis guide property *autoScale* to false:
+
+```javascript
+guide: {
+    x: { autoScale: false }
+}
+```
+
+In this case axis ticks exactly fit source domain. For example, if you have data values 9, 12 and 89 then ticks will start from 9 and end with 89.
+
 ## Ticks
 
 Ticks are small indicators on an axis that shows axis values.
@@ -87,20 +101,6 @@ Also there is a set of *tickFormat*'s for time-based dimensions:
 - "year" (2014)
 
 Also you can [define your own period and tick format](../plugins/customticks.md).
-
-#### autoScale
-
-By default TauCharts engine tries to auto scale plot axes for better look and feel by adding some values below and above.
-
-You can avoid this behaviour by setting axis guide property *autoScale* to false:
-
-```javascript
-guide: {
-    x: { autoScale: false }
-}
-```
-
-In this case axis values fit to source domain i.e. extreme points will be drawn on the plot borders.
 
 ##Coordinate grid
 
