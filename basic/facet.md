@@ -12,7 +12,7 @@ Here is an example of a facet chart. As you see, there are 4 variables encoded u
 ## Easy approach for creating facet chart.
 To create facet chart you can pass array of dimension in x or y properties to chart spec.
 Also you can set [guide properties](guide.md), if you pass array instead object.
-All passed params will read with tail of array and convert to [Tau Chart language](../advanced/tauchartslanguage.md).
+All passed params will read from tail of array and convert to [Tau Chart language](../advanced/tauchartslanguage.md).
 > Current moment you can't use two measure dimension for one axis. In this case you get error.
 
 ```javascript
