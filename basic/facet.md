@@ -9,11 +9,25 @@ Simply speaking, in TauCharts facet charts group variables using X and Y coordin
 Here is an example of a facet chart. As you see, there are 4 variables encoded using X and Y coordinates. First, on Y axis we see Teams and every small chart Y axis shows how many entities each team completed. X axis shows projects (TP and TP3) and then months.
 
 ![An example of facet chart](../images/facet.png)
+
+## How to create a facet chart
+
+There are two ways: simple and complex. Let's start from a simple one.
+
 ## Easy approach for creating facet chart.
-To create facet chart you can pass array of dimension in x or y properties to chart spec.
-Also you can set [guide properties](guide.md), if you pass array instead object.
-All passed params will read from tail of array and convert to [Tau Chart language](../advanced/tauchartslanguage.md).
-> Current moment you can't use two measure dimension for one axis. In this case you get error.
+
+To create a facet chart you can pass an array of dimensions in x or y properties, like that
+
+```javascript
+ x: ['euroEco', 'co2'],
+```
+
+If you want to set [guide properties](guide.md) for axis, you should pass array instead of object.
+
+
+> NOTE: You can't use two *measure* dimension for one axis. In this case you'll get an error.
+
+Here is an example:
 
 ```javascript
      var chart = new tauChart.Chart({
@@ -115,7 +129,8 @@ All passed params will read from tail of array and convert to [Tau Chart languag
      chart.renderTo('#scatter');
 ```
 [example jsBin](http://jsbin.com/xelewitiro/3/embed?output&height=500px)
-## How to create a facet chart
+
+### Advanced facet chart creation
 
 To construct facets we should use coordinates recursively by embedding COORDS.RECT units inside each other.
 
