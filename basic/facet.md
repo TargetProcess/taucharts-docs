@@ -14,18 +14,19 @@ Here is an example of a facet chart. As you see, there are 4 variables encoded u
 
 There are two ways: simple and complex. Let's start from a simple one.
 
-## Easy approach for creating facet chart.
+### Simple way to create a facet chart
 
-To create a facet chart you can pass an array of dimensions in x or y properties, like that
+To create a facet chart you can pass an array of dimensions in x or y properties, like that:
 
 ```javascript
  x: ['euroEco', 'co2'],
 ```
 
+It means the chart will draw two dimensions on x axis.
+
+> NOTE: You can't use two *measure* dimension in one axis. In this case you'll get an error.
+
 If you want to set [guide properties](guide.md) for axis, you should pass array instead of object.
-
-
-> NOTE: You can't use two *measure* dimension for one axis. In this case you'll get an error.
 
 Here is an example:
 
