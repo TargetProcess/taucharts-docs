@@ -26,7 +26,7 @@ It means the chart will draw two dimensions on x axis.
 
 > NOTE: You can't use two *measure* dimension in one axis. In this case you'll get an error.
 
-If you want to set [guide properties](guide.md) for axis, you should pass array instead of object.
+If you want to set [guide properties](guide.md) for axis, you should pass an array instead of an object.
 
 Here is an example:
 
