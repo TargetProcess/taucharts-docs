@@ -23,7 +23,7 @@ var chart = new tauChart.Chart({
     size: 'count'
 });
 ```
-[example jsBin](http://jsbin.com/focowi/1/embed?output&height=500px)
+[example jsBin](http://jsbin.com/focowi/2/embed?output&height=500px)
 
 ##Axis
 x or y describes correspontent axis view. We set axis label to 'Count' and define a padding in pixels.

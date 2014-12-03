@@ -11,7 +11,7 @@ var chart = new tauChart.Chart({
         });
 chart.renderTo('#scatter');
 ```
-[example jsBin](http://jsbin.com/hogoci/16/embed?output&height=500px)
+[example jsBin](http://jsbin.com/hogoci/47/embed?output&height=500px)
 
 Check [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value#custom-colors-for-encoding-color-value) section to see how to apply colors.
 
@@ -36,4 +36,4 @@ var chart = new tauChart.Chart({
         });
 ```
 
-[example jsBin](http://jsbin.com/tohujobuba/1/embed?output&height=500px)
+[example jsBin](http://jsbin.com/varino/1/embed?output&height=500px)

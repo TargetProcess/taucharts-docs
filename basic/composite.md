@@ -43,7 +43,7 @@ In this example we create coordinate grid and draw same dimensions with differen
     }
 }
 ```
-[example jsBin](http://jsbin.com/lokoxomape/1/embed?output&height=500px)
+[example jsBin](http://jsbin.com/civul/1/embed?output&height=500px)
 
 #### Example 2: Several elements on different data
 
@@ -97,7 +97,7 @@ Here we create empty COORDS.RECT item to use it as a top composition container a
 }
 ```
 
-[example jsBin](http://jsbin.com/ninalevedi/2/embed?output&height=500px)
+[example jsBin](http://jsbin.com/vogare/1/embed?output&height=500px)
 
 But what if you want to draw both bar and line on one grid? In this case you have to share Y axis for both charts. To do that we need to normalize the axis to common values domain by using *tickMin* / *tickMax* properties and set *guide/split* flag to *false* (actually *false* is default value).
 
@@ -150,7 +150,7 @@ But what if you want to draw both bar and line on one grid? In this case you hav
 }
 ```
 
-[example jsBin](http://jsbin.com/girubegara/2/embed?output&height=500px)
+[example jsBin](http://jsbin.com/cagero/1/embed?output&height=500px)
 
 
 

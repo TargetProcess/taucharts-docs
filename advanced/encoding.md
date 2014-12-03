@@ -77,4 +77,4 @@ var spec = {
 };
 ```
 
-[jsBin example](http://jsbin.com/hogoci/33/embed?output&height=500px)
+[jsBin example](http://jsbin.com/hogoci/60/embed?output&height=500px)
