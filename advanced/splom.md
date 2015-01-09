@@ -83,5 +83,5 @@ and build a facet that visualizes correlation. In this case we have three catego
 }
 ```
 
-[example jsBin](http://jsbin.com/jetowayige/2/embed?output&height=500px)
+[example jsBin](http://jsbin.com/kelefi/1/embed?output&height=500px)
 

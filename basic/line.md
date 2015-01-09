@@ -52,4 +52,4 @@ chart.renderTo('#line');
 
 Use [guide](guide.md) property for visual settings.
 
-[example jsBin](http://jsbin.com/hogoci/29/embed?output&height=500px)
+[example jsBin](http://jsbin.com/hogoci/48/embed?output&height=500px)

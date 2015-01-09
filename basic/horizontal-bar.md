@@ -20,7 +20,7 @@ var chart = new tauChart.Chart({
 chart.renderTo('#bar');
 ```
 
-[example jsBin](http://jsbin.com/hogoci/39/embed?output&height=500px)
+[example jsBin](http://jsbin.com/hogoci/50/embed?output&height=500px)
 
 
 To define color settings check [encoding](../advanced/encoding.md) section.
@@ -36,4 +36,4 @@ var chart = new tauChart.Chart({
         });
 chart.renderTo('#bar');
 ```
-[example jsBin](http://jsbin.com/hogoci/37/embed?output&height=500px)
+[example jsBin](http://jsbin.com/hogoci/52/embed?output&height=500px)

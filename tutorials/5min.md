@@ -38,7 +38,7 @@ var chart = new tauChart.Chart({
         });
 ```
 
-[Example jsBin](http://jsbin.com/tohujobuba/1/embed?output&height=500px)
+[Example jsBin](http://jsbin.com/kiriho/1/embed?output&height=500px)
 
 ##Work with plugins
 Plugins are under construction. So we can do nothing about that. Sad. But this section takes less than 5 mins to read! Good!
@@ -82,6 +82,6 @@ var plot = new tauChart.Plot({
 });
 ```
 
-[Example jsBin](http://jsbin.com/wuyujeroxo/1/embed?output&height=500px)
+[Example jsBin](http://jsbin.com/kiriho/3/embed?output&height=500px)
 
 Now we recommend to play with TauCharts and read some additional sections about [Basic concepts](../images/guide.png), then jump into [Advanced topics](../advanced/tauchartslanguage.md).
