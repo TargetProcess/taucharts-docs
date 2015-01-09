@@ -20,7 +20,7 @@ Method `renderTo` can accept a parameters: html selector or DOM element.
 
 As a result, you will have the chart like that:
 
-[example jsBin](http://jsbin.com/hogoci/46/embed?output)
+[example jsFiddle](http://jsfiddle.net/taucharts/6m31vccv/)
 
 
 Currently supported chart types: [scatterplot](scatterplot.md), [line](line.md), [bar](bar.md)
