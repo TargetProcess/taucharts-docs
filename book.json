@@ -5,6 +5,10 @@
     "pluginsConfig": {
       "disqus": {
         "shortName": "tauchartsapi"
+      },
+      "jsfiddle":{
+        "tabs":["result","js","css", "html"],
+        "height":500
       }
     }
 }

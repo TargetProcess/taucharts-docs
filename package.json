@@ -15,7 +15,7 @@
   "dependencies": {
     "gitbook-plugin-anchors": "^0.3.0",
     "gitbook-plugin-disqus": "0.0.1",
-    "gitbook-plugin-jsfiddle": "0.0.1"
+    "gitbook-plugin-jsfiddle": "0.0.2"
   },
   "repository": {
     "type": "git",
