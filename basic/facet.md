@@ -129,7 +129,7 @@ Here is an example:
      });
      chart.renderTo('#scatter');
 ```
-[example jsBin](http://jsbin.com/fures/1/embed?output&height=500px)
+[example](http://jsfiddle.net/taucharts/5c0pmnj1/)
 
 ### Advanced facet chart creation
 
@@ -180,7 +180,7 @@ In the following example we use facet chart to visualize distribution of car mod
 }
 ```
 
-[example jsBin](http://jsbin.com/lizam/2/embed?output&height=500px)
+[example](http://jsfiddle.net/taucharts/mr42f8bq/)
 
 Another example of faceted charts is [Scatterplot Matrices](../advanced/splom.md). Check them out.
 
