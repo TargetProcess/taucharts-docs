@@ -77,4 +77,4 @@ var spec = {
 };
 ```
 
-[jsBin example](http://jsbin.com/hogoci/60/embed?output&height=500px)
+[Example](http://jsfiddle.net/taucharts/awn8rz8w/)
