@@ -9,24 +9,19 @@ We built TauCharts based on three rules:
 
 ##How to create a simple line chart?
 
-You have to include d3.js and underscore libraries:
-```html
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script src="hhttp://underscorejs.org/underscore-min.js" type='text/javascript'></script>
-```
-
-Then [download and include TauCharts](http://cdn.jsdelivr.net/taucharts/latest/tauCharts.min.js) library.
+You have to include d3.js, underscore and taucharts libraries:
 
 ```html
-<script type='text/javascript' src='tauCharts.min.js'>
+<script src="//cdn.jsdelivr.net/d3js/latest/d3.min.js" charset="utf-8"></script>
+<script src="//cdn.jsdelivr.net/underscorejs/latest/underscore-min.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/taucharts/latest/tauCharts.min.js" type="text/javascript"></script>
 ```
 
-[Download and include CSS file](http://cdn.jsdelivr.net/taucharts/latest/tauCharts.min.css) as well
+Include CSS file:
 
 ```html
-<link rel="stylesheet" type="text/css" href='tauCharts.min.css'>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/taucharts/latest/tauCharts.min.css">
 ```
-
 
 Then [prepare data](../datasource/README.md) you want to use for the chart. TauCharts accepts data like an array of same-typed objects (it looks like CSV):
 
