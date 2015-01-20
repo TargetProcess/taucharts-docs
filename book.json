@@ -1,10 +1,14 @@
 {
     "title": "TauCharts is a javascript graph library.",
     "description": null,
-    "plugins": ["jsbin","disqus","anchors"],
+    "plugins": ["jsfiddle","disqus","anchors"],
     "pluginsConfig": {
       "disqus": {
         "shortName": "tauchartsapi"
+      },
+      "jsfiddle":{
+        "tabs":["result","js","css", "html"],
+        "height":500
       }
     }
 }

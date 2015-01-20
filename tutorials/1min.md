@@ -67,7 +67,7 @@ Like that:
 chart.renderTo('#line');
 ```
 
-[example jsBin](http://jsbin.com/hogoci/45/embed?output&height=500px)
+[example jsFiddle](http://jsfiddle.net/taucharts/u86cseky/)
 
 Now find 5 minutes and [read an extended tutorial](5min.md).
 
