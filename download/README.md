@@ -32,3 +32,5 @@ TauCharts is registered as a package with [npm](https://www.npmjs.com/package/ta
 ```
 npm install taucharts
 ```
+
+This will install TauCharts to node_modules directory.
