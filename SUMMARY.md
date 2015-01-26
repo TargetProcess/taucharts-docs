@@ -1,6 +1,7 @@
 # Tau Charts Guide Summary
 
 * [Why TauCharts?](why/README.md) - M
+* [Download](download/README.md) - M
 * [Tutorials](tutorials/README.md) - M
 	* [1 min tutorial](tutorials/1min.md) - M, IN DEV, wait for CDN
 	* [5 mins tutorial](tutorials/5min.md) - M, DONE
