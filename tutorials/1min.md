@@ -41,7 +41,7 @@ var datasource = [{
 Chart definition is extremely simple and speak for itself:
 
 ```javascript
-var chart = new tauChart.Chart({
+var chart = new tauCharts.Chart({
     data: datasource,
     type: 'line',
     x: 'date',
