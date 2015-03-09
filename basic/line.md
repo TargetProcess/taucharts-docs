@@ -19,7 +19,7 @@ var defData = [{
 Red line shows bugs and blue line shows user stories. Colors coding is defined in *guide* property.
 
 ```javascript
-var chart = new tauChart.Chart({
+var chart = new tauCharts.Chart({
     guide: {
         padding: {l: 70, t: 10, b: 70, r: 10},
         showGridLines: 'xy',

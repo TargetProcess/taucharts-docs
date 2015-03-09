@@ -11,7 +11,7 @@ var defData = [
 Now just specify 'horizontalBar' type to create a bar chart:
 
 ```javascript
-var chart = new tauChart.Chart({
+var chart = new tauCharts.Chart({
             data: defData,
             type: 'horizontalBar',
             x: 'effort',
@@ -27,7 +27,7 @@ To define color settings check [encoding](../advanced/encoding.md) section.
 
 Bellow chart has color parameters for encoding group
 ```javascript
-var chart = new tauChart.Chart({
+var chart = new tauCharts.Chart({
             data: defData,
             type: 'horizontalBar',
             x: 'effort',

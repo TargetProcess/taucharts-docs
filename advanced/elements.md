@@ -35,7 +35,7 @@ var lineElement = {
         }
     };
 
-    var s = new tauChart.Plot(
+    var s = new tauCharts.Plot(
             {
                 data: data,
                 spec: lineElement
@@ -105,7 +105,7 @@ and you create a chart with parameters:
            }
        };
 
-       new tauChart.Plot({
+       new tauCharts.Plot({
                        data: data,
                        spec: lineElement
                    }).renderTo('#line-element');
@@ -143,7 +143,7 @@ var intervalElement = {
     }
 };
 
-var bar = new tauChart.Plot({
+var bar = new tauCharts.Plot({
     data: defData,
     spec: intervalElement
 }).renderTo('#interval-element');
@@ -241,7 +241,7 @@ var intervalElement = {
     }
 };
 
-var bar = new tauChart.Plot({
+var bar = new tauCharts.Plot({
     data: data,
     spec: intervalElement
 }).renderTo('#interval-element');
@@ -275,7 +275,7 @@ var intervalElement = {
     }
 };
 
-var bar = new tauChart.Plot({
+var bar = new tauCharts.Plot({
     data: data,
     spec: intervalElement
 }).renderTo('#interval-element');
