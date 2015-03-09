@@ -20,7 +20,7 @@ Now we define a scatterplot chart. We use [guide](../basic/guide.md) parameter t
 
 
 ```javascript
-var chart = new tauChart.Chart({
+var chart = new tauCharts.Chart({
             guide: {
               x: {label:'Cycle Time in days'},  // custom label for X axis
               y: {label:'Effort in points'},    // custom label for Y axis
@@ -54,7 +54,7 @@ Basically, we define *units* that will be plotted on a chart and nest them insid
 
 
 ```javascript
-var plot = new tauChart.Plot({
+var plot = new tauCharts.Plot({
     data: [
         { name: "John", age: 30, tshirt: 'M', gender: 'Male',   hasChild: true },
         ...
