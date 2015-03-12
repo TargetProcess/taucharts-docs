@@ -27,10 +27,10 @@ TauCharts requires the source data to be provided in a form of structured table 
 By default TauCharts try to detect a dimension type which can be a category, order or measure.
 
 * **Category**: Represents data that can't be compared. Let's say, list of countries or names.
-* **Order**: As you might guess, represents data taht can be ordered, but you can't say how bigger one value from the other. For example, you can say that Must Have is more important than Nice to Have, but you can't say that Must Have is twice as important.
+* **Order**: As you might guess, represents data that can be ordered, but you can't say how bigger one value from the other. For example, you can say that Must Have is more important than Nice to Have, but you can't say that Must Have is twice as important.
 * **Measure**: That is easy. You can compare these variables, add them, multiply them, etc.
 
-Using dimension type TauChart tries to find the most appropriate scale for a dimension. Here is a list of default scales for corresponding dimension types:
+Using dimension type TauCharts tries to find the most appropriate scale for a dimension. Here is a list of default scales for corresponding dimension types:
 
 | type | scale |
 | -- | -- |
