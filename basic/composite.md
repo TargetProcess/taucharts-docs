@@ -29,7 +29,7 @@ In this example we create coordinate grid and draw same dimensions with differen
         guide: {
             showGridLines: '',
             padding: {l: 72, b: 120, r: 8, t: 8},
-            // NOTE: use tickMin / tickMax to specify values range
+            // NOTE: use tickMin / tickMax to specify values range and also should set autoScale as false
             y: {label: 'Horse power'},
             x: {rotate: 45, textAnchor: 'start'}
         },
@@ -119,7 +119,7 @@ But what if you want to draw both bar and line on one grid? In this case you hav
                     showGridLines: 'xy',
                     padding: {l: 72, b: 224, r: 8, t: 8},
                     // NOTE: use tickMin / tickMax to specify values range
-                    y: {label: {text: 'CO2 emission, g/km', padding: 52}, tickMin: 0, tickMax: 600},
+                    y: {label: {text: 'CO2 emission, g/km', padding: 52}, tickMin: 0, tickMax: 600, autoScale: false},
                     x: {rotate: 90, textAnchor: 'start', hide: true}
                 },
                 y: 'co2',
@@ -133,8 +133,8 @@ But what if you want to draw both bar and line on one grid? In this case you hav
                 guide: {
                     showGridLines: '',
                     padding: {l: 72, b: 224, r: 8, t: 8},
-                    // NOTE: use tickMin / tickMax to specify values range
-                    y: {label: 'Horse power (red line)', tickMin: 0, tickMax: 600},
+                    // NOTE: use tickMin / tickMax to specify values range and also should set autoScale as false
+                    y: {label: 'Horse power (red line)', tickMin: 0, tickMax: 600, autoScale: false},
                     x: {rotate: 45, textAnchor: 'start'},
                     color: { brewer: ['color-red'] }
                 },

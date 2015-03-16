@@ -68,7 +68,7 @@ Then the logical structure can be visually decorated with some pre-defined layou
         ...
         padding: { l:120, b:4, r:8, t:4 },
         showGridLines: 'xy',
-        y: {label: 'Cycle Time', tickMin: 0, tickMax: 100}
+        y: {label: 'Cycle Time', tickMin: 0, tickMax: 100, autoScale: false}
     },
     ...
     unit: [
