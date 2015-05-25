@@ -1,12 +1,12 @@
 If you didn't check [1 minute tutorial](1min), please go and read it. We will not repeat these basics here.
 
 ##What is TauCharts, finally?
-OK, here is the truth. We are developing [Targetprocess](http://www.targetprocess.com), a visual project management software. We wanted to add a cool reporting inside Targetprocess, but all existing javascript charting frameworks lacked functionality we needed. Sounds familiar, huh? We decided to invent our own bycicle and that's how TauCharts were born. TauCharts is open source framework and it is free for non-commercial use. 
+OK, here is the truth. We are developing [Targetprocess](http://www.targetprocess.com), a visual project management software. We wanted to add a cool reporting inside Targetprocess, but all existing JavaScript charting frameworks lacked functionality we needed. Sounds familiar, huh? We decided to invent our own bicycle and that's how TauCharts were born. TauCharts is open source framework and it is free for non-commercial use. 
 
 
 ##How to create a simple scatterplot chart?
 
-This time we will create slightly more compelx chart with some additional visual customizations. Here is out data:
+This time we will create a slightly more compelx chart with some additional visual customizations. Here is our data:
 
 
 ```javascript
@@ -46,7 +46,7 @@ Plugins are under construction. So we can do nothing about that. Sad. But this s
 ##Facets: complex and cool
 In TauCharts facet charts group variables using X and Y coordinates. Facet charts help to compare information with many variables.
 
-Most of other javascript charting frameworks doesn't support this type of charts.
+Most of other JavaScript charting frameworks doesn't support this type of charts.
 
 The more complex charts demands more complex definition here. You [read about TauCharts language](../advanced/tauchartslanguage.md) in more details.
 
