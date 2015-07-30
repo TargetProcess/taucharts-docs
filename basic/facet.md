@@ -133,7 +133,7 @@ Here is an example:
 
 ### Advanced facet chart creation
 
-To construct facets we should use coordinates recursively by embedding COORDS.RECT units inside each other.
+To construct facets we should use coordinates recursively by embedding COORDS.RECT units inside each other. 
 
 ## Example: Segmentation
 
