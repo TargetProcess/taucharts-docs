@@ -1,7 +1,7 @@
 If you didn't check [1 minute tutorial](1min), please go and read it. We will not repeat these basics here.
 
 ##What is TauCharts, finally?
-OK, here is the truth. We are developing [Targetprocess](http://www.targetprocess.com), a visual project management software. We wanted to add a cool reporting inside Targetprocess, but all existing JavaScript charting frameworks lacked functionality we needed. Sounds familiar, huh? We decided to invent our own bicycle and that's how TauCharts were born. TauCharts is open source framework and it is free for non-commercial use. 
+OK, here is the truth. We are developing [Targetprocess](http://www.targetprocess.com), a visual project management software. We wanted to add a cool reporting inside Targetprocess, but all existing JavaScript charting frameworks lacked functionality we needed. Sounds familiar, huh? We decided to invent our own bicycle and that's how TauCharts were born. TauCharts is open source framework under Apache License 2.0. 
 
 
 ##How to create a simple scatterplot chart?
