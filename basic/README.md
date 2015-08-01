@@ -3,7 +3,7 @@ Let's build a simple scatterplot chart. Download and add tauCharts.js library.
 ```html
 <script type='text/javascript' src='tauCharts.js'>
 ```
-Then [prepare data](../datasource/readme.md) you want to use for the chart. Chart definition is quite straightforward:
+Then [prepare data](../datasource/readme.md) you want to use for the chart. The chart definition is quite straightforward:
 
 ```javascript
 var chart = new tauCharts.Chart({
@@ -16,7 +16,7 @@ var chart = new tauCharts.Chart({
         });
 chart.renderTo('#scatter'); // HTML element with 'scatter' id
 ```
-Method `renderTo` can accept a parameters: html selector or DOM element.
+The `renderTo` method will accept one parameter: either a CSS selector or a DOM element.
 
 As a result, you will have the chart like that:
 
