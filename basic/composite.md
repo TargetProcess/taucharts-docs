@@ -10,40 +10,51 @@ There are 2 ways of composition supported:
 1. Composition in depth. You can insert COORDS.RECT into COORDS.RECT to get a facet chart.
 2. Horizontal composition. API allows to display several chart elements on one grid. It means that separate axes and shared common axes are possible.
 
-[Facets](../basic/facet.html) are explained in another chapter. So let's focus on the second type. The [COORDS.RECT](../advanced/coordinates.md) item has *unit* property. It can contains an array of nested [elements](../advanced/elements.md) (points, lines, nested coordinates etc.)
+[Facets](../basic/facet.html) are explained in another chapter. So let's focus on the second type.
 
-#### Example 1: Several elements on same data
+#### Example 1: Share axis
 
-In this example we create coordinate grid and draw same dimensions with different elements (point, line, bar) in parallel. Note how *x* and *y* params are inherited from parent unit if not declared.
+Let's visualy compare several numerical properties of the dataset. The Taucharts at the moment doesn't have special syntax for the task but there is a workaround. We need to introduce new variables to the data which transform meta-data to a format that Taucharts can operate with.
 
 ```javascript
-{
-    dimensions: {
-        car: {type: 'category'},
-        co2: {type: 'measure'},
-        hp: {type: 'measure'}
-    },
+var co2_vs_hp_by_cars_chart = new tauCharts.Chart({
 
-    unit: {
-        type: 'COORDS.RECT',
-        guide: {
-            showGridLines: '',
-            padding: {l: 72, b: 120, r: 8, t: 8},
-            // NOTE: use tickMin / tickMax to specify values range and also should set autoScale as false
-            y: {label: 'Horse power'},
-            x: {rotate: 45, textAnchor: 'start'}
-        },
-        x: 'car',
-        y: 'hp',
-        unit: [
-            {type: 'ELEMENT.INTERVAL'},
-            {type: 'ELEMENT.POINT'},
-            {type: 'ELEMENT.LINE'}
-        ]
-    }
-}
+    "type": "line",
+    "x": ["car"],
+    "y": ["co2,hp"],
+    "color": "co2-hp-type",
+
+    data: [
+            {car: "BMV X5", co2: 197, hp: 306},
+            {car: "Bentley Continental", co2: 246, hp: 507},
+            {car: "Infinity FX", co2: 238, hp: 238},
+            {car: "Toyota Prius+", co2: 96, hp: 99},
+            {car: "Mercedes Vito", co2: 203, hp: 95},
+            {car: "Peugeot 3008", co2: 155, hp: 120},
+            {car: "Volvo S60", co2: 135, hp: 150},
+            {car: "Subaru Forester", co2: 186, hp: 150},
+            {car: "Lexus RX", co2: 233, hp: 188}
+          ].reduce(function (memo, row) {
+
+                var keyVal = "co2,hp";
+                var keyType = "co2-hp-type";
+
+                var r1 = _.clone(row);
+                r1[keyType] = 'co2';
+                r1[keyVal] = row['co2'];
+
+                var r2 = _.clone(row);
+                r1[keyType] = 'hp';
+                r2[keyVal] = row['hp'];
+
+                return memo.concat([r1, r2]);
+            }, [])
+});
 ```
-[example](http://jsfiddle.net/taucharts/cdmjp86t/)
+
+Here we double source array by generating a new record for each property (i.e co2 and hp) and introduce two new variables "co2,hp" and "co2-hp-type". This is some kind of "unpacking meta-data". The "co2,hp" variable become a new composite axis while "co2-hp-type" variable is used to split geoms by color. 
+
+[example](http://jsfiddle.net/cdmjp86t/10/)
 
 #### Example 2: Several elements on different data
 
