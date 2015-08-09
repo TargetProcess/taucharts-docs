@@ -56,112 +56,19 @@ Here we double source array by generating a new record for each property (i.e co
 
 [example](http://jsfiddle.net/cdmjp86t/10/)
 
-#### Example 2: Several elements on different data
+#### Example 2: Visual experiments
 
-Let's build a visualization to compare some characteristics for different cars (e.g. CO<sub>2</sub> emission and horse power).
+While "Example 1" should cover 80% of the needs there is a lot of flexibility inside Taucharts DSL to support a special cases.
 
-Here we create empty COORDS.RECT item to use it as a top composition container and insert 2 coordinates inside. First bar chart for CO<sub>2</sub> values and second line chart for horse power. Note how we use *guide/split* flag to draw nested coordinates separately, CO<sub>2</sub> above hp.
+NOTE: at the moment DSL syntax is not stable enough so the following examples are experimental and you can use them on your own risk. At the same time we are working to provide shortcuts for popular "special cases".
 
-```javascript
-{
-    dimensions: {
-        car: { type: 'category' },
-        co2: { type: 'measure' },
-        hp : { type: 'measure' }
-    },
+What if I don't want to merge domain for "hp" and "co2" variables from the example above? The Taucharts DSL is flexible enough to draw two or more axes for cartesian coordinates. In this example we use several data sources to create two types of cartesian coordinates. One serves as a layout for coordinates composition while the rest represents data itself.
 
-    unit: {
-        type: 'COORDS.RECT', // top container
-        guide: { split: true },
-        unit: [
-            {
-                type: 'COORDS.RECT',
-                guide: {
-                    showGridLines: 'xy',
-                    padding: { l:72, b:4, r:8, t:8 },
-                    y: {label: 'CO2 emission, g/km'},
-                    x: {hide: true}
-                },
-                x: 'car',
-                y: 'co2',
-                unit: [
-                    {type: 'ELEMENT.INTERVAL'}
-                ]
-            },
-            {
-                type: 'COORDS.RECT',
-                guide: {
-                    showGridLines: 'xy',
-                    padding: { l:72, b:124, r:8, t:8 },
-                    y: {label: 'Horse power'},
-                    x: {rotate: 50, textAnchor: 'start'}
-                },
-                x: 'car',
-                y: 'hp',
-                unit: [
-                    {type: 'ELEMENT.POINT'},
-                    {type: 'ELEMENT.LINE'}
-                ]
-            }
-        ]
-    }
-}
-```
+[example](http://jsfiddle.net/bjwLaem1/6/)
 
-[example](http://jsfiddle.net/taucharts/bjwLaem1/)
+Also we can merge layout cells and use padding guide to save both axes while visually "share" coordinates canvas.
 
-But what if you want to draw both bar and line on one grid? In this case you have to share Y axis for both charts. To do that we need to normalize the axis to common values domain by using *tickMin* / *tickMax* properties and set *guide/split* flag to *false* (actually *false* is default value).
-
-```javascript
-{
-    dimensions: {
-        car: {type: 'category'},
-        co2: {type: 'measure'},
-        hp: {type: 'measure'}
-    },
-
-    unit: {
-        type: 'COORDS.RECT',
-        guide: {split: false},
-        unit: [
-            {
-                type: 'COORDS.RECT',
-                guide: {
-                    showGridLines: 'xy',
-                    padding: {l: 72, b: 224, r: 8, t: 8},
-                    // NOTE: use tickMin / tickMax to specify values range
-                    y: {label: {text: 'CO2 emission, g/km', padding: 52}, tickMin: 0, tickMax: 600, autoScale: false},
-                    x: {rotate: 90, textAnchor: 'start', hide: true}
-                },
-                y: 'co2',
-                x: 'car',
-                unit: [
-                    {type: 'ELEMENT.INTERVAL'}
-                ]
-            },
-            {
-                type: 'COORDS.RECT',
-                guide: {
-                    showGridLines: '',
-                    padding: {l: 72, b: 224, r: 8, t: 8},
-                    // NOTE: use tickMin / tickMax to specify values range and also should set autoScale as false
-                    y: {label: 'Horse power (red line)', tickMin: 0, tickMax: 600, autoScale: false},
-                    x: {rotate: 45, textAnchor: 'start'},
-                    color: { brewer: ['color-red'] }
-                },
-                x: 'car',
-                y: 'hp',
-                unit: [
-                    {type: 'ELEMENT.POINT'},
-                    {type: 'ELEMENT.LINE'}
-                ]
-            }
-        ]
-    }
-}
-```
-
-[example](http://jsfiddle.net/taucharts/7tbjnhbj/)
+[example](http://jsfiddle.net/7tbjnhbj/4/)
 
 
 
