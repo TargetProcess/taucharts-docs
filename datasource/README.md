@@ -94,7 +94,11 @@ For example, we have *priority* property in the data. It can be ordered, but Tau
 });
 ```
 
-#### Nested objects in DataSource
+<!---
+
+(((!!!NESTED OBJECTS ARE THE SOURCE OF OBJECTS AND COMPLEXITY!!!)))
+
+#### Nested objects in DataSource (DEPRECATED)
 
 In previous examples we used only primitive values in data.  TauCharts API allows you to pass nested objects as well. In this case you should specify which property is an identity and which property should be on axis ticks.
 
@@ -156,6 +160,7 @@ You can use nested objects to specify *ordered* dimensions:
     }
 });
 ```
+-->
 
 #### Time-based dimensions
 
@@ -209,5 +214,7 @@ The period size for *periodical* scale is specified using [tickPeriod](../basic/
 - year
 
 Also you can define [custom periods](../plugins/customticks.md).
+
+#####NOTE: the periodic scale operates with JavaScript Date objects in a LOCAL timezone. Make sure your data meets this requirement otherwise Taucharts automatically cast data values to browser timezone which can be a source of unobvious errors.
 
 The *time* scale doesn't require special customization, you can use [d3-based time format specifiers](https://github.com/mbostock/d3/wiki/Time-Formatting#format) for *tickFormat* in scale *guide*.
