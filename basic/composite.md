@@ -60,7 +60,7 @@ Here we double source array by generating a new record for each property (i.e co
 
 While "Example 1" should cover 80% of the needs there is a lot of flexibility inside Taucharts DSL to support a special cases.
 
-NOTE: at the moment DSL syntax is not stable enough so the following examples are experimental and you can use them on your own risk. At the same time we are working to provide shortcuts for popular "special cases".
+#####NOTE: at the moment DSL syntax is not stable enough so the following examples are experimental and you can use them on your own risk. At the same time we are working to provide shortcuts for popular "special cases".
 
 What if I don't want to merge domain for "hp" and "co2" variables from the example above? The Taucharts DSL is flexible enough to draw two or more axes for cartesian coordinates. In this example we use several data sources to create two types of cartesian coordinates. One serves as a layout for coordinates composition while the rest represents data itself.
 
