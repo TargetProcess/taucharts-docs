@@ -1,39 +1,51 @@
+Stacked bar chart shows a grouped structure in the data it represents. It is good for comparing relation of part to whole and between other parts.
 
-Horizontal bar chart is very easy to create as well. Here is the datasource:
+Let's take the sample data of sales:
 
 ```javascript
-var defData = [
-        {"team": "d", "cycleTime": 1, "effort": 1, "count": 1, "priority": "low"},
-        ...
-        {"team": "k", "cycleTime": 4, "effort": 6, "count": 8, "priority": "medium"}];
+var data = [
+    { process: 'sales', stage: 'visit', count: 100 },
+    { process: 'sales', stage: 'trial', count: 50  },
+    { process: 'sales', stage: 'buy',   count: 15  },
+    { process: 'sales', stage: 'away',  count: -7  }
+];
+```
+To create a stacked bar - use 'stacked-bar' type in chart definition:
+
+```javascript
+var chart = new tauCharts.Chart({
+    type: 'stacked-bar',
+    x   : 'process',
+    y   : 'count',
+    data: data
+});
 ```
 
-Now just specify 'horizontal-bar' or 'horizontalBar' type to create a horizontal bar chart:
+[example](http://jsfiddle.net/eawan9ym/2/)
+
+Now let's encode each stage with color for better visibility:
 
 ```javascript
 var chart = new tauCharts.Chart({
-            data: defData,
-            type: 'horizontalBar',
-            x: 'effort',
-            y: 'team'
-        });
-chart.renderTo('#bar');
+    type : 'stacked-bar',
+    x    : 'process',
+    y    : 'count',
+    color: 'stage',
+    data : data
+});
 ```
+[example](http://jsfiddle.net/eawan9ym/3/)
 
-[example](http://jsfiddle.net/taucharts/eawan9ym/)
+Also each part of stacked bar chart might be encoded with size. This can be useful to produce funnel-like plots:
 
-
-To define color settings check [encoding](../advanced/encoding.md) section.
-
-The chart below has color parameters for encoding group
 ```javascript
 var chart = new tauCharts.Chart({
-            data: defData,
-            type: 'horizontalBar',
-            x: 'effort',
-            y: 'team',
-            color:'priority'
-        });
-chart.renderTo('#bar');
+    type : 'stacked-bar',
+    x    : 'process',
+    y    : 'count',
+    color: 'stage',
+    size : 'ABS(count)',
+    data : data
+});
 ```
-[example](http://jsfiddle.net/taucharts/7zab04c4/)
+[example](http://jsfiddle.net/eawan9ym/4/)
