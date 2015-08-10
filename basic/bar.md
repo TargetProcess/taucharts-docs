@@ -25,7 +25,7 @@ chart.renderTo('#bar');
 
 To define color settings check [encoding](../advanced/encoding.md) section.
 
-Bellow chart has color parameters for encoding group
+The chart below has color parameters for encoding group
 ```javascript
 var chart = new tauCharts.Chart({
             data: defData,
