@@ -49,3 +49,5 @@ var chart = new tauCharts.Chart({
 });
 ```
 [example](http://jsfiddle.net/eawan9ym/4/)
+
+> NOTE: You can stack numeric data only so make sure the variable you map to "y" axis is a number. Otherwise the "Stacked field [...] should be a number" exception is thrown.
