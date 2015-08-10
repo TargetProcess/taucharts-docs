@@ -8,7 +8,7 @@ var defData = [
         {"team": "k", "cycleTime": 4, "effort": 6, "count": 8, "priority": "medium"}];
 ```
 
-Now just specify 'horizontalBar' type to create a bar chart:
+Now just specify 'horizontal-bar' or ''horizontalBar'' type to create a bar chart:
 
 ```javascript
 var chart = new tauCharts.Chart({
