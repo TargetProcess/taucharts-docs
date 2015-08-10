@@ -15,8 +15,8 @@ To create a horizontal stacked bar - use 'horizontal-stacked-bar' type in chart 
 ```javascript
 var chart = new tauCharts.Chart({
     type: 'horizontal-stacked-bar',
-    x   : 'process',
-    y   : 'count',
+    y   : 'process',
+    x   : 'count',
     data: data
 });
 ```
@@ -41,8 +41,8 @@ Also each part of stacked bar chart might be encoded with size. This can be usef
 ```javascript
 var chart = new tauCharts.Chart({
     type : 'horizontal-stacked-bar',
-    x    : 'process',
-    y    : 'count',
+    y    : 'process',
+    x    : 'count',
     color: 'stage',
     size : 'ABS(count)',
     data : data
