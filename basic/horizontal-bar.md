@@ -8,7 +8,7 @@ var defData = [
         {"team": "k", "cycleTime": 4, "effort": 6, "count": 8, "priority": "medium"}];
 ```
 
-Now just specify 'horizontal-bar' or ''horizontalBar'' type to create a bar chart:
+Now just specify 'horizontal-bar' or 'horizontalBar' type to create a bar chart:
 
 ```javascript
 var chart = new tauCharts.Chart({
@@ -25,7 +25,7 @@ chart.renderTo('#bar');
 
 To define color settings check [encoding](../advanced/encoding.md) section.
 
-Bellow chart has color parameters for encoding group
+The chart below has color parameters for encoding group
 ```javascript
 var chart = new tauCharts.Chart({
             data: defData,
