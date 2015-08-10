@@ -11,6 +11,8 @@
     * [Line](basic/line.md) - K, DONE
     * [Bar](basic/bar.md) - K, DONE
     * [Horizontal bar](basic/horizontal-bar.md) - K, DONE
+    * [Stacked bar](basic/stacked-bar.md)
+    * [Horizontal stacked bar](basic/horizontal-stacked-bar.md)
     * [Facets](basic/facet.md) - V, DONE
     * [Composite charts](basic/composite.md) - V, DONE
     * [Guide](basic/guide.md) - K, DONE
