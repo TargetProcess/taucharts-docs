@@ -8,7 +8,7 @@ Then [prepare data](../datasource/readme.md) you want to use for the chart. The 
 ```javascript
 var chart = new tauCharts.Chart({
             data: datasource,
-            type: 'scatterplot', // scatterplot, line, bar
+            type: 'scatterplot', // scatterplot, line, bar...
             x: 'cycleTime',
             y: 'effort',
             color: 'team',
