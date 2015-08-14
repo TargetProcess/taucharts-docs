@@ -1,12 +1,12 @@
-If you didn't check [1 minute tutorial](1min), please go and read it. We will not repeat these basics here.
+If you didn't check [1 minute tutorial](1min), please go and read it. We will not be repeating the basics here.
 
-##What is TauCharts, finally?
-OK, here is the truth. We are developing [Targetprocess](http://www.targetprocess.com), a visual project management software. We wanted to add a cool reporting inside Targetprocess, but all existing JavaScript charting frameworks lacked functionality we needed. Sounds familiar, huh? We decided to invent our own bicycle and that's how TauCharts were born. TauCharts is open source framework under Apache License 2.0. 
+##What is TauCharts actually?
+OK, here is the story. We are a team of developers and designers behind [Targetprocess](http://www.targetprocess.com), a visual project management software. We wanted to add a cool reporting tool inside Targetprocess, but all of the existing JavaScript charting frameworks lacked critical functionality that we needed. Sounds pretty familiar, huh? So, we decided to invent our own bicycle and that's how TauCharts was born. TauCharts is an open source framework under Apache License 2.0. 
 
 
-##How to create a simple scatterplot chart?
+##How do I create a simple scatterplot chart?
 
-This time we will create a slightly more compelx chart with some additional visual customizations. Here is our data:
+This time we will create a slightly more compelx chart and add some additional visual customizations. Here is our data:
 
 
 ```javascript
@@ -16,7 +16,7 @@ var defData = [
         {"team": "k", "cycleTime": 4, "effort": 6, "count": 8, "priority": "medium"}];
 ```
 
-Now we define a scatterplot chart. We use [guide](../basic/guide.md) parameter to define some visual settings like axes labels, overall paddings and colors for the various categories.
+Now, we'll define a scatterplot chart. We use the [guide](../basic/guide.md) parameter to define some visual settings like axis labels, chart paddings, and custom colors we'll use to color our chart elements.
 
 
 ```javascript
@@ -38,19 +38,19 @@ var chart = new tauCharts.Chart({
         });
 ```
 
-[Example jsBin](http://jsfiddle.net/taucharts/hmvwg1mn/)
+[See the Fiddle](http://jsfiddle.net/taucharts/hmvwg1mn/)
 
-##Work with plugins
-Plugins are under construction. So we can do nothing about that. Sad. But this section takes less than 5 mins to read! Good!
+##Working with plugins
+Plugins are still under construction. So there isn't much we can talk about here. Sad, we know, but this section takes less than a minute to read! Great!
 
 ##Facets: complex and cool
-In TauCharts facet charts group variables using X and Y coordinates. Facet charts help to compare information with many variables.
+In TauCharts facet charts group variables using X and Y coordinates, these charts help us to compare information with many different variables.
 
-Most of other JavaScript charting frameworks doesn't support this type of charts.
+Many other JavaScript charting frameworks don't support this type of chart.
 
-The more complex charts demands more complex definition here. You [read about TauCharts language](../advanced/tauchartslanguage.md) in more details.
+More complex charts require more complex definitions. You can [read about the TauCharts language](../advanced/tauchartslanguage.md)  to get more details.
 
-Basically, we define *units* that will be plotted on a chart and nest them inside each other. Here is a quick example of a facet chart. In this case we have two X axes (gender and age) and two Y axes (hasChild and tshirt). As a result, we have a matrix:
+Basically, we define *units* that will be plotted on a chart and nest them inside each other. Here is a quick example of a facet chart. In this case we have two X axes (gender and age) and two Y axes (hasChild and tshirt). As a result, we have a 2x2 matrix:
 
 
 ```javascript
@@ -84,4 +84,4 @@ var plot = new tauCharts.Plot({
 
 [Example jsFiddle](http://jsfiddle.net/taucharts/d6L9hppe/)
 
-Now we recommend to play with TauCharts and read some additional sections about [Basic concepts](../images/guide.png), then jump into [Advanced topics](../advanced/tauchartslanguage.md).
+Now we recommend that you go play with TauCharts and read some additional information regarding [basic concepts](../images/guide.png)and then jump into more [advanced topics](../advanced/tauchartslanguage.md).
