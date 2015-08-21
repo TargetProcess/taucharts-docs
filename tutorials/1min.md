@@ -1,15 +1,15 @@
 ##What is TauCharts?
-TauCharts is a javascript charting library. It is based on an awesome [D3 framework](http://d3js.org/) and [Grammar of Graphics](http://www.amazon.com/The-Grammar-Graphics-Statistics-Computing/dp/0387245448) concepts.
+TauCharts is a javascript charting library. It is based on the awesome [D3 framework](http://d3js.org/) and [Grammar of Graphics](http://www.amazon.com/The-Grammar-Graphics-Statistics-Computing/dp/0387245448) concepts.
 
-We built TauCharts based on three rules:
+We built TauCharts around three rules:
 
 1. Graphical design is imporant, so we design everything with passion.
 2. Simple charts are easy to create, complex charts are not easy, but possible.
-3. Flexibility is important. [Plugins framework](../plugins/README.md) should be powerful.
+3. Flexibility is important. Its [plugins framework](../plugins/README.md) should be powerful.
 
-##How to create a simple line chart?
+##How do I create a simple line chart?
 
-You have to include d3.js, underscore and taucharts libraries:
+You have to include the d3.js, underscore, and taucharts libraries:
 
 ```html
 <script src="//cdn.jsdelivr.net/d3js/latest/d3.min.js" charset="utf-8"></script>
@@ -17,13 +17,13 @@ You have to include d3.js, underscore and taucharts libraries:
 <script src="//cdn.jsdelivr.net/taucharts/latest/tauCharts.min.js" type="text/javascript"></script>
 ```
 
-Include CSS file:
+Also include the TauCharts CSS file:
 
 ```html
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/taucharts/latest/tauCharts.min.css">
 ```
 
-Then [prepare data](../datasource/README.md) you want to use for the chart. TauCharts accepts data like an array of same-typed objects (it looks like CSV):
+Then [prepare your data](../datasource/README.md) for use with the library. TauCharts accepts data as an array of similarly-typed objects (it looks like CSV):
 
 
 ```javascript
@@ -38,7 +38,7 @@ var datasource = [{
 }];
 ```
 
-Chart definition is extremely simple and speak for itself:
+The actual chart definition is pretty simple and speak for itself:
 
 ```javascript
 var chart = new tauCharts.Chart({
@@ -50,19 +50,19 @@ var chart = new tauCharts.Chart({
 });
 ```
 
-Then you just need to render the chart into some HTML element:
+Then, you can render the chart into some HTML element:
 
 ```html
 <div id='line'>
 ```
 
-Like that:
+Just like this:
 
 ```javascript
 chart.renderTo('#line');
 ```
 
-[example jsFiddle](http://jsfiddle.net/taucharts/u86cseky/)
+[Example jsFiddle](http://jsfiddle.net/taucharts/u86cseky/)
 
-Now find 5 minutes and [read an extended tutorial](5min.md).
+Now, find 5 free minutes and [check out our extended tutorial](5min.md).
 
