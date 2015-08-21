@@ -50,38 +50,28 @@ Many other JavaScript charting frameworks don't support this type of chart.
 
 More complex charts require more complex definitions. You can [read about the TauCharts language](../advanced/tauchartslanguage.md)  to get more details.
 
-Basically, we define *units* that will be plotted on a chart and nest them inside each other. Here is a quick example of a facet chart. In this case we have two X axes (gender and age) and two Y axes (hasChild and tshirt). As a result, we have a 2x2 matrix:
+Basically, we compose coordinates into coordinates to get graph of graphs or table of graphs. Here is a quick example of a facet chart. In this case we have two X axes and two Y axes. As a result, we have a 2x2 matrix:
 
 
 ```javascript
-var plot = new tauCharts.Plot({
-    data: [
-        { name: "John", age: 30, tshirt: 'M', gender: 'Male',   hasChild: true },
-        ...
-        { name: "Jane", age: 28, tshirt: 'L', gender: 'Female', hasChild: true }
-    ],
-    spec: {
-        unit: { // outer X and Y axes
-            type: 'COORDS.RECT',
-            x: 'gender',
-            y: 'hasChild',
-            unit: [
-                {
-                    type: 'COORDS.RECT',
-                    x: 'age',
-                    y: 'tshirt',
-                    unit: [
-                        {
-                            type: 'ELEMENT.POINT' // scatterplot
-                        }
-                    ]
-                }
-            ]
-        }
-    }
-});
+     var chart = new tauCharts.Chart({
+         type: 'scatterplot',
+         x: ['euroEco', 'co2'],
+         y: ['power', 'hp'],
+         data: [
+            { car: "Toyota Prius+", co2: 96,  hp: 99 },
+            { car: "Volvo S60",     co2: 135, hp: 150},
+            ...
+            { car: "BMV X5",        co2: 197, hp: 306}
+         ].map(function(x) {
+             x.euroEco = (x.co2 < 140) ? 'eco' : 'non-eco';
+             x.power = (x.hp < 150) ? 'low' : ((x.hp < 200) ? 'normal' : 'high');
+             return x;
+         })
+     });
+     chart.renderTo('#scatter');
 ```
 
-[Example jsFiddle](http://jsfiddle.net/taucharts/d6L9hppe/)
+[Example jsFiddle](http://jsfiddle.net/taucharts/5c0pmnj1/)
 
-Now we recommend that you go play with TauCharts and read some additional information regarding [basic concepts](../images/guide.png)and then jump into more [advanced topics](../advanced/tauchartslanguage.md).
+Now we recommend that you go play with TauCharts and read some additional information regarding [basic concepts](../images/guide.png) and then jump into more [advanced topics](../advanced/tauchartslanguage.md).
