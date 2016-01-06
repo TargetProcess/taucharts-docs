@@ -95,4 +95,4 @@ Here is how declarative specification transforms to a visual plot in 3 main step
 2. **Calculate Layout**. On this step layout engine traverses tree structure and calculates physical position and size for each item to fit the plot into the given area.
 3. **Draw**. On this stage the engine traverses the layout tree from previous step and calls drawer for each item with corresponding configuration.
 
-The division by these stages allows to control the process and augment behavior on each step using [plugins](plugins/README.md).
+The division by these stages allows to control the process and augment behavior on each step using [plugins](../plugins/README.md).
