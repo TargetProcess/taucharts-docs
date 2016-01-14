@@ -1,15 +1,25 @@
 {
-    "title": "TauCharts is a javascript graph library.",
-    "description": null,
-    "gitbook": "2.x.x",
-    "plugins": ["jsfiddle","disqus","anchors"],
-    "pluginsConfig": {
-      "disqus": {
-        "shortName": "tauchartsapi"
-      },
-      "jsfiddle":{
-        "tabs":["result","js","css", "html"],
-        "height":500
-      }
+  "title": "TauCharts is a javascript graph library.",
+  "description": "TauCharts is a JavaScript charting library. It is based on the [D3](http://d3js.org) framework and 'Grammar of Graphics' concepts.",
+  "gitbook": "2.x.x",
+  "plugins": [
+    "jsfiddle",
+    "disqus",
+    "anchors"
+  ],
+  "pluginsConfig": {
+    "disqus": {
+      "shortName": "tauchartsapi"
+    },
+    "jsfiddle": {
+      "type": "frame",
+      "tabs": [
+        "result",
+        "js",
+        "css",
+        "html"
+      ],
+      "height": 500
     }
+  }
 }
