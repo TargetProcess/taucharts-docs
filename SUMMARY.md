@@ -25,5 +25,4 @@
    * [Scatterplot Matrices](advanced/splom.md)
 * [Plugins](plugins/README.md)
    * [Custom Ticks](plugins/customticks.md)
-* [Releases](releases.md)
 
