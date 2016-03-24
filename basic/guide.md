@@ -37,7 +37,7 @@ x or y describes correspondent axis view. We set axis label to 'Count' and defin
 
 #### autoScale
 
-This property is deprecated and will not be supported in near future. See *nice* below as an alternative.
+This property is deprecated and will not be supported after 1.0.0 release. See *nice* below as an alternative.
 
 #### nice
 
