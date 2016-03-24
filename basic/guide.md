@@ -37,7 +37,9 @@ x or y describes correspondent axis view. We set axis label to 'Count' and defin
 
 #### nice
 
-By default Taucharts engine tries to make axis scale "nice". It tries to start measure scale from 0 and adds some margins to complete scale with "nice" numbers. For example, if original scale domain contains values [8, 20, ... 40], then axis will have ticks from 0 to 45.
+By default Taucharts engine tries to make axis scale "nice". It tries to start measure-based scale from 0 and adds some margins to complete scale with "nice" numbers. For example, if original scale domain contains values [8, 20, ... 40], then axis will have ticks from 0 to 45.
+
+For the time scale *nice* means adding margins to start and complete scale with nearest nice dates.
 
 You can avoid this behavior by setting axis guide property *nice* to false:
 
@@ -48,6 +50,23 @@ guide: {
 ```
 
 In this case axis ticks match borders of the original domain. For example, axis ticks will start from 8 and end with 40 for the sample domain [8, 20, ... 40].
+
+#### min / max
+
+The scale domain can be extended using *min* and *max* properties. The *min* and *max* can't reduce original scale domain and will be ignored in such a cases.
+
+NOTE: the "nicing" will be applied to extended domain by default. Set *nice* property to *false* to avoid such a behavior.
+
+For example, this approach can be used to setup percent scale (0 - 100) while there are no 0 or 100 values in the original data.
+
+```javascript
+data: [{date:"2016-01-01", percent:5} ... {date:"2016-02-22", percent:85}],
+x: "date",
+y: "percent",
+guide: {
+    y: { min: 0, max: 100, nice: false }
+}
+```
 
 #### autoScale
 
