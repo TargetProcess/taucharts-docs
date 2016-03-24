@@ -26,7 +26,7 @@ var chart = new tauCharts.Chart({
 [example](http://jsfiddle.net/taucharts/ry010e5m/)
 
 ##Axis
-x or y describes correspontent axis view. We set axis label to 'Count' and define a padding in pixels.
+x or y describes correspondent axis view. We set axis label to 'Count' and define a padding in pixels.
 ```javascript
   var guide = {
         x:{
@@ -34,6 +34,20 @@ x or y describes correspontent axis view. We set axis label to 'Count' and defin
         }
   }
 ```
+
+#### nice
+
+By default Taucharts engine tries to make axis scale "nice". It tries to start measure scale from 0 and adds some margins to complete scale with "nice" numbers. For example, if original scale domain contains values [8, 20, ... 40], then axis will have ticks from 0 to 45.
+
+You can avoid this behavior by setting axis guide property *nice* to false:
+
+```javascript
+guide: {
+    x: { nice: false }
+}
+```
+
+In this case axis ticks match borders of the original domain. For example, axis ticks will start from 8 and end with 40 for the sample domain [8, 20, ... 40].
 
 #### autoScale
 
