@@ -71,6 +71,7 @@ guide: {
     y: { min: 0, max: 100, nice: false }
 }
 ```
+See example: https://jsfiddle.net/ykycn16p/17/
 
 ## Ticks
 
