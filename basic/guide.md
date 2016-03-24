@@ -35,6 +35,10 @@ x or y describes correspondent axis view. We set axis label to 'Count' and defin
   }
 ```
 
+#### autoScale
+
+This property is deprecated and will not be supported in near future. See *nice* below as an alternative.
+
 #### nice
 
 By default Taucharts engine tries to make axis scale "nice". It tries to start measure-based scale from 0 and adds some margins to complete scale with "nice" numbers. For example, if original scale domain contains values [8, 20, ... 40], then axis will have ticks from 0 to 45.
@@ -57,7 +61,7 @@ The scale domain can be extended using *min* and *max* properties. The *min* and
 
 NOTE: the "nicing" will be applied to extended domain by default. Set *nice* property to *false* to avoid such a behavior.
 
-For example, this approach can be used to setup percent scale (0 - 100) while there are no 0 or 100 values in the original data.
+For example, this approach can be used to setup percent scale (from 0 to 100) while there are no 0 or 100 values in the original data.
 
 ```javascript
 data: [{date:"2016-01-01", percent:5} ... {date:"2016-02-22", percent:85}],
@@ -67,20 +71,6 @@ guide: {
     y: { min: 0, max: 100, nice: false }
 }
 ```
-
-#### autoScale
-
-By default TauCharts engine tries to auto scale axes, it always draws 0 for *measures* and add some ticks to create paddings below the bottom value and above the top value. For example, if you have data values 1, 2, 20, 40, the on axis you will have ticks from 0 to 45.
-
-You can avoid this behaviour by setting axis guide property *autoScale* to false:
-
-```javascript
-guide: {
-    x: { autoScale: false }
-}
-```
-
-In this case axis ticks exactly fit source domain. For example, if you have data values 9, 12 and 89 then ticks will start from 9 and end with 89.
 
 ## Ticks
 
