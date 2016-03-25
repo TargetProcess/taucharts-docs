@@ -18,6 +18,7 @@
    * [Facets](basic/facet.md)
    * [Composite charts](basic/composite.md)
    * [Guide](basic/guide.md)
+   * Settings
 * [Advanced concepts](advanced/README.md)
    * [Tau Chart Language](advanced/tauchartslanguage.md)
    * [Coordinates](advanced/coordinates.md)
