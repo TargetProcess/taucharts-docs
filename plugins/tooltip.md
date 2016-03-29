@@ -76,6 +76,7 @@ It is a hash object where key is a name of original property and value is a *{la
         tauCharts.api.plugins.get('tooltip')({
             // will see only name and age on tooltip
             formatters: {
+                // weight will be displayed as                // Person Weight: 50
                 age: {label: "Person Age", format: "03d"},    // Person Age   : 018
                 height: {
                     label: "Person Height",
@@ -87,7 +88,6 @@ It is a hash object where key is a name of original property and value is a *{la
                 name: function (str) {
                     return str.toUpperCase();                 // name         : ANN
                 }
-                // weight will be displayed as                // Person Weight: 50
             }
         })
     ]
