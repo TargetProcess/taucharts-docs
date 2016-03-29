@@ -24,7 +24,7 @@ There are some settings to customize a tooltip behavior.
 
 By default the plugin displays all properties from the data row.
 
-The *fields* property allows to specify which properties from a row to show on a tooltip.
+The **fields** property allows to specify which properties from a row to show on a tooltip.
 
 ```javascript
 {
@@ -50,7 +50,7 @@ The *fields* property allows to specify which properties from a row to show on a
 
 By default the plugin formats displayed properties according to a chart guide or leaves them as is.
 
-The *formatters* property allows to rename displayed property name and specify format for property value.
+The **formatters** property allows to rename displayed property name and specify format for property value.
 
 It is a hash object where key is a name of original property and value is a *{label, value}* object:
 
@@ -79,7 +79,7 @@ It is a hash object where key is a name of original property and value is a *{la
                         return (n + " cm");                 // 170 cm
                     }
                 },
-                // short notation
+                // (!) short notation
                 name: function (str) {
                     return str.toUpperCase();
                 }
