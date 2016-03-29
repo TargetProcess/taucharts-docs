@@ -16,11 +16,11 @@ Here is a code to apply plugin:
 }
 ```
 
-### Tooltip settings
+## Tooltip settings
 
 There are some settings to customize a tooltip behavior.
 
-### fields
+#### fields
 
 By default the plugin displays all properties from the data row.
 
@@ -46,11 +46,11 @@ The *fields* property allows to specify which properties from a row to show on a
 }
 ```
 
-### formatters
+#### formatters
 
-By default the plugin displays all properties from the data row.
+By default the plugin formats displayed properties according to chart guide or leave them them as is.
 
-The *fields* property allows to specify which properties from a row to show on a tooltip.
+The *formatters* property allows to rename displayed property name and specify formatter for property value.
 
 ```javascript
 {
