@@ -63,6 +63,10 @@ It is a hash object where key is a name of original property and value is a *{la
     x: 'weight',
     y: 'height',
     color: 'gender',
+    guide: {
+        x: {label: "Person Weight"},
+        y: {label: "Bla bla Height"}
+    },
     data: [
         {weight: 65, height: 170, gender: 'male',   age: 25, name: 'Konstantin'},
         ...
@@ -72,18 +76,18 @@ It is a hash object where key is a name of original property and value is a *{la
         tauCharts.api.plugins.get('tooltip')({
             // will see only name and age on tooltip
             formatters: {
-                weight: {label: "Weight", format: "04d"},    // 0065
+                age: {label: "Person Age", format: "03d"},    // Person Age   : 018
                 height: {
-                    label: "Height",
+                    label: "Person Height",
                     format: function (n) {
-                        return (n + " cm");                 // 170 cm
+                        return (n + " cm");                   // Person Height: 160 cm
                     }
                 },
                 // (!) short notation
                 name: function (str) {
-                    return str.toUpperCase();
+                    return str.toUpperCase();                 // name         : ANN
                 }
-                // age will be displayed as is
+                // weight will be displayed as                // Person Weight: 50
             }
         })
     ]
