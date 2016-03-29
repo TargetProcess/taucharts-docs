@@ -72,10 +72,10 @@ It is a hash object where key is a name of original property and value is a *{la
         tauCharts.api.plugins.get('tooltip')({
             // will see only name and age on tooltip
             formatters: {
-                weight: {label: "Weight", value: "04d"},    // 0065
+                weight: {label: "Weight", format: "04d"},    // 0065
                 height: {
                     label: "Height",
-                    value: function (n) {
+                    format: function (n) {
                         return (n + " cm");                 // 170 cm
                     }
                 },
