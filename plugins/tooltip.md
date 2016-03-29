@@ -48,9 +48,14 @@ The *fields* property allows to specify which properties from a row to show on a
 
 #### formatters
 
-By default the plugin formats displayed properties according to chart guide or leave them them as is.
+By default the plugin formats displayed properties according to a chart guide or leaves them as is.
 
-The *formatters* property allows to rename displayed property name and specify formatter for property value.
+The *formatters* property allows to rename displayed property name and specify format for property value.
+
+It is a hash object where key is a name of original property and value is a *{label, value}* object:
+
+* The **label** (*string*) allows to rename default property name
+* The **value** (*function* or [*d3 format string*](https://github.com/mbostock/d3/wiki/Formatting)) allows to specify formatter for property value.
 
 ```javascript
 {
@@ -66,8 +71,23 @@ The *formatters* property allows to rename displayed property name and specify f
     plugins: [
         tauCharts.api.plugins.get('tooltip')({
             // will see only name and age on tooltip
-            fields: ['name', 'age']
+            formatters: {
+                weight: {label: "Weight", value: "04d"},    // 0065
+                height: {
+                    label: "Height",
+                    value: function (n) {
+                        return (n + " cm");                 // 170 cm
+                    }
+                },
+                // short notation
+                name: function (str) {
+                    return str.toUpperCase();
+                }
+                // age will be displayed as is
+            }
         })
     ]
 }
 ```
+
+Once you don't want to change displayed property name there is a short notation. Instead of the a *{label / value}* object - specify value formatter directly.
