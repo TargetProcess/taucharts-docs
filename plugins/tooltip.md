@@ -52,10 +52,10 @@ By default the plugin formats displayed properties according to a chart guide or
 
 The **formatters** property allows to rename displayed property name and specify format for property value.
 
-It is a hash object where key is a name of original property and value is a *{label, value}* object:
+It is a hash object where key is a name of original property and value is a *{label, format}* object:
 
 * The **label** (*string*) allows to rename default property name
-* The **value** (*function* or [*d3 format string*](https://github.com/mbostock/d3/wiki/Formatting)) allows to specify formatter for property value.
+* The **format** (*function* or [*d3 format string*](https://github.com/mbostock/d3/wiki/Formatting)) allows to specify formatter for property value.
 
 ```javascript
 {
@@ -90,4 +90,4 @@ It is a hash object where key is a name of original property and value is a *{la
 }
 ```
 
-Once you don't want to change displayed property name there is a short notation. Instead of the a *{label / value}* object - specify value formatter directly.
+Once you don't want to change displayed property name there is a short notation. Instead of the a *{label / format}* object - specify value formatter directly.
