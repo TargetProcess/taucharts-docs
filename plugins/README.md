@@ -3,7 +3,7 @@ Plugins are in progress, folks. Stay tuned.
 List of future plugins:
 
 * Regression lines
-* Tooltips
+* Tooltip
 * Axes projection
 * Brushing
 * Legend
