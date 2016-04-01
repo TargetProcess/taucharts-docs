@@ -74,6 +74,9 @@ It is a hash object where key is a name of original property and value is a *{la
     ],
     plugins: [
         tauCharts.api.plugins.get('tooltip')({
+        
+            fields: ['weight', 'age', 'height', 'name'],
+        
             // will see only name and age on tooltip
             formatters: {
                 // weight will be displayed as                // Person Weight: 50
