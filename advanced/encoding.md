@@ -69,6 +69,7 @@ var chart = new tauCharts.Chart({
 
 [Example](https://jsfiddle.net/tcw7rna4/)
 
+## Custom colors with *Cynthia Brewer*
 You can set custom colors to encode color value or use bundles from a nice categorical color scales by [Cynthia Brewer](http://colorbrewer2.org/).
 If you want to use color brewer, you should include the following code into your pages:
 
