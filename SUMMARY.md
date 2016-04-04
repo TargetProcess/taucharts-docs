@@ -25,6 +25,7 @@
    * [Elements](advanced/elements.md)
    * [Visual encoding / Color](advanced/encoding.md)
    * [Scatterplot Matrices](advanced/splom.md)
+   * Visual encoding / Size
 * [Plugins](plugins/README.md)
    * [Custom Ticks](plugins/customticks.md)
    * [Tooltip](plugins/tooltip.md)
