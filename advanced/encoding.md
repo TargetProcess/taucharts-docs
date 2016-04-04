@@ -2,10 +2,13 @@
 
 The Taucharts color scale behaves differently for a measure and nominal variables.
 
+### Color gradient
 A brewer for measure variable is defined using array of color codes. These colors define a continues color gradient.
 
 [Color Gradient Example](https://jsfiddle.net/ojb039vr/2/)
 
+
+### Nominal color scale
 A brewer for nominal variable can be defined in several ways using color codes or CSS classes and handled as a discrete set of colors.
 
 There are 2 ways to define color brewer for nominal color scale:
@@ -69,7 +72,7 @@ var chart = new tauCharts.Chart({
 
 [Example](https://jsfiddle.net/tcw7rna4/)
 
-## Custom colors with *Cynthia Brewer*
+#### Custom colors with *Cynthia Brewer*
 You can set custom colors to encode color value or use bundles from a nice categorical color scales by [Cynthia Brewer](http://colorbrewer2.org/).
 If you want to use color brewer, you should include the following code into your pages:
 
