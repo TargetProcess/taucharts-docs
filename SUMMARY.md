@@ -23,7 +23,7 @@
    * [Tau Chart Language](advanced/tauchartslanguage.md)
    * [Coordinates](advanced/coordinates.md)
    * [Elements](advanced/elements.md)
-   * [Visual encoding / Color and Size](advanced/encoding.md)
+   * [Visual encoding / Color](advanced/encoding.md)
        * Visual encoding / Size
    * [Scatterplot Matrices](advanced/splom.md)
 * [Plugins](plugins/README.md)
