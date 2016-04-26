@@ -37,10 +37,12 @@ new tauCharts.Chart({
 
 [Example](http://jsfiddle.net/oLcub5h3/)
 
+#### minSize / maxSize
+
 By default Taucharts tries to infer optimal size scale for a given chart size. While the size scale can be customized by *minSize / maxSize* parameters of *guide.size* section:
 - *guide.size.minSize* specifies minimal size of element.
 - *guide.size.maxSize* specifies maximal size of element.
 
-NOTE: minSize / maxSize specify absolute limits for any container size which may look ugly when user resize the chart.
+**NOTE**: *minSize / maxSize* specify absolute limits for any container size which may look ugly when user resize the chart.
 
 [Example](http://jsfiddle.net/ugL0wkab/)
