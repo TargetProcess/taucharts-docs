@@ -63,4 +63,4 @@ new tauCharts.Chart({
 ```
 [Example](http://jsfiddle.net/0bu5oo8b/)
 
-See [size encoding](advanced/) for detailed reference.
+See [size encoding](advanced/visual_encoding__size.md) for detailed reference.
