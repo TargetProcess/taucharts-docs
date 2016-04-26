@@ -9,7 +9,7 @@ new tauCharts.Chart({
   x: 'longitude',
   y: 'latitude',
   text: 'place',
-  size: 'survivors',
+  size: 'survivors', // encode amount of survivors by line width
   split: 'group',
   color: 'direction',
   data: [...]
