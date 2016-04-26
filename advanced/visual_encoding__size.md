@@ -15,7 +15,7 @@ new tauCharts.Chart({
   data: [...]
 })
 ```
-[Example](http://jsfiddle.net/md2ap6gh/)
+[Example](http://jsfiddle.net/0bu5oo8b/)
 
 Apply *size encoding* by assigning measure variable to **size** parameter.
 
