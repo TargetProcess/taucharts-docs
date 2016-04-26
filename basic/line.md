@@ -1,60 +1,51 @@
-Let's create a simple line chart. For example, count of entities that were completed by month.
+Let's create a simple line chart. For example, let's plot *sin()* and *cos()* functions on one chart.
 
 Here is our datasource:
 
 ```javascript
-var defData = [{
-  type:'us', count:0, date:'12-2013'
-},{
-  type:'us', count:10, date:'01-2014'
-},{
-  type:'us', count:15, date:'02-2014'
-},
-...
-{
-  type:'bug', count:23, date:'05-2014'
-}];
+function data() {
+	return (_
+      .times(100, function (i) {return i;})
+      .reduce(function (memo, x) {
+          var i = x / 100;
+          return memo.concat([
+            {type: 'sin', i: i, val: Math.sin(i)},
+            {type: 'cos', i: i, val: Math.cos(i)}
+          ]);
+      }, []));
+}
 ```
 
-Red line shows bugs and blue line shows user stories. Colors coding is defined in *guide* property.
+Let's take red line shows *sin()* and green shows *cos()*. Colors brewer is defined in *guide.color.brewer* property.
 
 ```javascript
-var chart = new tauCharts.Chart({
-    guide: {
-        padding: {l: 70, t: 10, b: 70, r: 10},
-        showGridLines: 'xy',
-        color: {
-            brewer: { // set color for every 'type' in datasource
-                us: 'color-us',
-                bug: 'color-bug'
-            }
-        },
-        y: {
-            label: {
-                text: 'Count of completed entities',
-                padding: 50
-            }
-        },
-        x: {
-            label: 'Month'
-        }
-    },
-    data: defData,
+new tauCharts.Chart({
+    data: data(),
     type: 'line',
-    x: 'date',
-    y: 'count',
-    color: 'type' // we have two types in datasource, so there will be two lines on the chart
-});
-
-chart.renderTo('#line');
-
+    x: 'i',
+    y: 'val',
+    color: 'type',
+    guide: {
+    	color: {
+          brewer: { sin: '#ff0000', cos: '#00ff00' }
+        }
+    }
+}).renderTo('#target');
 ```
 
-Use [guide](guide.md) property for visual settings.
+See [guide](guide.md) reference for another sophisticated settings.
 
-[example jsFiddle](http://jsfiddle.net/taucharts/4o4z6fqn/)
+[Example](http://jsfiddle.net/taucharts/4vgoddao/)
 
-Let's consider more complex example of line chart.
+#### split
+By default data chunks for a line chart are split by color parameter. Taucharts gives the **split** parameter as an additional way to split data for lines. It is useful when you need to draw separate lines per *property A* and colorize them (optionally) by another *property B*.
+
+Here is an example:
+
+[Example](http://jsfiddle.net/oqyu0j2n/)
+
+#### size
+Taucharts allows lines of variable width.
 
 Minard's ["Figurative map of the successive losses of men in the French army during the Russian campaign, 1812-1813"](https://en.wikipedia.org/wiki/Charles_Joseph_Minard) is now one of the most famous statistical graphics, thanks to Tufte. Example below demonstrates how to build it using Taucharts:
 
@@ -72,9 +63,4 @@ new tauCharts.Chart({
 ```
 [Example](http://jsfiddle.net/0bu5oo8b/)
 
-#### split
-By default data chunks for a line chart are split by color parameter. Taucharts gives the **split** parameter as an additional way to split data for lines. It is useful when you need to draw separate lines per *property A* and colorize them (optionally) by another *property B*.
-
-Here is an example:
-
-[Example](http://jsfiddle.net/oqyu0j2n/)
+See [size encoding](advanced/) for detailed reference.
