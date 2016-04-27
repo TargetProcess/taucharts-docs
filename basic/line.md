@@ -45,7 +45,7 @@ Here is an example:
 [Example](http://jsfiddle.net/oqyu0j2n/)
 
 #### size
-Taucharts allows lines of variable width.
+Taucharts allows to build lines of variable width.
 
 Minard's ["Figurative map of the successive losses of men in the French army during the Russian campaign, 1812-1813"](https://en.wikipedia.org/wiki/Charles_Joseph_Minard) is now one of the most famous statistical graphics, thanks to Tufte. Example below demonstrates how to build it using Taucharts:
 
