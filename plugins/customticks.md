@@ -67,3 +67,7 @@ tauChart.api.tickFormat.add("quarter", function(x) {
     return 'Q' + (q + 1) + ' ' + d.getFullYear();
 })
 ```
+
+Custom format specifiers are useful for ticks localization.
+
+See example of such localization: http://jsfiddle.net/qvqn12zg/
