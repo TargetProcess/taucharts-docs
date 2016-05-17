@@ -88,7 +88,7 @@ In the example below ticks on *x* axis are formatted using SI-prefix (e.g. "2200
         x:{ tickFormat: 's' }
   }
 ```
-Custom format specifiers can be defined:
+[Custom format specifiers](//api.taucharts.com/plugins/customticks.html#how-to-add-a-custom-tick-format) can be defined:
 ```javascript
 // register formatter by a string key
 tauCharts.api.tickFormat.add('string_key', function (originalValue) { /* formatter */ })
