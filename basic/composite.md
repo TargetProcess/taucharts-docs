@@ -54,7 +54,7 @@ var co2_vs_hp_by_cars_chart = new tauCharts.Chart({
 
 Here we double source array by generating a new record for each property (i.e co2 and hp) and introduce two new variables "co2,hp" and "co2-hp-type". This is some kind of "unpacking meta-data". The "co2,hp" variable become a new composite axis while "co2-hp-type" variable is used to split geoms by color. 
 
-[example](http://jsfiddle.net/cdmjp86t/10/)
+[example](https://jsfiddle.net/taucharts/nLdac8sc/)
 
 #### Example 2: Visual experiments
 
