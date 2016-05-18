@@ -29,4 +29,4 @@ http://jsfiddle.net/taucharts/9hzfoqop/
 These settings control minimal padding between tick text and tick border on ordinal scale.
 It is 0.25 by default.
 See example where yDensityPadding is set to 30 and xDensityPadding is set to 1:
-https://jsfiddle.net/x2aan84d/
+http://jsfiddle.net/taucharts/p3jtgt4j/
