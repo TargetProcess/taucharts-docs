@@ -5,7 +5,7 @@ The Taucharts color scale behaves differently for a measure and nominal variable
 ### Color gradient
 A brewer for measure variable is defined using array of color codes. These colors define a continues color gradient.
 
-[Color Gradient Example](https://jsfiddle.net/ojb039vr/2/)
+[Color Gradient Example](//jsfiddle.net/taucharts/xsrjtbg1/)
 
 
 ### Nominal color scale
