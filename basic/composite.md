@@ -64,11 +64,11 @@ While "Example 1" should cover 80% of the needs there is a lot of flexibility in
 
 What if I don't want to merge domain for "hp" and "co2" variables from the example above? The Taucharts DSL is flexible enough to draw two or more axes for cartesian coordinates. In this example we use several data sources to create two types of cartesian coordinates. One serves as a layout for coordinates composition while the rest represents data itself.
 
-[example](http://jsfiddle.net/bjwLaem1/8/)
+[example](https://jsfiddle.net/taucharts/2z1s9mw1/)
 
 Also we can merge layout cells and use padding guide to save both axes while visually "share" coordinates canvas.
 
-[example](http://jsfiddle.net/7tbjnhbj/5/)
+[example](https://jsfiddle.net/taucharts/7cbthzLu/)
 
 
 
