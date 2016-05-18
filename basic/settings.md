@@ -22,7 +22,7 @@ This setting defines which strategy to use to embed a chart into a container.
 Possible values: **minimal** / **entire-view** / **fit-width** / **fit-height** / **normal** (default value).
 
 See example:
-https://jsfiddle.net/Lggk4f1c/
+http://jsfiddle.net/taucharts/9hzfoqop/
 
 #### xDensityPadding / yDensityPadding
 
