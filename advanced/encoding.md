@@ -70,7 +70,7 @@ var chart = new tauCharts.Chart({
 });
 ```
 
-[Example](https://jsfiddle.net/tcw7rna4/)
+[Example](http://jsfiddle.net/taucharts/ayxhavku/)
 
 #### Custom colors with *Cynthia Brewer*
 You can set custom colors to encode color value or use bundles from a nice categorical color scales by [Cynthia Brewer](http://colorbrewer2.org/).
