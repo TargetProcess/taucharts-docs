@@ -64,8 +64,6 @@ chart.renderTo('#line');
 chart.renderTo(document.getElementById('#line'));
 ```
 
-or 
-
 [Example jsFiddle](http://jsfiddle.net/taucharts/u86cseky/)
 
 Now, find 5 free minutes and [check out our extended tutorial](5min.md).
