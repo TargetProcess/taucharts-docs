@@ -50,17 +50,21 @@ var chart = new tauCharts.Chart({
 });
 ```
 
-Then, you can render the chart into some HTML element:
+Then, you can render the chart into some HTML element (container):
 
 ```html
 <div id='line'>
 ```
 
-Just like this:
+You can reference container using selector or pass a DOM element:
 
 ```javascript
 chart.renderTo('#line');
+// or
+chart.renderTo(document.getElementById('#line'));
 ```
+
+or 
 
 [Example jsFiddle](http://jsfiddle.net/taucharts/u86cseky/)
 
