@@ -1,6 +1,6 @@
 ## Scatterplot Matrices (SPLOMs)
 
-The [scatterplot matrix](http://junkcharts.typepad.com/junk_charts/2010/06/the-scatterplot-matrix-a-great-tool.html) (SPLOM) was invented by John Hartigan (1975). The SPLOM replaces the numbers in a covariance or correlation matrix with the scatterplots of the data on which they were computed. In other words, it allows visually search most interesting correlations between parameters in the data set.
+The [scatterplot matrix](https://junkcharts.typepad.com/junk_charts/2010/06/the-scatterplot-matrix-a-great-tool.html) (SPLOM) was invented by John Hartigan (1975). The SPLOM replaces the numbers in a covariance or correlation matrix with the scatterplots of the data on which they were computed. In other words, it allows visually search most interesting correlations between parameters in the data set.
 
 Let's check an example. There is a data source with car characteristics:
 
@@ -83,5 +83,5 @@ and build a facet that visualizes correlation. In this case we have three catego
 }
 ```
 
-[Example](http://jsfiddle.net/taucharts/814f5caL/)
+[Example](https://jsfiddle.net/taucharts/814f5caL/)
 

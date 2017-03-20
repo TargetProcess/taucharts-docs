@@ -38,7 +38,7 @@ var chart = new tauCharts.Chart({
         });
 ```
 
-[See the Fiddle](http://jsfiddle.net/taucharts/hmvwg1mn/)
+[See the Fiddle](https://jsfiddle.net/taucharts/hmvwg1mn/)
 
 ##Working with plugins
 Plugins are still under construction. So there isn't much we can talk about here. Sad, we know, but this section takes less than a minute to read! Great!
@@ -72,6 +72,6 @@ Basically, we compose coordinates into coordinates to get graph of graphs or tab
      chart.renderTo('#scatter');
 ```
 
-[Example jsFiddle](http://jsfiddle.net/taucharts/5c0pmnj1/)
+[Example jsFiddle](https://jsfiddle.net/taucharts/5c0pmnj1/)
 
 Now we recommend that you go play with TauCharts and read some additional information regarding [basic concepts](../images/guide.png) and then jump into more [advanced topics](../advanced/tauchartslanguage.md).

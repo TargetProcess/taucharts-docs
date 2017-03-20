@@ -21,7 +21,7 @@ var chart = new tauCharts.Chart({
 });
 ```
 
-[example](http://jsfiddle.net/eawan9ym/2/)
+[example](https://jsfiddle.net/eawan9ym/2/)
 
 Now let's encode each stage with color for better visibility:
 
@@ -34,7 +34,7 @@ var chart = new tauCharts.Chart({
     data : data
 });
 ```
-[example](http://jsfiddle.net/eawan9ym/3/)
+[example](https://jsfiddle.net/eawan9ym/3/)
 
 Also each part of stacked bar chart might be encoded with size. This can be useful to produce funnel-like plots:
 
@@ -48,6 +48,6 @@ var chart = new tauCharts.Chart({
     data : data
 });
 ```
-[example](http://jsfiddle.net/eawan9ym/4/)
+[example](https://jsfiddle.net/eawan9ym/4/)
 
 > NOTE: You can stack numeric data only so make sure the variable you map to "y" axis is a number. Otherwise the "Stacked field [...] should be a number" exception is thrown.

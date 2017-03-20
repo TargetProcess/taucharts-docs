@@ -20,7 +20,7 @@ var chart = new tauCharts.Chart({
 chart.renderTo('#bar');
 ```
 
-[example](http://jsfiddle.net/taucharts/ryaobh0w/)
+[example](https://jsfiddle.net/taucharts/ryaobh0w/)
 
 
 To define color settings check [encoding](../advanced/encoding.md) section.
@@ -36,4 +36,4 @@ var chart = new tauCharts.Chart({
         });
 chart.renderTo('#bar');
 ```
-[example](http://jsfiddle.net/taucharts/6mdLrj6o/)
+[example](https://jsfiddle.net/taucharts/6mdLrj6o/)

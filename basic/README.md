@@ -20,7 +20,7 @@ The `renderTo` method will accept one parameter: either a CSS selector or a DOM 
 
 As a result, you will have the chart like that:
 
-[example jsFiddle](http://jsfiddle.net/taucharts/6m31vccv/)
+[example jsFiddle](https://jsfiddle.net/taucharts/6m31vccv/)
 
 
 Currently supported chart types: [scatterplot](scatterplot.md), [line](line.md), [bar](bar.md)

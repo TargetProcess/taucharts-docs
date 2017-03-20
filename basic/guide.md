@@ -23,7 +23,7 @@ var chart = new tauCharts.Chart({
     size: 'count'
 });
 ```
-[example](http://jsfiddle.net/taucharts/ry010e5m/)
+[example](https://jsfiddle.net/taucharts/ry010e5m/)
 
 ##Axis
 x or y describes correspondent axis view. We set axis label to 'Count' and define a padding in pixels.
@@ -104,7 +104,7 @@ tauCharts.api.tickFormat.add('string_key', function (originalValue) { /* formatt
 ```
 Custom format specifiers are useful for ticks localization.
 
-See example of such localization: http://jsfiddle.net/qvqn12zg/
+See example of such localization: https://jsfiddle.net/qvqn12zg/
 
 #### tickPeriod
 

@@ -20,7 +20,7 @@ var plot = new tauCharts.Chart({
 });
 ```
 
-[example jsFiddle](http://jsfiddle.net/taucharts/q4ka1aw4/)
+[example jsFiddle](https://jsfiddle.net/taucharts/q4ka1aw4/)
 
 TauCharts requires the source data to be provided in a form of structured table which can be expressed in javascript as an array of same-typed objects (e.g. in example above: name, age, gender, hasChild).
 

@@ -35,14 +35,14 @@ new tauCharts.Chart({
 
 See [guide](guide.md) reference for another sophisticated settings.
 
-[Example](http://jsfiddle.net/taucharts/4vgoddao/)
+[Example](https://jsfiddle.net/taucharts/4vgoddao/)
 
 #### split
 By default data chunks for a line chart are split by color parameter. Taucharts gives the **split** parameter as an additional way to split data for lines. It is useful when you need to draw separate lines per *property A* and colorize them (optionally) by another *property B*.
 
 Here is an example:
 
-[Example](http://jsfiddle.net/oqyu0j2n/)
+[Example](https://jsfiddle.net/oqyu0j2n/)
 
 #### size
 Taucharts allows to build lines of variable width.
@@ -61,6 +61,6 @@ new tauCharts.Chart({
   data: [...]
 })
 ```
-[Example](http://jsfiddle.net/0bu5oo8b/)
+[Example](https://jsfiddle.net/0bu5oo8b/)
 
-See [size encoding](http://api.taucharts.com/advanced/visual_encoding__size.html) for a details.
+See [size encoding](https://api.taucharts.com/advanced/visual_encoding__size.html) for a details.

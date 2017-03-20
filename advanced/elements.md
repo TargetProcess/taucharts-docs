@@ -41,7 +41,7 @@ var lineElement = {
                 spec: lineElement
             }).renderTo('#line-element');
 ```
-[jsBin](http://jsfiddle.net/taucharts/54z1n2od/)
+[Example](https://jsfiddle.net/taucharts/54z1n2od/)
 ##Point
 Point element draws a point. It has the following parameters:
 
@@ -112,7 +112,7 @@ and you create a chart with parameters:
 ```
 the result is two lines:
 
-[Example](http://jsfiddle.net/taucharts/n6c70f2L/)
+[Example](https://jsfiddle.net/taucharts/n6c70f2L/)
 
 ##Interval
 
@@ -148,7 +148,7 @@ var bar = new tauCharts.Plot({
     spec: intervalElement
 }).renderTo('#interval-element');
 ```
-[Example](http://jsfiddle.net/taucharts/awk2nm61/)
+[Example](https://jsfiddle.net/taucharts/awk2nm61/)
 
 *Color* property groups data into several bars of different colors. For example, if you have data like:
 ```javascript
@@ -246,7 +246,7 @@ var bar = new tauCharts.Plot({
     spec: intervalElement
 }).renderTo('#interval-element');
 ```
-[Example](http://jsfiddle.net/taucharts/e6xem9f0/)
+[Example](https://jsfiddle.net/taucharts/e6xem9f0/)
 if you wont create horizontal interval you should set flip property to true
 ```javascript
 var intervalElement = {
@@ -280,4 +280,4 @@ var bar = new tauCharts.Plot({
     spec: intervalElement
 }).renderTo('#interval-element');
 ```
-[Example](http://jsfiddle.net/taucharts/2fa0wd52/)
+[Example](https://jsfiddle.net/taucharts/2fa0wd52/)
