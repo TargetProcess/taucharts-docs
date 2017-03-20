@@ -7,7 +7,6 @@
    * [1 min tutorial](tutorials/1min.md)
    * [5 mins tutorial](tutorials/5min.md)
 * [Data source / dimensions](datasource/README.md)
-   * Chart settings
 * [Basic concepts](basic/README.md)
    * [Scatterplot](basic/scatterplot.md)
    * [Line](basic/line.md)
