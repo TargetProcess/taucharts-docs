@@ -4,8 +4,8 @@ Here is our datasource:
 
 ```javascript
 function data() {
-	return (_
-      .times(100, function (i) {return i;})
+	return (Array.from({length:100})
+      .map(function (e,i) {return i;})
       .reduce(function (memo, x) {
           var i = x / 100;
           return memo.concat([
@@ -35,14 +35,14 @@ new tauCharts.Chart({
 
 See [guide](guide.md) reference for another sophisticated settings.
 
-[Example](https://jsfiddle.net/taucharts/4vgoddao/)
+[Example](https://jsfiddle.net/taucharts/mymLjpyj/)
 
 #### split
 By default data chunks for a line chart are split by color parameter. Taucharts gives the **split** parameter as an additional way to split data for lines. It is useful when you need to draw separate lines per *property A* and colorize them (optionally) by another *property B*.
 
 Here is an example:
 
-[Example](https://jsfiddle.net/oqyu0j2n/)
+[Example](https://jsfiddle.net/taucharts/cv7jkhjx/)
 
 #### size
 Taucharts allows to build lines of variable width.

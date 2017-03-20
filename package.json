@@ -18,7 +18,7 @@
     "gitbook-plugin-jsfiddle": "1.0.0"
   },
   "scripts": {
-    "start":"gitbook build"
+    "start": "gitbook build"
   },
   "repository": {
     "type": "git",
