@@ -25,6 +25,7 @@
    * [Visual encoding / Color](advanced/encoding.md)
    * [Visual encoding / Size](advanced/visual_encoding__size.md)
    * [Scatterplot Matrices](advanced/splom.md)
+   * [Rendering performance](advanced/performance.md)
 * [Plugins](plugins/README.md)
    * [Custom Ticks](plugins/customticks.md)
    * [Tooltip](plugins/tooltip.md)

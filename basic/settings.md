@@ -30,3 +30,11 @@ These settings control minimal padding between tick text and tick border on ordi
 It is 0.25 by default.
 See example where yDensityPadding is set to 30 and xDensityPadding is set to 1:
 https://jsfiddle.net/taucharts/p3jtgt4j/
+
+#### animationSpeed
+
+Controls the duration of elements animation. By default it is `750` ms. Set `0` to disable animation.
+
+#### asyncRendering
+
+Setting `asyncRendering: true` will make a browser more responsive, when rendering charts with large amount of data and facets. See more info about asynchronous rendering [here](../advanced/performance.md).
