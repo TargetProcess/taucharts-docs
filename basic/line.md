@@ -64,3 +64,19 @@ new tauCharts.Chart({
 [Example](https://jsfiddle.net/0bu5oo8b/)
 
 See [size encoding](https://api.taucharts.com/advanced/visual_encoding__size.html) for a details.
+
+#### guide.showAnchors
+Defines when to show anchors:
+* `hover` (default) - anchor will appear when user points a cursor over it.
+* `always` - anchors will always be visible.
+* `never` - anchors will not be displayed.
+
+```javascript
+new tauCharts.Chart({
+  ...
+  guide: {
+    showAnchors: 'always'
+  }
+})
+```
+[Example](https://jsfiddle.net/mymLjpyj/2/)
