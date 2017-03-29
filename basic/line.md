@@ -80,3 +80,21 @@ new tauCharts.Chart({
 })
 ```
 [Example](https://jsfiddle.net/mymLjpyj/2/)
+
+#### guide.interpolate
+Line points can be connected using straight polyline or a smooth line:
+* `linear` - default polyline.
+* `smooth` - smooth curve, suits for interpolating math data.
+* `smooth-keep-extremum` - curve which doesn't exceed point values, suites for business data.
+* `step`, `step-before`, `step-after` - connects points using steps.
+
+```javascript
+new tauCharts.Chart({
+  ...
+  guide: {
+    interpolate: 'smooth-keep-extremum'
+  }
+})
+```
+
+[Example](https://jsfiddle.net/6mdLrj6o/28/)
