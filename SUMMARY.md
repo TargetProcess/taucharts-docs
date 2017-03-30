@@ -14,6 +14,7 @@
    * [Horizontal bar](basic/horizontal-bar.md)
    * [Stacked bar](basic/stacked-bar.md)
    * [Horizontal stacked bar](basic/horizontal-stacked-bar.md)
+   * [Stacked area](basic/stacked-area.md)
    * [Facets](basic/facet.md)
    * [Composite charts](basic/composite.md)
    * [Guide](basic/guide.md)
@@ -29,4 +30,5 @@
 * [Plugins](plugins/README.md)
    * [Custom Ticks](plugins/customticks.md)
    * [Tooltip](plugins/tooltip.md)
+   * [Creating a plugin](plugins/create-plugin.md)
 
