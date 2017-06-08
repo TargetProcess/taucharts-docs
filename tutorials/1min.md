@@ -9,10 +9,10 @@ We built TauCharts around three rules:
 
 ##How do I create a simple line chart?
 
-You have to include the d3.js, underscore, and taucharts libraries:
+You have to include the d3.js and Taucharts libraries:
 
 ```html
-<script src="//cdn.jsdelivr.net/d3js/latest/d3.min.js" charset="utf-8"></script>
+<script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
 <script src="//cdn.jsdelivr.net/taucharts/latest/tauCharts.min.js" type="text/javascript"></script>
 ```
 
