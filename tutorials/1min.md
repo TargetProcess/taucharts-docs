@@ -13,13 +13,13 @@ You have to include the d3.js and Taucharts libraries:
 
 ```html
 <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
-<script src="//cdn.jsdelivr.net/taucharts/latest/tauCharts.min.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
 ```
 
 Also include the TauCharts CSS file:
 
 ```html
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/taucharts/latest/tauCharts.min.css">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
 ```
 
 Then [prepare your data](../datasource/README.md) for use with the library. TauCharts accepts data as an array of similarly-typed objects (it looks like CSV):
