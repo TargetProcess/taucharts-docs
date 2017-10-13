@@ -23,4 +23,10 @@ var chart = new tauCharts.Chart({
 });
 ```
 
+## Examples
+
+- Plugin, which puts custom control into chart's panel and executes chart's methods:
 [Example](https://jsfiddle.net/6mdLrj6o/27/)
+
+- Plugin, which draws points over existing chart using filtered data
+[Example](https://jsfiddle.net/wyohpa4a/)
