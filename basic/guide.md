@@ -1,4 +1,4 @@
-#Guide
+# Guide
 Guide is responsible for axes look and feel: labels, paddings, color, size and other aesthetic parameters. Here is the structure of the chart and related settings:
 ![guide](../images/guide.png)
 
@@ -25,7 +25,7 @@ var chart = new tauCharts.Chart({
 ```
 [example](https://jsfiddle.net/taucharts/ry010e5m/)
 
-##Axis
+## Axis
 x or y describes correspondent axis view. We set axis label to 'Count' and define a padding in pixels.
 ```javascript
   var guide = {
@@ -143,7 +143,7 @@ Also there is a set of *tickFormat*'s for time-based dimensions:
 
 Also you can [define your own period and tick format](../plugins/customticks.md).
 
-##Coordinate grid
+## Coordinate grid
 
 If you want to draw a coordinates grid, you can set *showGridLines*:
 ```javascript
@@ -160,5 +160,5 @@ If you want to draw a coordinates grid, you can set *showGridLines*:
     }
 ```
 
-##Color
+## Color
 See [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value) section to understand how to apply color.

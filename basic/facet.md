@@ -1,4 +1,4 @@
-#What is a facet chart
+# What is a facet chart
 
 The Grammar of Graphics provides the following description of the *facet* term:
 

@@ -1,4 +1,4 @@
-##Custom colors for encoding color value
+## Custom colors for encoding color value
 
 The Taucharts color scale behaves differently for a measure and nominal variables.
 

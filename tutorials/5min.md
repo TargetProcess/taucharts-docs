@@ -1,10 +1,10 @@
 If you didn't check [1 minute tutorial](1min), please go and read it. We will not be repeating the basics here.
 
-##What is Taucharts actually?
+## What is Taucharts actually?
 OK, here is the story. We are a team of developers and designers behind [Targetprocess](http://www.targetprocess.com), a visual project management software. We wanted to add a cool reporting tool inside Targetprocess, but all of the existing JavaScript charting frameworks lacked critical functionality that we needed. Sounds pretty familiar, huh? So, we decided to invent our own bicycle and that's how Taucharts was born. Taucharts is an open source framework under Apache License 2.0. 
 
 
-##How do I create a simple scatterplot chart?
+## How do I create a simple scatterplot chart?
 
 This time we will create a slightly more compelx chart and add some additional visual customizations. Here is our data:
 
@@ -40,10 +40,10 @@ var chart = new tauCharts.Chart({
 
 [See the Fiddle](https://jsfiddle.net/taucharts/hmvwg1mn/)
 
-##Working with plugins
+## Working with plugins
 Plugins are still under construction. So there isn't much we can talk about here. Sad, we know, but this section takes less than a minute to read! Great!
 
-##Facets: complex and cool
+## Facets: complex and cool
 In Taucharts facet charts group variables using X and Y coordinates, these charts help us to compare information with many different variables.
 
 Many other JavaScript charting frameworks don't support this type of chart.

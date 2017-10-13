@@ -1,4 +1,4 @@
-##Using Taucharts with a CDN
+## Using Taucharts with a CDN
 
 To use the Taucharts via jsdelivr CDN, include the following code:
 
@@ -13,7 +13,7 @@ Include CSS file as well:
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
 ```
 
-##Downloading Taucharts using Bower
+## Downloading Taucharts using Bower
 
 Taucharts is registered as a package with Bower. You can install the latest version with the command:
 
@@ -24,7 +24,7 @@ bower install taucharts
 This will install Taucharts to Bower's install directory, the default being bower_components. 
 
 
-##Downloading Taucharts using npm
+## Downloading Taucharts using npm
 
 Taucharts is registered as a package with [npm](https://www.npmjs.com/package/taucharts). You can install the latest version with the command:
 

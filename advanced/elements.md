@@ -1,4 +1,4 @@
-#Elements
+# Elements
 Elements can be used for creating composite chart, you can use small elements [point](#point), [line](#line), [interval](#interval) and draw them on a single plot.
 
 For example:
@@ -42,7 +42,7 @@ var lineElement = {
             }).renderTo('#line-element');
 ```
 [Example](https://jsfiddle.net/taucharts/54z1n2od/)
-##Point
+## Point
 Point element draws a point. It has the following parameters:
 
 ```javascript
@@ -59,7 +59,7 @@ Point diameter can be set via  [encoding](../advanced/encoding.md#size).
 
 Point color can be set via  [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value#custom-colors-for-encoding-color-value).
 
-##Line
+## Line
 Line element draws a line, obviously:
 
 ```javascript
@@ -114,7 +114,7 @@ the result is two lines:
 
 [Example](https://jsfiddle.net/taucharts/n6c70f2L/)
 
-##Interval
+## Interval
 
 Draws a bar.
 

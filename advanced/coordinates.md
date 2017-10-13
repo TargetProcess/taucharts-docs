@@ -1,4 +1,4 @@
-##Coordinates
+## Coordinates
 
 Coordinates is a basic building element in Taucharts specification.
 

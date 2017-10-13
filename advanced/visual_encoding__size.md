@@ -1,4 +1,4 @@
-##Size
+## Size
 Using element *size* for encoding can be a powerful visualization technique. If used properly it can give you an immediate insight on your data.
 
 Minard's ["Figurative map of the successive losses of men in the French army during the Russian campaign, 1812-1813"](https://en.wikipedia.org/wiki/Charles_Joseph_Minard) is now one of the most famous statistical graphics, which uses this technique. Here is it in terms of Taucharts API:

@@ -1,4 +1,4 @@
-##What is Taucharts?
+## What is Taucharts?
 Taucharts is a javascript charting library. It is based on the awesome [D3 framework](http://d3js.org/) and [Grammar of Graphics](http://www.amazon.com/The-Grammar-Graphics-Statistics-Computing/dp/0387245448) concepts.
 
 We built Taucharts around three rules:
@@ -7,7 +7,7 @@ We built Taucharts around three rules:
 2. Simple charts are easy to create, complex charts are not easy, but possible.
 3. Flexibility is important. Its [plugins framework](../plugins/README.md) should be powerful.
 
-##How do I create a simple line chart?
+## How do I create a simple line chart?
 
 You have to include the d3.js and Taucharts libraries:
 

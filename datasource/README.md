@@ -1,4 +1,4 @@
-##Data source
+## Data source
 
 You can think of Taucharts API as a mapping between data variable set (data dimensions) and visual encoding parameters (X, Y, color and size).
 
@@ -215,6 +215,6 @@ The period size for *periodical* scale is specified using [tickPeriod](../basic/
 
 Also you can define [custom periods](../plugins/customticks.md).
 
-#####NOTE: the periodic scale operates with JavaScript Date objects in a LOCAL timezone. Make sure your data meets this requirement otherwise Taucharts automatically cast data values to browser timezone which can be a source of unobvious errors.
+##### NOTE: the periodic scale operates with JavaScript Date objects in a LOCAL timezone. Make sure your data meets this requirement otherwise Taucharts automatically cast data values to browser timezone which can be a source of unobvious errors.
 
 The *time* scale doesn't require special customization, you can use [d3-based time format specifiers](https://github.com/mbostock/d3/wiki/Time-Formatting#format) for *tickFormat* in scale *guide*.
