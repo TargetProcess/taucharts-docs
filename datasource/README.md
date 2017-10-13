@@ -1,6 +1,6 @@
 ##Data source
 
-You can think of TauCharts API as a mapping between data variable set (data dimensions) and visual encoding parameters (X, Y, color and size).
+You can think of Taucharts API as a mapping between data variable set (data dimensions) and visual encoding parameters (X, Y, color and size).
 
 ```javascript
 var plot = new tauCharts.Chart({
@@ -22,15 +22,15 @@ var plot = new tauCharts.Chart({
 
 [example jsFiddle](https://jsfiddle.net/taucharts/q4ka1aw4/)
 
-TauCharts requires the source data to be provided in a form of structured table which can be expressed in javascript as an array of same-typed objects (e.g. in example above: name, age, gender, hasChild).
+Taucharts requires the source data to be provided in a form of structured table which can be expressed in javascript as an array of same-typed objects (e.g. in example above: name, age, gender, hasChild).
 
-By default TauCharts try to detect a dimension type which can be a category, order or measure.
+By default Taucharts try to detect a dimension type which can be a category, order or measure.
 
 * **Category**: Represents data that can't be compared. Let's say, list of countries or names.
 * **Order**: As you might guess, represents data that can be ordered, but you can't say how bigger one value from the other. For example, you can say that Must Have is more important than Nice to Have, but you can't say that Must Have is twice as important.
 * **Measure**: That is easy. You can compare these variables, add them, multiply them, etc.
 
-Using dimension type TauCharts tries to find the most appropriate scale for a dimension. Here is a list of default scales for corresponding dimension types:
+Using dimension type Taucharts tries to find the most appropriate scale for a dimension. Here is a list of default scales for corresponding dimension types:
 
 | type | scale |
 | -- | -- |
@@ -67,7 +67,7 @@ var plot = new tauCharts.Chart({
 
 You should pass data property as a primitive type (string, boolean) and define an **order** array that provides the order of categories.
 
-For example, we have *priority* property in the data. It can be ordered, but TauCharts don't have a clue how to do that. In *dimensions* section you describe *priority* as *order* and set ['Low', 'Medium', 'High'] order.
+For example, we have *priority* property in the data. It can be ordered, but Taucharts don't have a clue how to do that. In *dimensions* section you describe *priority* as *order* and set ['Low', 'Medium', 'High'] order.
 
 ```javascript
 {
@@ -100,7 +100,7 @@ For example, we have *priority* property in the data. It can be ordered, but Tau
 
 #### Nested objects in DataSource (DEPRECATED)
 
-In previous examples we used only primitive values in data.  TauCharts API allows you to pass nested objects as well. In this case you should specify which property is an identity and which property should be on axis ticks.
+In previous examples we used only primitive values in data.  Taucharts API allows you to pass nested objects as well. In this case you should specify which property is an identity and which property should be on axis ticks.
 
 This can be useful for visualizing complex entities which *potentially* can have non-unique names but have to be tracked by their unique identity (for example, Cities are non-unique).
 
@@ -164,7 +164,7 @@ You can use nested objects to specify *ordered* dimensions:
 
 #### Time-based dimensions
 
-In TauCharts time-based data is expressed as *order* or *measure* dimension type on *period* or *time* scale.
+In Taucharts time-based data is expressed as *order* or *measure* dimension type on *period* or *time* scale.
 
 ```javascript
 {

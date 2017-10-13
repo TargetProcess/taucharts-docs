@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Why TauCharts?](why/README.md)
+* [Why Taucharts?](why/README.md)
 * [Download](download/README.md)
 * [Tutorials](tutorials/README.md)
    * [1 min tutorial](tutorials/1min.md)

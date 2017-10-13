@@ -79,7 +79,7 @@ Ticks are small indicators on an axis that shows axis values.
 
 #### tickFormat
 
-*guide* allows to format tick labels using *tickFormat* property. TauCharts uses d3-based formatter. Check available [d3 format specifiers](https://github.com/mbostock/d3/wiki/Formatting#d3_format).
+*guide* allows to format tick labels using *tickFormat* property. Taucharts uses d3-based formatter. Check available [d3 format specifiers](https://github.com/mbostock/d3/wiki/Formatting#d3_format).
 
 In the example below ticks on *x* axis are formatted using SI-prefix (e.g. "22000" printed as "22k").
 

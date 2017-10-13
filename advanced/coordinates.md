@@ -1,6 +1,6 @@
 ##Coordinates
 
-Coordinates is a basic building element in TauChart specification.
+Coordinates is a basic building element in Taucharts specification.
 
 There are many types of coordinates:
 * Cartesian
@@ -13,9 +13,9 @@ There are many types of coordinates:
 * Local / Global Maps
 * 3D
 
-For now TauCharts supports Cartesian coordinates only &mdash; the most popular coordinate system.
+For now Taucharts supports Cartesian coordinates only &mdash; the most popular coordinate system.
 
-In TauCharts cartesian coordinates are specified using *COORDS.RECT* type:
+In Taucharts cartesian coordinates are specified using *COORDS.RECT* type:
 
 ```javascript
 {

@@ -1,7 +1,7 @@
-##What is TauCharts?
-TauCharts is a javascript charting library. It is based on the awesome [D3 framework](http://d3js.org/) and [Grammar of Graphics](http://www.amazon.com/The-Grammar-Graphics-Statistics-Computing/dp/0387245448) concepts.
+##What is Taucharts?
+Taucharts is a javascript charting library. It is based on the awesome [D3 framework](http://d3js.org/) and [Grammar of Graphics](http://www.amazon.com/The-Grammar-Graphics-Statistics-Computing/dp/0387245448) concepts.
 
-We built TauCharts around three rules:
+We built Taucharts around three rules:
 
 1. Graphical design is imporant, so we design everything with passion.
 2. Simple charts are easy to create, complex charts are not easy, but possible.
@@ -16,13 +16,13 @@ You have to include the d3.js and Taucharts libraries:
 <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
 ```
 
-Also include the TauCharts CSS file:
+Also include the Taucharts CSS file:
 
 ```html
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
 ```
 
-Then [prepare your data](../datasource/README.md) for use with the library. TauCharts accepts data as an array of similarly-typed objects (it looks like CSV):
+Then [prepare your data](../datasource/README.md) for use with the library. Taucharts accepts data as an array of similarly-typed objects (it looks like CSV):
 
 
 ```javascript

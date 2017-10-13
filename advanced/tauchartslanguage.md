@@ -1,6 +1,6 @@
-## TauChart language
+## Taucharts language
 
-The flexibility of TauChart library is powered by Charts Intermediate Language (CIL) which is inspired by Leland Wilkinson's work "Grammar of Graphics".
+The flexibility of Taucharts library is powered by Charts Intermediate Language (CIL) which is inspired by Leland Wilkinson's work "Grammar of Graphics".
 
 CIL is a declarative language which describes the following aspects:
 * [Data source](../datasource/README.md) structure (meta data)
@@ -91,7 +91,7 @@ By default inner element inherits parent properties like x, y, guide.
 
 Here is how declarative specification transforms to a visual plot in 3 main steps:
 
-1. **Build logical structure**. TauChart plot engine expands CIL specification to a tree structure based on data domain.
+1. **Build logical structure**. Taucharts plot engine expands CIL specification to a tree structure based on data domain.
 2. **Calculate Layout**. On this step layout engine traverses tree structure and calculates physical position and size for each item to fit the plot into the given area.
 3. **Draw**. On this stage the engine traverses the layout tree from previous step and calls drawer for each item with corresponding configuration.
 

@@ -1,6 +1,6 @@
 ## Composite charts
 
-TauCharts API focuses on flexible composition architecture instead of rich taxonomy of chart types like many other libraries.
+Taucharts API focuses on flexible composition architecture instead of rich taxonomy of chart types like many other libraries.
 
 This approach allows to build a facet charts by nesting coordinates into coordinates recursively as well as display many different elements (e.g. points, bars, lines) on the chart grid.
 
