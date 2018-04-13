@@ -60,7 +60,7 @@ You can reference container using selector or pass a DOM element:
 ```javascript
 chart.renderTo('#line');
 // or
-chart.renderTo(document.getElementById('#line'));
+chart.renderTo(document.getElementById('line'));
 ```
 
 [Example jsFiddle](https://jsfiddle.net/taucharts/u86cseky/)
