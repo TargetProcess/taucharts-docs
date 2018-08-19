@@ -1,7 +1,7 @@
 {
   "title": "Taucharts is a javascript graph library.",
   "description": "Taucharts is a JavaScript charting library. It is based on the [D3](http://d3js.org) framework and 'Grammar of Graphics' concepts.",
-  "gitbook": "2.x.x",
+  "gitbook": "3.x.x",
   "plugins": [
     "jsfiddle",
     "disqus",

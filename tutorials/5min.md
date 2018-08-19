@@ -20,7 +20,7 @@ Now, we'll define a scatterplot chart. We use the [guide](../basic/guide.md) par
 
 
 ```javascript
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
             guide: {
               x: {label:'Cycle Time in days'},  // custom label for X axis
               y: {label:'Effort in points'},    // custom label for Y axis
@@ -38,7 +38,7 @@ var chart = new tauCharts.Chart({
         });
 ```
 
-[See the Fiddle](https://jsfiddle.net/taucharts/hmvwg1mn/)
+[See the Fiddle](https://jsfiddle.net/taucharts/hmvwg1mn/88/)
 
 ## Working with plugins
 Plugins are still under construction. So there isn't much we can talk about here. Sad, we know, but this section takes less than a minute to read! Great!
@@ -54,7 +54,7 @@ Basically, we compose coordinates into coordinates to get graph of graphs or tab
 
 
 ```javascript
-     var chart = new tauCharts.Chart({
+     var chart = new Taucharts.Chart({
          type: 'scatterplot',
          x: ['euroEco', 'co2'],
          y: ['power', 'hp'],
@@ -72,6 +72,6 @@ Basically, we compose coordinates into coordinates to get graph of graphs or tab
      chart.renderTo('#scatter');
 ```
 
-[Example jsFiddle](https://jsfiddle.net/taucharts/5c0pmnj1/)
+[Example jsFiddle](https://jsfiddle.net/taucharts/5c0pmnj1/76/)
 
 Now we recommend that you go play with Taucharts and read some additional information regarding [basic concepts](../images/guide.png) and then jump into more [advanced topics](../advanced/tauchartslanguage.md).

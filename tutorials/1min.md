@@ -12,14 +12,14 @@ We built Taucharts around three rules:
 You have to include the d3.js and Taucharts libraries:
 
 ```html
-<script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
-<script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/taucharts@2.5.1/dist/taucharts.min.js" type="text/javascript"></script>
 ```
 
 Also include the Taucharts CSS file:
 
 ```html
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/taucharts@2.5.1/dist/taucharts.min.css">
 ```
 
 Then [prepare your data](../datasource/README.md) for use with the library. Taucharts accepts data as an array of similarly-typed objects (it looks like CSV):
@@ -40,7 +40,7 @@ var datasource = [{
 The actual chart definition is pretty simple and speak for itself:
 
 ```javascript
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
     data: datasource,
     type: 'line',
     x: 'date',
@@ -63,6 +63,6 @@ chart.renderTo('#line');
 chart.renderTo(document.getElementById('line'));
 ```
 
-[Example jsFiddle](https://jsfiddle.net/taucharts/u86cseky/)
+[Example jsFiddle](https://jsfiddle.net/taucharts/u86cseky/164/)
 
 Now, find 5 free minutes and [check out our extended tutorial](5min.md).
