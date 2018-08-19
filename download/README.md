@@ -4,13 +4,13 @@ To use the Taucharts via jsdelivr CDN, include the following code:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script>
-<script src="https://cdn.jsdelivr.net/npm/taucharts@2.5.1/dist/taucharts.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script>
 ```
 
 Include CSS file as well:
 
 ```html
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/taucharts@2.5.1/dist/taucharts.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.css">
 ```
 
 ## Downloading Taucharts using Bower
