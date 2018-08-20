@@ -3,15 +3,15 @@ Bar chart is very easy to create as well. Here is the datasource:
 
 ```javascript
 var defData = [
-        {"team": "d", "cycleTime": 1, "effort": 1, "count": 1, "priority": "low"},
+        {"team": "One", "cycleTime": 1, "effort": 1, "count": 1, "priority": "low"},
         ...
-        {"team": "k", "cycleTime": 4, "effort": 6, "count": 8, "priority": "medium"}];
+        {"team": "Two", "cycleTime": 4, "effort": 6, "count": 8, "priority": "medium"}];
 ```
 
 Now just specify 'bar' type to create a bar chart:
 
 ```javascript
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
             data: defData,
             type: 'bar',
             x: 'team',
@@ -20,14 +20,14 @@ var chart = new tauCharts.Chart({
 chart.renderTo('#bar');
 ```
 
-[example](https://jsfiddle.net/taucharts/ryaobh0w/)
+[example](https://jsfiddle.net/taucharts/ryaobh0w/330/)
 
 
 To define color settings check [encoding](../advanced/encoding.md) section.
 
 The chart below has color parameters for encoding group
 ```javascript
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
             data: defData,
             type: 'bar',
             x: 'team',
@@ -36,4 +36,4 @@ var chart = new tauCharts.Chart({
         });
 chart.renderTo('#bar');
 ```
-[example](https://jsfiddle.net/taucharts/6mdLrj6o/)
+[example](https://jsfiddle.net/taucharts/6mdLrj6o/229/)
