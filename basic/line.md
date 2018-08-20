@@ -19,7 +19,7 @@ function data() {
 Let's take red line shows *sin()* and green shows *cos()*. Colors brewer is defined in *guide.color.brewer* property.
 
 ```javascript
-new tauCharts.Chart({
+new Taucharts.Chart({
     data: data(),
     type: 'line',
     x: 'i',
@@ -50,7 +50,7 @@ Taucharts allows to build lines of variable width.
 Minard's ["Figurative map of the successive losses of men in the French army during the Russian campaign, 1812-1813"](https://en.wikipedia.org/wiki/Charles_Joseph_Minard) is now one of the most famous statistical graphics, thanks to Tufte. Example below demonstrates how to build it using Taucharts:
 
 ```javascript
-new tauCharts.Chart({
+new Taucharts.Chart({
   type: 'line',
   x: 'longitude',
   y: 'latitude',
@@ -72,7 +72,7 @@ Defines when to show anchors:
 * `never` - anchors will not be displayed.
 
 ```javascript
-new tauCharts.Chart({
+new Taucharts.Chart({
   ...
   guide: {
     showAnchors: 'always'
@@ -89,7 +89,7 @@ Line points can be connected using straight polyline or a smooth line:
 * `step`, `step-before`, `step-after` - connects points using steps.
 
 ```javascript
-new tauCharts.Chart({
+new Taucharts.Chart({
   ...
   guide: {
     interpolate: 'smooth-keep-extremum'

@@ -15,7 +15,7 @@ A plugin is a function, which returns an object, that can handle chart events, p
   tauCharts.api.plugins.add('extra', ExtraPlugin);
 })();
 
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
     ...
     plugins: [
         tauCharts.api.plugins.get('extra')({...})

@@ -6,7 +6,7 @@ Let's build a simple scatterplot chart. Download and add tauCharts.js library.
 Then [prepare data](../datasource/README.md) you want to use for the chart. The chart definition is quite straightforward:
 
 ```javascript
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
             data: datasource,
             type: 'scatterplot', // scatterplot, line, bar...
             x: 'cycleTime',

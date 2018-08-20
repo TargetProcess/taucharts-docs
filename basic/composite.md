@@ -17,7 +17,7 @@ There are 2 ways of composition supported:
 Let's visualy compare several numerical properties of the dataset. The Taucharts at the moment doesn't have special syntax for the task but there is a workaround. We need to introduce new variables to the data which transform meta-data to a format that Taucharts can operate with.
 
 ```javascript
-var co2_vs_hp_by_cars_chart = new tauCharts.Chart({
+var co2_vs_hp_by_cars_chart = new Taucharts.Chart({
 
     "type": "line",
     "x": ["car"],

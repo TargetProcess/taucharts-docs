@@ -1,7 +1,7 @@
 Let's create a stacked area chart to compare how *effort* change over *date* across *teams*.
 
 ``` javascript
-new tauCharts.Chart({
+new Taucharts.Chart({
     type: 'stacked-area',
     x: 'date',
     y: 'effort',
@@ -26,7 +26,7 @@ Defines when to show anchors:
 * `never` - anchors will not be displayed.
 
 ```javascript
-new tauCharts.Chart({
+new Taucharts.Chart({
   ...
   guide: {
     showAnchors: 'always'
@@ -42,7 +42,7 @@ Areas can be represented with polygons, smooth curves or steps:
 * `step`, `step-before`, `step-after` - connects points using steps.
 
 ```javascript
-new tauCharts.Chart({
+new Taucharts.Chart({
   ...
   guide: {
     interpolate: 'smooth-keep-extremum'

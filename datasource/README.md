@@ -3,7 +3,7 @@
 You can think of Taucharts API as a mapping between data variable set (data dimensions) and visual encoding parameters (X, Y, color and size).
 
 ```javascript
-var plot = new tauCharts.Chart({
+var plot = new Taucharts.Chart({
     // data dimensions
     data: [
         { name: "John", age: 30, gender: 'Male',   hasChild: true  },
@@ -41,7 +41,7 @@ Using dimension type Taucharts tries to find the most appropriate scale for a di
 You can explicitly specify dimension type / scale in *dimensions* section:
 
 ```javascript
-var plot = new tauCharts.Chart({
+var plot = new Taucharts.Chart({
     data: [
         { name: "John", age: 30, gender: 'Male',   hasChild: true  },
         ...

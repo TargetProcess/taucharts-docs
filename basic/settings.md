@@ -7,7 +7,7 @@ Apart of chart guide there is a chart settings that control chart appearance and
 Plot.globalSettings.xDensityPadding = 4;
 
 // Locally
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
   ...
   settings: {
     xDensityPadding: 4

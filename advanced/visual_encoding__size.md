@@ -4,7 +4,7 @@ Using element *size* for encoding can be a powerful visualization technique. If 
 Minard's ["Figurative map of the successive losses of men in the French army during the Russian campaign, 1812-1813"](https://en.wikipedia.org/wiki/Charles_Joseph_Minard) is now one of the most famous statistical graphics, which uses this technique. Here is it in terms of Taucharts API:
 
 ```javascript
-new tauCharts.Chart({
+new Taucharts.Chart({
   type: 'line',
   x: 'longitude',
   y: 'latitude',
@@ -26,7 +26,7 @@ The *size* encodes visually:
 - diameter of anchor point for an area chart.
 
 ```javascript
-new tauCharts.Chart({
+new Taucharts.Chart({
   type: 'scatterplot',
   x: 'cycleTime',
   y: 'effort',

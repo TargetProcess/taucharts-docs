@@ -31,7 +31,7 @@ If you want to set [guide properties](guide.md) for axis, you should pass an arr
 Here is an example:
 
 ```javascript
-     var chart = new tauCharts.Chart({
+     var chart = new Taucharts.Chart({
          type: 'scatterplot',
          x: ['euroEco', 'co2'],
          y: ['power', 'hp'],

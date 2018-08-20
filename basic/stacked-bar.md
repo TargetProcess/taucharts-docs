@@ -13,7 +13,7 @@ var data = [
 To create a stacked bar - use 'stacked-bar' type in chart definition:
 
 ```javascript
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
     type: 'stacked-bar',
     x   : 'process',
     y   : 'count',
@@ -26,7 +26,7 @@ var chart = new tauCharts.Chart({
 Now let's encode each stage with color for better visibility:
 
 ```javascript
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
     type : 'stacked-bar',
     x    : 'process',
     y    : 'count',
@@ -39,7 +39,7 @@ var chart = new tauCharts.Chart({
 Also each part of stacked bar chart might be encoded with size. This can be useful to produce funnel-like plots:
 
 ```javascript
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
     type : 'stacked-bar',
     x    : 'process',
     y    : 'count',

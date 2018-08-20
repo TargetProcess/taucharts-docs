@@ -5,7 +5,7 @@ Guide is responsible for axes look and feel: labels, paddings, color, size and o
 And a live example:
 
 ```javascript
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
     guide: {
         x: {label: {text: 'Cycle Time in days', padding: 35}, padding: 20},
         y: {label: 'Effort in points', padding: 20},

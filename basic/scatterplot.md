@@ -1,7 +1,7 @@
 For creating scatterplot chart you can use the following script:
 
 ```javascript
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
             data: defData,
             type: 'scatterplot',
             x: 'cycleTime',
@@ -18,7 +18,7 @@ Check [encoding](../advanced/encoding.md#custom-colors-for-encoding-color-value#
 Use [guide](guide.md) property for some advanced  settings. Here is an example that sets custom labels for axes and custom colors `'color-red'`,`'color-green'`,`'color-blue'` for elements.
 
 ```javascript
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
             guide: {
               x: {label:'Cycle Time in days'},  // custom label for X axis
               y: {label:'Effort in points'},    // custom label for Y axis

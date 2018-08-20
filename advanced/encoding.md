@@ -20,7 +20,7 @@ There are 2 ways to define color brewer for nominal color scale:
 If you want to use custom colors - enumerate classes / codes in an array.
 
 ```javascript
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
     type: 'bar',
     x: 'month',
     y: 'count',
@@ -45,7 +45,7 @@ Sometimes there is a strong need to explicitly link some category to a color.
 For example, all points with 'NewTeam' team should be *red*. Use **object** notation to define *color / value* mapping:
 
 ```javascript
-var chart = new tauCharts.Chart({
+var chart = new Taucharts.Chart({
     type: 'bar',
     x: 'month',
     y: 'count',
