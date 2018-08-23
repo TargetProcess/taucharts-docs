@@ -15,7 +15,7 @@ new Taucharts.Chart({
   data: [...]
 })
 ```
-[Example](https://jsfiddle.net/0bu5oo8b/)
+[Example](https://jsfiddle.net/taucharts/0bu5oo8b/76/)
 
 Apply *size encoding* by assigning measure variable to **size** parameter.
 
@@ -35,7 +35,7 @@ new Taucharts.Chart({
 })
 ```
 
-[Example](https://jsfiddle.net/oLcub5h3/)
+[Example](https://jsfiddle.net/taucharts/oLcub5h3/4/)
 
 #### minSize / maxSize
 
@@ -45,4 +45,4 @@ By default Taucharts tries to infer optimal size scale for a given chart size. W
 
 **NOTE**: *minSize / maxSize* specify absolute limits for any container size which may look ugly when user resize the chart.
 
-[Example](https://jsfiddle.net/jb87feLj/)
+[Example](https://jsfiddle.net/taucharts/jb87feLj/5/)
