@@ -70,4 +70,4 @@ tauChart.api.tickFormat.add("quarter", function(x) {
 
 Custom format specifiers are useful for ticks localization.
 
-See example of such localization: https://jsfiddle.net/taucharts/1tewxdtk/
+See example of such localization: [example](https://jsfiddle.net/taucharts/qvqn12zg/69/)
