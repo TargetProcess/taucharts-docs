@@ -35,14 +35,14 @@ new Taucharts.Chart({
 
 See [guide](guide.md) reference for another sophisticated settings.
 
-[Example](https://jsfiddle.net/taucharts/mymLjpyj/)
+[Example](https://jsfiddle.net/taucharts/mymLjpyj/361/)
 
 #### split
 By default data chunks for a line chart are split by color parameter. Taucharts gives the **split** parameter as an additional way to split data for lines. It is useful when you need to draw separate lines per *property A* and colorize them (optionally) by another *property B*.
 
 Here is an example:
 
-[Example](https://jsfiddle.net/taucharts/cv7jkhjx/)
+[Example](https://jsfiddle.net/taucharts/cv7jkhjx/33/)
 
 #### size
 Taucharts allows to build lines of variable width.
@@ -61,7 +61,7 @@ new Taucharts.Chart({
   data: [...]
 })
 ```
-[Example](https://jsfiddle.net/0bu5oo8b/)
+[Example](https://jsfiddle.net/taucharts/0bu5oo8b/76/)
 
 See [size encoding](https://api.taucharts.com/advanced/visual_encoding__size.html) for a details.
 
@@ -79,7 +79,7 @@ new Taucharts.Chart({
   }
 })
 ```
-[Example](https://jsfiddle.net/mymLjpyj/2/)
+[Example](https://jsfiddle.net/taucharts/mymLjpyj/360/)
 
 #### guide.interpolate
 Line points can be connected using straight polyline or a smooth line:
@@ -97,4 +97,4 @@ new Taucharts.Chart({
 })
 ```
 
-[Example](https://jsfiddle.net/6mdLrj6o/28/)
+[Example](https://jsfiddle.net/taucharts/6mdLrj6o/235/)
