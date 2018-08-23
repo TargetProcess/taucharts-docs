@@ -54,7 +54,7 @@ var co2_vs_hp_by_cars_chart = new Taucharts.Chart({
 
 Here we double source array by generating a new record for each property (i.e co2 and hp) and introduce two new variables "co2,hp" and "co2-hp-type". This is some kind of "unpacking meta-data". The "co2,hp" variable become a new composite axis while "co2-hp-type" variable is used to split geoms by color. 
 
-[example](https://jsfiddle.net/taucharts/nLdac8sc/)
+[example](https://jsfiddle.net/taucharts/nLdac8sc/61/)
 
 #### Example 2: Visual experiments
 
@@ -64,11 +64,11 @@ While "Example 1" should cover 80% of the needs there is a lot of flexibility in
 
 What if I don't want to merge domain for "hp" and "co2" variables from the example above? The Taucharts DSL is flexible enough to draw two or more axes for cartesian coordinates. In this example we use several data sources to create two types of cartesian coordinates. One serves as a layout for coordinates composition while the rest represents data itself.
 
-[example](https://jsfiddle.net/taucharts/2z1s9mw1/)
+[example](https://jsfiddle.net/taucharts/2z1s9mw1/108/)
 
 Also we can merge layout cells and use padding guide to save both axes while visually "share" coordinates canvas.
 
-[example](https://jsfiddle.net/taucharts/7cbthzLu/)
+[example](https://jsfiddle.net/taucharts/7cbthzLu/81/)
 
 
 
