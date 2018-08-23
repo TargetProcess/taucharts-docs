@@ -23,7 +23,7 @@ var chart = new Taucharts.Chart({
     size: 'count'
 });
 ```
-[example](https://jsfiddle.net/taucharts/ry010e5m/)
+[example](https://jsfiddle.net/taucharts/ry010e5m/106/)
 
 ## Axis
 x or y describes correspondent axis view. We set axis label to 'Count' and define a padding in pixels.
@@ -34,10 +34,6 @@ x or y describes correspondent axis view. We set axis label to 'Count' and defin
         }
   }
 ```
-
-#### autoScale (*deprecated*)
-
-This property is deprecated and will not be supported after 1.0.0 release. See *nice* below as an alternative.
 
 #### nice
 
@@ -71,7 +67,7 @@ guide: {
     y: { min: 0, max: 100, nice: false }
 }
 ```
-See example: https://jsfiddle.net/tnhfxnuc/
+See example: [example](https://jsfiddle.net/taucharts/tnhfxnuc/75/)
 
 ## Ticks
 
@@ -79,7 +75,7 @@ Ticks are small indicators on an axis that shows axis values.
 
 #### tickFormat
 
-*guide* allows to format tick labels using *tickFormat* property. Taucharts uses d3-based formatter. Check available [d3 format specifiers](https://github.com/mbostock/d3/wiki/Formatting#d3_format).
+*guide* allows to format tick labels using *tickFormat* property. Taucharts uses d3-based formatter. Check available [d3 format specifiers](https://github.com/d3/d3-time-format/blob/master/README.md#d3-time-format).
 
 In the example below ticks on *x* axis are formatted using SI-prefix (e.g. "22000" printed as "22k").
 
@@ -104,7 +100,7 @@ tauCharts.api.tickFormat.add('string_key', function (originalValue) { /* formatt
 ```
 Custom format specifiers are useful for ticks localization.
 
-See example of such localization: https://jsfiddle.net/qvqn12zg/
+See example of such localization: [example](https://jsfiddle.net/taucharts/qvqn12zg/69/)
 
 #### tickPeriod
 
