@@ -17,7 +17,7 @@ new Taucharts.Chart({
     ]
 }).renderTo('#target');
 ```
-[Example](https://jsfiddle.net/mymLjpyj/4/)
+[Example](https://jsfiddle.net/taucharts/mymLjpyj/363/)
 
 #### guide.showAnchors
 Defines when to show anchors:
@@ -50,4 +50,4 @@ new Taucharts.Chart({
 })
 ```
 
-[Example](https://jsfiddle.net/mymLjpyj/5/)
+[Example](https://jsfiddle.net/taucharts/mymLjpyj/364/)
