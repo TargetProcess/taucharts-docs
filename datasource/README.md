@@ -217,4 +217,4 @@ Also you can define [custom periods](../plugins/customticks.md).
 
 ##### NOTE: the periodic scale operates with JavaScript Date objects in a LOCAL timezone. Make sure your data meets this requirement otherwise Taucharts automatically cast data values to browser timezone which can be a source of unobvious errors.
 
-The *time* scale doesn't require special customization, you can use [d3-based time format specifiers](https://github.com/mbostock/d3/wiki/Time-Formatting#format) for *tickFormat* in scale *guide*.
+The *time* scale doesn't require special customization, you can use [d3-based time format specifiers](https://github.com/d3/d3-time-format/blob/master/README.md#d3-time-format) for *tickFormat* in scale *guide*.
