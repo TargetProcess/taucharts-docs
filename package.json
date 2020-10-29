@@ -14,17 +14,18 @@
   ],
   "dependencies": {
     "gitbook-plugin-anchors": "0.7.1",
-    "gitbook-plugin-disqus": "0.1.0",
-    "gitbook-plugin-jsfiddle": "1.0.1"
+    "gitbook-plugin-jsfiddle": "1.0.3"
   },
   "scripts": {
-    "start": "gitbook build"
+    "start": "gitbook build",
+    "publishDocs": "node ./tasks/publishDocs.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/TargetProcess/tauCharts.git"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "gitbook-cli": "2.3.2"
   }
 }
