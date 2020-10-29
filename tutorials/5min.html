@@ -1,0 +1,718 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5 mins tutorial · Taucharts is a javascript graph library.</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../datasource/" />
+    
+    
+    <link rel="prev" href="1min.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../why/">
+            
+                <a href="../why/">
+            
+                    
+                    Why Taucharts?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../download/">
+            
+                <a href="../download/">
+            
+                    
+                    Download
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Tutorials
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="1min.html">
+            
+                <a href="1min.html">
+            
+                    
+                    1 min tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="5min.html">
+            
+                <a href="5min.html">
+            
+                    
+                    5 mins tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../datasource/">
+            
+                <a href="../datasource/">
+            
+                    
+                    Data source / dimensions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../basic/">
+            
+                <a href="../basic/">
+            
+                    
+                    Basic concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../basic/scatterplot.html">
+            
+                <a href="../basic/scatterplot.html">
+            
+                    
+                    Scatterplot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../basic/line.html">
+            
+                <a href="../basic/line.html">
+            
+                    
+                    Line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../basic/bar.html">
+            
+                <a href="../basic/bar.html">
+            
+                    
+                    Bar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../basic/horizontal-bar.html">
+            
+                <a href="../basic/horizontal-bar.html">
+            
+                    
+                    Horizontal bar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../basic/stacked-bar.html">
+            
+                <a href="../basic/stacked-bar.html">
+            
+                    
+                    Stacked bar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../basic/horizontal-stacked-bar.html">
+            
+                <a href="../basic/horizontal-stacked-bar.html">
+            
+                    
+                    Horizontal stacked bar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../basic/stacked-area.html">
+            
+                <a href="../basic/stacked-area.html">
+            
+                    
+                    Stacked area
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../basic/facet.html">
+            
+                <a href="../basic/facet.html">
+            
+                    
+                    Facets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../basic/composite.html">
+            
+                <a href="../basic/composite.html">
+            
+                    
+                    Composite charts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../basic/guide.html">
+            
+                <a href="../basic/guide.html">
+            
+                    
+                    Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../basic/settings.html">
+            
+                <a href="../basic/settings.html">
+            
+                    
+                    Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../advanced/">
+            
+                <a href="../advanced/">
+            
+                    
+                    Advanced concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../advanced/tauchartslanguage.html">
+            
+                <a href="../advanced/tauchartslanguage.html">
+            
+                    
+                    Tau Chart Language
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../advanced/coordinates.html">
+            
+                <a href="../advanced/coordinates.html">
+            
+                    
+                    Coordinates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../advanced/elements.html">
+            
+                <a href="../advanced/elements.html">
+            
+                    
+                    Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../advanced/encoding.html">
+            
+                <a href="../advanced/encoding.html">
+            
+                    
+                    Visual encoding / Color
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../advanced/visual_encoding__size.html">
+            
+                <a href="../advanced/visual_encoding__size.html">
+            
+                    
+                    Visual encoding / Size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../advanced/splom.html">
+            
+                <a href="../advanced/splom.html">
+            
+                    
+                    Scatterplot Matrices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../advanced/performance.html">
+            
+                <a href="../advanced/performance.html">
+            
+                    
+                    Rendering performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../plugins/">
+            
+                <a href="../plugins/">
+            
+                    
+                    Plugins
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../plugins/customticks.html">
+            
+                <a href="../plugins/customticks.html">
+            
+                    
+                    Custom Ticks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../plugins/tooltip.html">
+            
+                <a href="../plugins/tooltip.html">
+            
+                    
+                    Tooltip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../plugins/create-plugin.html">
+            
+                <a href="../plugins/create-plugin.html">
+            
+                    
+                    Creating a plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >5 mins tutorial</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>If you didn&apos;t check <a href="1min">1 minute tutorial</a>, please go and read it. We will not be repeating the basics here.</p>
+<h2 id="what-is-taucharts-actually"><a name="what-is-taucharts-actually" class="plugin-anchor" href="#what-is-taucharts-actually"><i class="fa fa-link" aria-hidden="true"></i></a>What is Taucharts actually?</h2>
+<p>OK, here is the story. We are a team of developers and designers behind <a href="http://www.targetprocess.com" target="_blank">Targetprocess</a>, a visual project management software. We wanted to add a cool reporting tool inside Targetprocess, but all of the existing JavaScript charting frameworks lacked critical functionality that we needed. Sounds pretty familiar, huh? So, we decided to invent our own bicycle and that&apos;s how Taucharts was born. Taucharts is an open source framework under Apache License 2.0. </p>
+<h2 id="how-do-i-create-a-simple-scatterplot-chart"><a name="how-do-i-create-a-simple-scatterplot-chart" class="plugin-anchor" href="#how-do-i-create-a-simple-scatterplot-chart"><i class="fa fa-link" aria-hidden="true"></i></a>How do I create a simple scatterplot chart?</h2>
+<p>This time we will create a slightly more compelx chart and add some additional visual customizations. Here is our data:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> defData = [
+        {<span class="hljs-string">&quot;team&quot;</span>: <span class="hljs-string">&quot;d&quot;</span>, <span class="hljs-string">&quot;cycleTime&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&quot;effort&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&quot;count&quot;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&quot;priority&quot;</span>: <span class="hljs-string">&quot;low&quot;</span>},
+        ...
+        {<span class="hljs-string">&quot;team&quot;</span>: <span class="hljs-string">&quot;k&quot;</span>, <span class="hljs-string">&quot;cycleTime&quot;</span>: <span class="hljs-number">4</span>, <span class="hljs-string">&quot;effort&quot;</span>: <span class="hljs-number">6</span>, <span class="hljs-string">&quot;count&quot;</span>: <span class="hljs-number">8</span>, <span class="hljs-string">&quot;priority&quot;</span>: <span class="hljs-string">&quot;medium&quot;</span>}];
+</code></pre>
+<p>Now, we&apos;ll define a scatterplot chart. We use the <a href="../basic/guide.html">guide</a> parameter to define some visual settings like axis labels, chart paddings, and custom colors we&apos;ll use to color our chart elements.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> Taucharts.Chart({
+            guide: {
+              x: {label:<span class="hljs-string">&apos;Cycle Time in days&apos;</span>},  <span class="hljs-comment">// custom label for X axis</span>
+              y: {label:<span class="hljs-string">&apos;Effort in points&apos;</span>},    <span class="hljs-comment">// custom label for Y axis</span>
+              padding: {b:<span class="hljs-number">40</span>,l:<span class="hljs-number">40</span>,t:<span class="hljs-number">10</span>,r:<span class="hljs-number">10</span>},   <span class="hljs-comment">// chart paddings</span>
+              color: {                          <span class="hljs-comment">// custom colors</span>
+                brewer: [<span class="hljs-string">&apos;color-red&apos;</span>, <span class="hljs-string">&apos;color-green&apos;</span>, <span class="hljs-string">&apos;color-blue&apos;</span>]
+              }
+            },
+            data: defData,
+            type: <span class="hljs-string">&apos;scatterplot&apos;</span>,
+            x: <span class="hljs-string">&apos;cycleTime&apos;</span>,
+            y: <span class="hljs-string">&apos;effort&apos;</span>,
+            color: <span class="hljs-string">&apos;team&apos;</span>, <span class="hljs-comment">// every team will be represented by different color</span>
+            size: <span class="hljs-string">&apos;count&apos;</span>
+        });
+</code></pre>
+<p><a href="https://jsfiddle.net/taucharts/hmvwg1mn/88/" target="_blank">See the Fiddle</a></p>
+<h2 id="working-with-plugins"><a name="working-with-plugins" class="plugin-anchor" href="#working-with-plugins"><i class="fa fa-link" aria-hidden="true"></i></a>Working with plugins</h2>
+<p>Plugins are still under construction. So there isn&apos;t much we can talk about here. Sad, we know, but this section takes less than a minute to read! Great!</p>
+<h2 id="facets-complex-and-cool"><a name="facets-complex-and-cool" class="plugin-anchor" href="#facets-complex-and-cool"><i class="fa fa-link" aria-hidden="true"></i></a>Facets: complex and cool</h2>
+<p>In Taucharts facet charts group variables using X and Y coordinates, these charts help us to compare information with many different variables.</p>
+<p>Many other JavaScript charting frameworks don&apos;t support this type of chart.</p>
+<p>More complex charts require more complex definitions. You can <a href="../advanced/tauchartslanguage.html">read about the Taucharts language</a>  to get more details.</p>
+<p>Basically, we compose coordinates into coordinates to get graph of graphs or table of graphs. Here is a quick example of a facet chart. In this case we have two X axes and two Y axes. As a result, we have a 2x2 matrix:</p>
+<pre><code class="lang-javascript">     <span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> Taucharts.Chart({
+         type: <span class="hljs-string">&apos;scatterplot&apos;</span>,
+         x: [<span class="hljs-string">&apos;euroEco&apos;</span>, <span class="hljs-string">&apos;co2&apos;</span>],
+         y: [<span class="hljs-string">&apos;power&apos;</span>, <span class="hljs-string">&apos;hp&apos;</span>],
+         data: [
+            { car: <span class="hljs-string">&quot;Toyota Prius+&quot;</span>, co2: <span class="hljs-number">96</span>,  hp: <span class="hljs-number">99</span> },
+            { car: <span class="hljs-string">&quot;Volvo S60&quot;</span>,     co2: <span class="hljs-number">135</span>, hp: <span class="hljs-number">150</span>},
+            ...
+            { car: <span class="hljs-string">&quot;BMV X5&quot;</span>,        co2: <span class="hljs-number">197</span>, hp: <span class="hljs-number">306</span>}
+         ].map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x</span>) </span>{
+             x.euroEco = (x.co2 &lt; <span class="hljs-number">140</span>) ? <span class="hljs-string">&apos;eco&apos;</span> : <span class="hljs-string">&apos;non-eco&apos;</span>;
+             x.power = (x.hp &lt; <span class="hljs-number">150</span>) ? <span class="hljs-string">&apos;low&apos;</span> : ((x.hp &lt; <span class="hljs-number">200</span>) ? <span class="hljs-string">&apos;normal&apos;</span> : <span class="hljs-string">&apos;high&apos;</span>);
+             <span class="hljs-keyword">return</span> x;
+         })
+     });
+     chart.renderTo(<span class="hljs-string">&apos;#scatter&apos;</span>);
+</code></pre>
+<p><a href="https://jsfiddle.net/taucharts/5c0pmnj1/76/" target="_blank">Example jsFiddle</a></p>
+<p>Now we recommend that you go play with Taucharts and read some additional information regarding <a href="../images/guide.png">basic concepts</a> and then jump into more <a href="../advanced/tauchartslanguage.html">advanced topics</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1min.html" class="navigation navigation-prev " aria-label="Previous page: 1 min tutorial">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../datasource/" class="navigation navigation-next " aria-label="Next page: Data source / dimensions">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5 mins tutorial","level":"1.4.2","depth":2,"next":{"title":"Data source / dimensions","level":"1.5","depth":1,"path":"datasource/README.md","ref":"datasource/README.md","articles":[]},"previous":{"title":"1 min tutorial","level":"1.4.1","depth":2,"path":"tutorials/1min.md","ref":"tutorials/1min.md","articles":[]},"dir":"ltr"},"config":{"plugins":["jsfiddle","disqus","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"tauchartsapi"},"jsfiddle":{"type":"frame","tabs":["result","js","css","html"],"height":500},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Taucharts is a javascript graph library.","gitbook":"3.x.x","description":"Taucharts is a JavaScript charting library. It is based on the [D3](http://d3js.org) framework and 'Grammar of Graphics' concepts."},"file":{"path":"tutorials/5min.md","mtime":"2018-08-19T13:04:40.564Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-29T11:27:37.963Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-jsfiddle/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

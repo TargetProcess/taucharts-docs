@@ -1,0 +1,32 @@
+{
+  "name": "tauCharts",
+  "version": "0.0.1",
+  "homepage": "https://github.com/TargetProcess/tauCharts",
+  "description": "Simple charts library based on d3",
+  "author": {
+    "name": "Taucraft Limited"
+  },
+  "licenses": [
+    {
+      "type": "Creative Commons",
+      "url": "https://github.com/TargetProcess/tauCharts/blob/master/LICENSE.txt"
+    }
+  ],
+  "dependencies": {
+    "gitbook-plugin-anchors": "0.7.1",
+    "gitbook-plugin-disqus": "0.1.0",
+    "gitbook-plugin-jsfiddle": "1.0.3"
+  },
+  "scripts": {
+    "start": "gitbook build",
+    "publishDocs": "node ./tasks/publishDocs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TargetProcess/tauCharts.git"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "gitbook-cli": "2.3.2"
+  }
+}
