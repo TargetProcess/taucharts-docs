@@ -14,7 +14,6 @@
   ],
   "dependencies": {
     "gitbook-plugin-anchors": "0.7.1",
-    "gitbook-plugin-disqus": "0.1.0",
     "gitbook-plugin-jsfiddle": "1.0.3"
   },
   "scripts": {
